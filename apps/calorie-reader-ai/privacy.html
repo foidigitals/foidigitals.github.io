@@ -3,161 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>calorie reader ai — privacy</title>
-  <meta name="description" content="Privacy policy for the Calorie Reader AI mobile application." />
-  <meta name="theme-color" content="#000000" />
+  <title>Calorie Reader AI — Privacy</title>
+  <meta name="description" content="Privacy policy for Calorie Reader AI by Foi Digitals." />
+  <meta name="theme-color" content="#08080F" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Boldonse&family=Hanken+Grotesk:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,30..100,0..1;1,9..144,300..700,30..100,0..1&family=JetBrains+Mono:wght@400;500&family=Onest:wght@400;500;600;700&display=swap"
+  />
   <link rel="stylesheet" href="../../assets/styles.css" />
   <link rel="icon" type="image/png" href="../../assets/images/calorie-reader-ai.png" />
 </head>
 
 <body>
-  <header class="site-header">
+  <header class="site-header" id="siteHeader">
     <div class="container">
-      <a href="../../index.html" class="brand">
-        <span class="brand-mark-magic" aria-hidden="true"></span>
-        <span class="brand-name">foi digitals</span>
+      <a href="../../index.html" class="brand" aria-label="Foi Digitals — home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>foi digitals</span>
       </a>
       <nav class="site-nav" aria-label="Primary">
         <a href="../../index.html#work"><span data-i18n="nav.work">work</span></a>
-        <a href="../../index.html#about"><span data-i18n="nav.about">studio</span></a>
-        <a href="../../support.html"><span data-i18n="nav.support">support</span></a>
+        <a href="../../index.html#services"><span data-i18n="nav.services">services</span></a>
+        <a href="../../index.html#studio"><span data-i18n="nav.studio">studio</span></a>
         <a href="../../index.html#contact"><span data-i18n="nav.contact">contact</span></a>
       </nav>
-      <div class="lang-toggle" role="group" aria-label="Language">
-        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
-        <button type="button" class="lang-btn" data-lang="tr" aria-pressed="false">TR</button>
+      <div class="header-right">
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+          <button type="button" class="lang-btn" data-lang="tr" aria-pressed="false">TR</button>
+        </div>
+        <button class="menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false" id="menuBtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
       </div>
-      <button class="menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
     </div>
   </header>
 
-  <main>
-    <article class="article">
-      <div class="container">
-        <div class="article-grid">
-          <aside class="article-side">
-            <dl class="article-meta">
-              <div class="article-meta-row"><dt>effective</dt><dd data-i18n="apps.calorieReader.privacy.effective">27 may 2026</dd></div>
-              <div class="article-meta-row"><dt>version</dt><dd data-i18n="apps.calorieReader.privacy.version">v1.0</dd></div>
-            </dl>
-            <nav class="article-toc" aria-label="Contents">
-              <span class="article-toc-label" data-i18n="apps.calorieReader.privacy.tocLabel">contents</span>
-              <a href="#overview" data-i18n="apps.calorieReader.privacy.h_overview">overview</a>
-              <a href="#collect" data-i18n="apps.calorieReader.privacy.h_collect">information we collect</a>
-              <a href="#use" data-i18n="apps.calorieReader.privacy.h_use">how we use it</a>
-              <a href="#third" data-i18n="apps.calorieReader.privacy.h_third">third-party services</a>
-              <a href="#retention" data-i18n="apps.calorieReader.privacy.h_retention">data retention</a>
-              <a href="#rights" data-i18n="apps.calorieReader.privacy.h_rights">your rights</a>
-              <a href="#children" data-i18n="apps.calorieReader.privacy.h_children">children</a>
-              <a href="#international" data-i18n="apps.calorieReader.privacy.h_international">international transfers</a>
-              <a href="#security" data-i18n="apps.calorieReader.privacy.h_security">security</a>
-              <a href="#changes" data-i18n="apps.calorieReader.privacy.h_changes">changes</a>
-              <a href="#contact" data-i18n="apps.calorieReader.privacy.h_contact">contact</a>
-            </nav>
-          </aside>
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <button class="close" type="button" aria-label="Close menu" id="closeMenuBtn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <a href="../../index.html#work" data-i18n="nav.work">work</a>
+    <a href="../../index.html#services" data-i18n="nav.services">services</a>
+    <a href="../../index.html#studio" data-i18n="nav.studio">studio</a>
+    <a href="../../index.html#contact" data-i18n="nav.contact">contact</a>
+    <a href="../../support.html" data-i18n="nav.support">support</a>
+  </div>
 
-          <div class="article-body">
-            <span class="article-eyebrow" data-i18n="apps.calorieReader.privacy.eyebrow">calorie reader ai — privacy</span>
-            <h1 class="article-title" data-i18n="apps.calorieReader.privacy.title">privacy policy</h1>
-            <p class="article-lede" data-i18n-html="apps.calorieReader.privacy.lede">This Privacy Policy applies to Calorie Reader AI.</p>
-
-            <section><h2 id="overview" data-i18n="apps.calorieReader.privacy.h_overview">overview</h2>
-              <p data-i18n="apps.calorieReader.privacy.p_overview">Calorie Reader AI is published by Foi Digitals.</p></section>
-            <section><h2 id="collect" data-i18n="apps.calorieReader.privacy.h_collect">information we collect</h2>
-              <h3 data-i18n="apps.calorieReader.privacy.h_collect_account">account information</h3>
-              <p data-i18n="apps.calorieReader.privacy.p_collect_account">When you create an account, we collect your email address.</p>
-              <h3 data-i18n="apps.calorieReader.privacy.h_collect_profile">profile &amp; nutrition data</h3>
-              <p data-i18n="apps.calorieReader.privacy.p_collect_profile">We store the profile inputs you provide.</p>
-              <h3 data-i18n="apps.calorieReader.privacy.h_collect_photos">meal photos</h3>
-              <p data-i18n="apps.calorieReader.privacy.p_collect_photos">The image is transmitted to our backend.</p>
-              <h3 data-i18n="apps.calorieReader.privacy.h_collect_health">apple health data</h3>
-              <p data-i18n="apps.calorieReader.privacy.p_collect_health">If you grant permission, the app can read selected Health data.</p>
-              <h3 data-i18n="apps.calorieReader.privacy.h_collect_subs">subscription data</h3>
-              <p data-i18n="apps.calorieReader.privacy.p_collect_subs">Subscriptions are processed by Apple.</p>
-              <h3 data-i18n="apps.calorieReader.privacy.h_collect_usage">usage analytics &amp; diagnostics</h3>
-              <p data-i18n="apps.calorieReader.privacy.p_collect_usage">We collect anonymized usage events and crash diagnostics.</p></section>
-            <section><h2 id="use" data-i18n="apps.calorieReader.privacy.h_use">how we use it</h2>
-              <p data-i18n="apps.calorieReader.privacy.p_use_lede">We use the information we collect to:</p>
-              <ul>
-                <li data-i18n="apps.calorieReader.privacy.l_use_1">Provide and operate the app.</li>
-                <li data-i18n="apps.calorieReader.privacy.l_use_2">Personalize coaching.</li>
-                <li data-i18n="apps.calorieReader.privacy.l_use_3">Manage your subscription.</li>
-                <li data-i18n="apps.calorieReader.privacy.l_use_4">Send notifications you opt into.</li>
-                <li data-i18n="apps.calorieReader.privacy.l_use_5">Diagnose issues and improve the app.</li>
-                <li data-i18n="apps.calorieReader.privacy.l_use_6">Comply with legal obligations.</li>
-              </ul>
-              <div class="callout"><p data-i18n="apps.calorieReader.privacy.p_use_no_sell"><strong>We do not sell your personal data.</strong></p></div></section>
-            <section><h2 id="third" data-i18n="apps.calorieReader.privacy.h_third">third-party services</h2>
-              <p data-i18n="apps.calorieReader.privacy.p_third_lede">We rely on a small set of vetted providers:</p>
-              <ul>
-                <li data-i18n="apps.calorieReader.privacy.l_third_1">Supabase — authentication, database, storage.</li>
-                <li data-i18n="apps.calorieReader.privacy.l_third_2">A third-party AI vision provider.</li>
-                <li data-i18n="apps.calorieReader.privacy.l_third_3">RevenueCat — subscription validation.</li>
-                <li data-i18n="apps.calorieReader.privacy.l_third_4">Apple and Google — only data you authorize.</li>
-                <li data-i18n="apps.calorieReader.privacy.l_third_5">Anonymized analytics and crash reporting.</li>
-              </ul></section>
-            <section><h2 id="retention" data-i18n="apps.calorieReader.privacy.h_retention">data retention</h2>
-              <p data-i18n="apps.calorieReader.privacy.p_retention">We retain account information for as long as your account is active.</p></section>
-            <section><h2 id="rights" data-i18n="apps.calorieReader.privacy.h_rights">your rights</h2>
-              <p data-i18n="apps.calorieReader.privacy.p_rights_lede">You may have the following rights:</p>
-              <ul>
-                <li data-i18n="apps.calorieReader.privacy.l_rights_1">Access — request a copy of your information.</li>
-                <li data-i18n="apps.calorieReader.privacy.l_rights_2">Correction.</li>
-                <li data-i18n="apps.calorieReader.privacy.l_rights_3">Deletion.</li>
-                <li data-i18n="apps.calorieReader.privacy.l_rights_4">Portability.</li>
-                <li data-i18n="apps.calorieReader.privacy.l_rights_5">Objection or restriction.</li>
-                <li data-i18n="apps.calorieReader.privacy.l_rights_6">Withdraw consent.</li>
-              </ul>
-              <p data-i18n-html="apps.calorieReader.privacy.p_rights_how">Write to <a href="mailto:foidigitals@gmail.com">foidigitals@gmail.com</a>.</p></section>
-            <section><h2 id="children" data-i18n="apps.calorieReader.privacy.h_children">children</h2>
-              <p data-i18n="apps.calorieReader.privacy.p_children">Not directed to children under 13.</p></section>
-            <section><h2 id="international" data-i18n="apps.calorieReader.privacy.h_international">international data transfers</h2>
-              <p data-i18n="apps.calorieReader.privacy.p_international">Your information may be processed in other countries.</p></section>
-            <section><h2 id="security" data-i18n="apps.calorieReader.privacy.h_security">security</h2>
-              <p data-i18n="apps.calorieReader.privacy.p_security">We use encryption in transit and at rest.</p></section>
-            <section><h2 id="changes" data-i18n="apps.calorieReader.privacy.h_changes">changes</h2>
-              <p data-i18n="apps.calorieReader.privacy.p_changes">We may update this Policy.</p></section>
-            <section><h2 id="contact" data-i18n="apps.calorieReader.privacy.h_contact">contact</h2>
-              <p data-i18n-html="apps.calorieReader.privacy.p_contact">Questions? Write to <a href="mailto:foidigitals@gmail.com">foidigitals@gmail.com</a>.</p></section>
-          </div>
-        </div>
-      </div>
-    </article>
+  <main class="longform">
+    <div class="container">
+      <a href="index.html" class="back-link" data-i18n="craPrivacy.back">back to calorie reader ai</a>
+      <header class="longform-head">
+        <p class="eyebrow" data-i18n="craPrivacy.eyebrow">calorie reader ai · privacy</p>
+        <h1 data-i18n="craPrivacy.title">Privacy Policy</h1>
+        <p class="meta" data-i18n="craPrivacy.meta">Last updated · 2026-05-27 · v1.2</p>
+      </header>
+      <article class="longform-body" data-i18n-html="craPrivacy.body"></article>
+    </div>
   </main>
 
   <footer class="site-footer">
     <div class="container">
       <div class="footer-top">
-        <p class="footer-statement" data-i18n="footer.tagline">a small studio crafting software worth keeping.</p>
-        <div class="footer-nav-grid">
-          <div class="footer-col">
-            <h4 data-i18n="footer.col_products">products</h4>
-            <ul>
-              <li><a href="index.html" data-i18n="footer.link_calorie">Calorie Reader AI</a></li>
-              <li><span style="color: var(--ink-4);" data-i18n="footer.link_calorie_more">more coming</span></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4 data-i18n="footer.col_legal">legal</h4>
-            <ul>
-              <li><a href="../../privacy.html" data-i18n="footer.link_privacy">privacy</a></li>
-              <li><a href="../../terms.html" data-i18n="footer.link_terms">terms</a></li>
-              <li><a href="../../support.html" data-i18n="footer.link_support">support</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>contact</h4>
-            <ul><li><a href="mailto:foidigitals@gmail.com">foidigitals@gmail.com</a></li></ul>
-          </div>
+        <p class="footer-statement" data-i18n-html="footer.statement">a small studio crafting software <em>worth keeping.</em></p>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.col.products">products</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="footer.link.calorie">Calorie Reader AI</a></li>
+            <li><span class="text-muted" data-i18n="footer.link.more">more coming</span></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.col.studio">studio</h4>
+          <ul>
+            <li><a href="../../index.html#services" data-i18n="footer.link.services">services</a></li>
+            <li><a href="../../index.html#studio" data-i18n="footer.link.capabilities">capabilities</a></li>
+            <li><a href="../../index.html#contact" data-i18n="footer.link.contact">contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.col.legal">legal</h4>
+          <ul>
+            <li><a href="privacy.html" data-i18n="footer.link.privacy">privacy</a></li>
+            <li><a href="terms.html" data-i18n="footer.link.terms">terms</a></li>
+            <li><a href="support.html" data-i18n="footer.link.support">support</a></li>
+          </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span data-i18n="footer.copyright">© 2026 foi digitals.</span>
+        <span data-i18n="footer.copyright">© 2026 foi digitals — istanbul, tr</span>
         <span>foidigitals.github.io</span>
       </div>
     </div>
