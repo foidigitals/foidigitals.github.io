@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" data-i18n-title="meta.appCalorieTitle" data-i18n-desc="meta.appCalorieDesc">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Calorie Reader AI — Foi Digitals</title>
+  <meta name="description" content="Snap a meal, get calories instantly. AI-powered nutrition tracker by Foi Digitals." />
+  <meta name="theme-color" content="#08080c" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600&family=Fraunces:ital,opsz,wght,SOFT,WONK@1,144,400,100,1&family=Geist+Mono:wght@400;500&family=Geist:wght@400;500;600&display=swap"
+  />
+  <link rel="stylesheet" href="../../assets/styles.css" />
+  <link rel="icon" type="image/png" href="../../assets/images/calorie-reader-ai.png" />
+</head>
+
+<body>
+  <div class="bg-aurora" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="../../index.html" class="brand">
+        <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7 5h10M7 5v14M7 12h7" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <circle cx="17.5" cy="18" r="1.4" fill="currentColor"/>
+        </svg>
+        <span class="brand-name">Foi Digitals</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="../../index.html#work" data-i18n="nav.work">Work</a>
+        <a href="../../index.html#about" data-i18n="nav.about">Studio</a>
+        <a href="../../support.html" data-i18n="nav.support">Support</a>
+        <a href="../../index.html#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" class="lang-btn" data-lang="tr" aria-pressed="false">TR</button>
+      </div>
+      <button class="menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="app-hero">
+      <div class="container">
+        <nav class="app-breadcrumb" aria-label="Breadcrumb">
+          <a href="../../index.html" data-i18n="apps.calorieReader.detail.breadcrumbStudio">Foi Digitals</a>
+          <span class="app-breadcrumb-sep" aria-hidden="true">/</span>
+          <a href="../../index.html#work" data-i18n="apps.calorieReader.detail.breadcrumbWork">Work</a>
+          <span class="app-breadcrumb-sep" aria-hidden="true">/</span>
+          <span style="color: var(--ink-2);">Calorie Reader AI</span>
+        </nav>
+
+        <div class="app-hero-grid">
+          <div>
+            <h1 class="app-name" data-i18n="apps.calorieReader.detail.name">Calorie Reader AI</h1>
+            <p class="app-tagline" data-i18n="apps.calorieReader.detail.tagline">A calorie tracker that reads your plate.</p>
+            <p class="app-desc" data-i18n="apps.calorieReader.detail.desc">
+              Photograph a meal. Our vision model returns calories, protein, carbs, and fat in seconds.
+            </p>
+
+            <div class="app-status-row">
+              <span class="app-status-pill" data-i18n="apps.calorieReader.detail.statusPill">Coming soon — App Store</span>
+            </div>
+
+            <dl class="app-meta-list">
+              <div class="app-meta-item">
+                <dt class="app-meta-label" data-i18n="apps.calorieReader.detail.meta_platform_label">Platform</dt>
+                <dd class="app-meta-value" data-i18n="apps.calorieReader.detail.meta_platform_value">iOS</dd>
+              </div>
+              <div class="app-meta-item">
+                <dt class="app-meta-label" data-i18n="apps.calorieReader.detail.meta_category_label">Category</dt>
+                <dd class="app-meta-value" data-i18n="apps.calorieReader.detail.meta_category_value">Health &amp; Fitness</dd>
+              </div>
+              <div class="app-meta-item">
+                <dt class="app-meta-label" data-i18n="apps.calorieReader.detail.meta_lang_label">Languages</dt>
+                <dd class="app-meta-value" data-i18n="apps.calorieReader.detail.meta_lang_value">EN · TR · DE · ES · FR · PT</dd>
+              </div>
+              <div class="app-meta-item">
+                <dt class="app-meta-label" data-i18n="apps.calorieReader.detail.meta_studio_label">Studio</dt>
+                <dd class="app-meta-value" data-i18n="apps.calorieReader.detail.meta_studio_value">Foi Digitals</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="app-hero-visual">
+            <div class="app-logo-frame">
+              <img src="../../assets/images/calorie-reader-ai.png" alt="Calorie Reader AI app logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="app-features section">
+      <div class="container">
+        <header class="section-head reveal">
+          <div>
+            <span class="eyebrow" data-i18n="apps.calorieReader.detail.featuresLabel">What it does</span>
+            <h2 class="h-display" data-i18n="apps.calorieReader.detail.featuresHeading">Track without typing.</h2>
+          </div>
+          <p class="section-head-text" data-i18n="apps.calorieReader.detail.featuresLede">
+            A focused set of features built around a single idea.
+          </p>
+        </header>
+
+        <div class="app-features-grid reveal">
+          <article class="app-feature">
+            <svg class="app-feature-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="8" width="24" height="18" rx="3"/>
+              <circle cx="16" cy="17" r="5"/>
+              <path d="M10 8l2-3h8l2 3"/>
+            </svg>
+            <h3 class="app-feature-title" data-i18n="apps.calorieReader.detail.feat1Title">Snap &amp; Track</h3>
+            <p class="app-feature-desc" data-i18n="apps.calorieReader.detail.feat1Desc">A single photo becomes calories, protein, carbs, and fat.</p>
+          </article>
+
+          <article class="app-feature">
+            <svg class="app-feature-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 8h20v14H10l-4 4z"/>
+              <path d="M12 14h8M12 18h6"/>
+            </svg>
+            <h3 class="app-feature-title" data-i18n="apps.calorieReader.detail.feat2Title">AI Coach</h3>
+            <p class="app-feature-desc" data-i18n="apps.calorieReader.detail.feat2Desc">A chat coach that knows your goals.</p>
+          </article>
+
+          <article class="app-feature">
+            <svg class="app-feature-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 26V14M12 26V8M19 26V18M26 26V11"/>
+              <path d="M3 28h26"/>
+            </svg>
+            <h3 class="app-feature-title" data-i18n="apps.calorieReader.detail.feat3Title">Smart Insights</h3>
+            <p class="app-feature-desc" data-i18n="apps.calorieReader.detail.feat3Desc">Weekly trends, daily targets, gentle streaks.</p>
+          </article>
+
+          <article class="app-feature">
+            <svg class="app-feature-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="8" y="14" width="16" height="14" rx="2"/>
+              <path d="M12 14V9a4 4 0 018 0v5"/>
+              <circle cx="16" cy="20" r="1.5" fill="currentColor"/>
+            </svg>
+            <h3 class="app-feature-title" data-i18n="apps.calorieReader.detail.feat4Title">Privacy First</h3>
+            <p class="app-feature-desc" data-i18n="apps.calorieReader.detail.feat4Desc">Your photos and health data are yours.</p>
+          </article>
+
+          <article class="app-feature">
+            <svg class="app-feature-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="16" cy="16" r="13"/>
+              <path d="M3 16h26M16 3a20 20 0 010 26M16 3a20 20 0 000 26"/>
+            </svg>
+            <h3 class="app-feature-title" data-i18n="apps.calorieReader.detail.feat5Title">6 Languages</h3>
+            <p class="app-feature-desc" data-i18n="apps.calorieReader.detail.feat5Desc">EN · TR · DE · ES · FR · PT including the AI coach.</p>
+          </article>
+
+          <article class="app-feature">
+            <svg class="app-feature-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 28c-5 0-10-4-10-10S11 8 16 8s10 4 10 10-5 10-10 10z"/>
+              <path d="M16 4c0 2 2 4 4 4M16 4c0-2-2-4-4-4"/>
+            </svg>
+            <h3 class="app-feature-title" data-i18n="apps.calorieReader.detail.feat6Title">Apple Health</h3>
+            <p class="app-feature-desc" data-i18n="apps.calorieReader.detail.feat6Desc">Optional read and write to Apple Health.</p>
+          </article>
+        </div>
+
+        <div class="app-links-row">
+          <span style="font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em; color: var(--ink-4); text-transform: uppercase;" data-i18n="apps.calorieReader.detail.linksLabel">Documents</span>
+          <a href="privacy.html" data-i18n="apps.calorieReader.detail.linkPrivacy">Privacy Policy</a>
+          <a href="terms.html" data-i18n="apps.calorieReader.detail.linkTerms">Terms of Use</a>
+          <a href="support.html" data-i18n="apps.calorieReader.detail.linkSupport">Support &amp; FAQ</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand-block">
+          <a href="../../index.html" class="brand">
+            <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 5h10M7 5v14M7 12h7" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+              <circle cx="17.5" cy="18" r="1.4" fill="currentColor"/>
+            </svg>
+            <span class="brand-name">Foi Digitals</span>
+          </a>
+          <p class="footer-tagline" data-i18n="footer.tagline">A small studio crafting software worth keeping.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.col_products">Products</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="footer.link_calorie">Calorie Reader AI</a></li>
+            <li><span style="color: var(--ink-4);" data-i18n="footer.link_calorie_more">More coming</span></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.col_legal">Legal</h4>
+          <ul>
+            <li><a href="../../privacy.html" data-i18n="footer.link_privacy">Privacy</a></li>
+            <li><a href="../../terms.html" data-i18n="footer.link_terms">Terms</a></li>
+            <li><a href="../../support.html" data-i18n="footer.link_support">Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.copyright">© 2026 Foi Digitals — All rights reserved.</span>
+        <span>foidigitals.github.io</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../assets/i18n.js"></script>
+  <script src="../../assets/main.js"></script>
+</body>
+</html>
