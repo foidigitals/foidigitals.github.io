@@ -3,38 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Foi Digitals — Apps, games, and tools worth keeping</title>
+  <title>Foi Digitals — apps, games, and tools worth keeping</title>
   <meta name="description" content="Foi Digitals is an independent studio crafting mobile apps, mobile games, web products, and AI-powered software." />
-  <meta name="theme-color" content="#08080c" />
+  <meta name="theme-color" content="#000000" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600&family=Fraunces:ital,opsz,wght,SOFT,WONK@1,144,400,100,1&family=Geist+Mono:wght@400;500&family=Geist:wght@400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Boldonse&family=Hanken+Grotesk:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"
   />
   <link rel="stylesheet" href="assets/styles.css" />
   <link rel="icon" type="image/png" href="assets/images/calorie-reader-ai.png" />
 </head>
 
 <body>
-  <div class="bg-aurora" aria-hidden="true"></div>
-
   <header class="site-header">
     <div class="container">
       <a href="index.html" class="brand" aria-label="Foi Digitals — home">
-        <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M7 5h10M7 5v14M7 12h7" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-          <circle cx="17.5" cy="18" r="1.4" fill="currentColor"/>
-        </svg>
-        <span class="brand-name">Foi Digitals</span>
+        <span class="brand-mark-magic" aria-hidden="true"></span>
+        <span class="brand-name">foi digitals</span>
       </a>
 
       <nav class="site-nav" aria-label="Primary">
-        <a href="index.html#work" data-i18n="nav.work">Work</a>
-        <a href="index.html#about" data-i18n="nav.about">Studio</a>
-        <a href="support.html" data-i18n="nav.support">Support</a>
-        <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+        <a href="index.html#work"><span data-i18n="nav.work">work</span></a>
+        <a href="index.html#about"><span data-i18n="nav.about">studio</span></a>
+        <a href="support.html"><span data-i18n="nav.support">support</span></a>
+        <a href="index.html#contact"><span data-i18n="nav.contact">contact</span></a>
       </nav>
 
       <div class="lang-toggle" role="group" aria-label="Language">
@@ -43,9 +38,7 @@
       </div>
 
       <button class="menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
-          <path d="M4 7h16M4 12h16M4 17h16"/>
-        </svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
     </div>
   </header>
@@ -54,120 +47,152 @@
     <!-- HERO -->
     <section class="hero">
       <div class="container">
-        <div class="hero-eyebrow">
-          <span class="live-dot" aria-hidden="true"></span>
-          <span data-i18n="home.heroPill">Independent studio · est. 2026</span>
+        <div class="hero-top">
+          <span class="hero-tag">
+            <span class="magic-orb" aria-hidden="true"></span>
+            <span data-i18n="home.heroTag">studio no. 001 / istanbul</span>
+          </span>
+          <p class="hero-side" data-i18n-html="home.heroSideHtml">An independent studio.</p>
         </div>
-        <h1 class="hero-title" data-i18n-html="home.heroTitleHtml">
-          Apps, games, and tools <em>worth keeping.</em>
-        </h1>
-        <p class="hero-body" data-i18n="home.heroBody">
-          Foi Digitals is a small independent studio building software for everyday life.
-        </p>
-        <div class="hero-meta">
-          <div class="hero-stat">
-            <span class="hero-stat-value" data-i18n="home.heroStat1Value">01</span>
-            <span class="hero-stat-label" data-i18n="home.heroStat1Label">Shipping product</span>
-          </div>
-          <span class="hero-divider" aria-hidden="true"></span>
-          <div class="hero-stat">
-            <span class="hero-stat-value" data-i18n="home.heroStat2Value">06</span>
-            <span class="hero-stat-label" data-i18n="home.heroStat2Label">Supported languages</span>
-          </div>
-          <span class="hero-divider" aria-hidden="true"></span>
-          <div class="hero-stat">
-            <span class="hero-stat-value" data-i18n="home.heroStat3Value">∞</span>
-            <span class="hero-stat-label" data-i18n="home.heroStat3Label">Made with care</span>
-          </div>
+
+        <h1 class="hero-title" data-i18n-html="home.heroTitleHtml">we make software<br>worth <em>keeping.</em></h1>
+
+        <div class="hero-bottom">
+          <p class="hero-lede" data-i18n="home.heroLede">Four disciplines. One small team.</p>
+          <a href="#work" class="hero-scroll">
+            <span data-i18n="home.heroScroll">scroll to see the work</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+              <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- CAPABILITIES -->
-    <section class="capabilities section" id="about">
+    <!-- MARQUEE -->
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item"><span data-i18n="home.marquee1">mobile apps</span></span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-item"><span data-i18n="home.marquee2">mobile games</span></span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-item"><span data-i18n="home.marquee3">web products</span></span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-item"><span data-i18n="home.marquee4">ai software</span></span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-item" data-i18n-html="home.marqueeAccentHtml"><em>made with care</em></span>
+        <span class="marquee-dot"></span>
+      </div>
+    </section>
+
+    <!-- CAPABILITIES — bento grid -->
+    <section class="capabilities" id="about">
       <div class="container">
-        <header class="section-head reveal">
+        <header class="section-head-row reveal">
           <div>
-            <span class="eyebrow" data-i18n="home.capLabel">Capabilities</span>
-            <h2 class="h-display" data-i18n="home.capHeading">What the studio makes.</h2>
+            <span class="eyebrow" data-i18n="home.capLabel">capabilities</span>
+            <h2 class="h-display" data-i18n="home.capHeading">what the studio makes.</h2>
           </div>
           <p class="section-head-text" data-i18n="home.capLede">
             Four disciplines, one studio. We move between them deliberately so each product feels considered, not assembled.
           </p>
         </header>
 
-        <div class="cap-grid reveal">
-          <article class="cap-card">
-            <svg class="cap-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="9" y="3" width="14" height="26" rx="3"/>
+        <div class="bento reveal">
+          <article class="bento-card b-1">
+            <div>
+              <span class="bento-card-num">01 / mobile</span>
+              <h3 class="bento-card-title" data-i18n="home.cap1Title">mobile apps</h3>
+              <p class="bento-card-desc" data-i18n="home.cap1Desc">iOS and Android consumer apps with calm interfaces and a native feel.</p>
+            </div>
+            <svg class="bento-card-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="10" y="3" width="12" height="26" rx="3"/>
               <path d="M14 25h4"/>
             </svg>
-            <h3 class="cap-title" data-i18n="home.cap1Title">Mobile Apps</h3>
-            <p class="cap-desc" data-i18n="home.cap1Desc">iOS and Android consumer apps.</p>
           </article>
-          <article class="cap-card">
-            <svg class="cap-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="9" width="26" height="14" rx="4"/>
-              <path d="M9 14v4M7 16h4M19 16h.01M23 16h.01M21 14h.01M21 18h.01"/>
+
+          <article class="bento-card b-2">
+            <div>
+              <span class="bento-card-num">02 / games</span>
+              <h3 class="bento-card-title" data-i18n="home.cap2Title">mobile games</h3>
+            </div>
+            <svg class="bento-card-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="10" width="26" height="14" rx="4"/>
+              <path d="M9 15v4M7 17h4M20 17h.01M24 17h.01M22 15h.01M22 19h.01"/>
             </svg>
-            <h3 class="cap-title" data-i18n="home.cap2Title">Mobile Games</h3>
-            <p class="cap-desc" data-i18n="home.cap2Desc">Small, focused games.</p>
           </article>
-          <article class="cap-card">
-            <svg class="cap-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+
+          <article class="bento-card b-3">
+            <div>
+              <span class="bento-card-num">03 / web</span>
+              <h3 class="bento-card-title" data-i18n="home.cap3Title">web</h3>
+            </div>
+            <svg class="bento-card-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="16" cy="16" r="13"/>
               <path d="M3 16h26M16 3a20 20 0 010 26M16 3a20 20 0 000 26"/>
             </svg>
-            <h3 class="cap-title" data-i18n="home.cap3Title">Web</h3>
-            <p class="cap-desc" data-i18n="home.cap3Desc">Marketing sites, web tools, lightweight applications.</p>
           </article>
-          <article class="cap-card">
-            <svg class="cap-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+
+          <article class="bento-card b-4">
+            <div>
+              <span class="bento-card-num">04 / ai</span>
+              <h3 class="bento-card-title" data-i18n="home.cap4Title">ai software</h3>
+            </div>
+            <svg class="bento-card-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
               <path d="M16 4l2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5z"/>
-              <circle cx="25" cy="25" r="2.5"/>
-              <circle cx="7" cy="25" r="1.5"/>
+              <circle cx="25" cy="25" r="2.4"/>
+              <circle cx="7" cy="25" r="1.4"/>
             </svg>
-            <h3 class="cap-title" data-i18n="home.cap4Title">AI Software</h3>
-            <p class="cap-desc" data-i18n="home.cap4Desc">AI-powered products and internal tools.</p>
+          </article>
+
+          <article class="bento-card b-5">
+            <div>
+              <span class="bento-card-num">+ / approach</span>
+              <h3 class="bento-card-title">
+                <em style="font-family: var(--f-italic); font-style: italic;">few</em>, made well.
+              </h3>
+              <p class="bento-card-desc" data-i18n="home.cap2Desc">Small, focused work over volume. Mechanics over monetization.</p>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
     <!-- FEATURED PRODUCT -->
-    <section class="featured section" id="work">
+    <section class="featured" id="work">
+      <div class="featured-bg" aria-hidden="true"></div>
       <div class="container">
-        <header class="section-head reveal" style="margin-bottom: 3rem;">
-          <div>
-            <span class="eyebrow" data-i18n="home.featLabel">Featured product</span>
-            <h2 class="h-display" data-i18n="home.featTitle">A calorie tracker that reads your plate.</h2>
-          </div>
+        <header class="reveal" style="margin-bottom: clamp(3rem, 5vw, 5rem);">
+          <span class="eyebrow" data-i18n="home.featLabel">featured product</span>
+          <h2 class="h-display" data-i18n="home.featTitle">a calorie tracker that reads your plate.</h2>
         </header>
 
-        <article class="featured-card reveal">
-          <div class="featured-content">
-            <span class="featured-app-pill" data-i18n="home.featPill">Calorie Reader AI</span>
+        <article class="featured-inner reveal">
+          <div>
+            <span class="featured-pill">
+              <span class="magic-orb" aria-hidden="true"></span>
+              <span data-i18n="home.featPill">calorie reader ai</span>
+            </span>
+            <h3 class="featured-title" data-i18n="home.featTitle">a calorie tracker that <em>reads</em> your plate.</h3>
             <p class="featured-desc" data-i18n="home.featDesc">
               Photograph a meal. Our vision model returns calories, protein, carbs, and fat in seconds.
             </p>
             <div class="featured-tags">
               <span class="featured-tag" data-i18n="home.featTag1">iOS</span>
-              <span class="featured-tag" data-i18n="home.featTag2">AI Vision</span>
-              <span class="featured-tag" data-i18n="home.featTag3">Health</span>
-              <span class="featured-tag" data-i18n="home.featTag4">6 Languages</span>
+              <span class="featured-tag" data-i18n="home.featTag2">AI vision</span>
+              <span class="featured-tag" data-i18n="home.featTag3">health</span>
+              <span class="featured-tag" data-i18n="home.featTag4">6 languages</span>
             </div>
             <div class="featured-actions">
               <a href="apps/calorie-reader-ai/index.html" class="btn btn-primary">
-                <span data-i18n="home.featCtaPrimary">See the product</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                  <path d="M5 12h14M13 5l7 7-7 7"/>
-                </svg>
+                <span data-i18n="home.featCtaPrimary">see the product</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
               </a>
-              <span class="btn btn-ghost" data-i18n="home.featCtaGhost">App Store soon</span>
+              <span class="btn btn-ghost" data-i18n="home.featCtaGhost">app store soon</span>
             </div>
           </div>
           <div class="featured-visual">
-            <div class="featured-logo-frame">
+            <div class="featured-logo">
               <img src="assets/images/calorie-reader-ai.png" alt="Calorie Reader AI app logo" />
             </div>
           </div>
@@ -176,81 +201,76 @@
     </section>
 
     <!-- NEXT FROM THE STUDIO -->
-    <section class="next-apps section">
+    <section class="next-section">
       <div class="container">
-        <header class="section-head reveal">
+        <header class="section-head-row reveal">
           <div>
-            <span class="eyebrow" data-i18n="home.nextLabel">Next from the studio</span>
-            <h2 class="h-display" data-i18n="home.nextHeading">In quiet development.</h2>
+            <span class="eyebrow" data-i18n="home.nextLabel">next from the studio</span>
+            <h2 class="h-display" data-i18n="home.nextHeading">in quiet development.</h2>
           </div>
         </header>
 
-        <div class="next-list">
+        <div class="next-grid">
           <article class="next-card reveal">
-            <span class="next-index" data-i18n="home.next1Index">002</span>
-            <h3 class="next-title" data-i18n="home.next1Title">Untitled mobile game</h3>
-            <p class="next-desc" data-i18n="home.next1Desc">A short, focused game prototype.</p>
-            <span class="next-status" data-i18n="home.next1Status">Prototype</span>
+            <span class="next-card-num" data-i18n="home.next1Index">002</span>
+            <h3 class="next-card-title" data-i18n="home.next1Title">untitled mobile game</h3>
+            <p class="next-card-desc" data-i18n="home.next1Desc">A short, focused game prototype.</p>
+            <span class="next-card-status" data-i18n="home.next1Status">prototype</span>
           </article>
-          <article class="next-card reveal reveal-delay-1">
-            <span class="next-index" data-i18n="home.next2Index">003</span>
-            <h3 class="next-title" data-i18n="home.next2Title">Untitled AI tool</h3>
-            <p class="next-desc" data-i18n="home.next2Desc">An internal experiment.</p>
-            <span class="next-status" data-i18n="home.next2Status">Research</span>
+          <article class="next-card reveal r-delay-1">
+            <span class="next-card-num" data-i18n="home.next2Index">003</span>
+            <h3 class="next-card-title" data-i18n="home.next2Title">untitled ai tool</h3>
+            <p class="next-card-desc" data-i18n="home.next2Desc">An internal experiment.</p>
+            <span class="next-card-status" data-i18n="home.next2Status">research</span>
           </article>
         </div>
       </div>
     </section>
 
     <!-- PHILOSOPHY -->
-    <section class="philosophy section">
+    <section class="philosophy">
       <div class="container">
-        <header class="section-head reveal">
+        <header class="section-head-row reveal">
           <div>
-            <span class="eyebrow" data-i18n="home.philosLabel">How we work</span>
-            <h2 class="h-display" data-i18n="home.philosHeading">Three things we hold to.</h2>
+            <span class="eyebrow" data-i18n="home.philosLabel">how we work</span>
+            <h2 class="h-display" data-i18n="home.philosHeading">three things we hold to.</h2>
           </div>
         </header>
 
-        <div class="philos-grid">
-          <div class="philos-item reveal">
+        <div class="philos-list">
+          <div class="philos-row reveal">
             <span class="philos-num">i</span>
-            <h3 class="philos-title" data-i18n="home.philos1Title">Few products, made well</h3>
-            <p class="philos-body" data-i18n="home.philos1Body">Cadence over volume.</p>
+            <div>
+              <h3 class="philos-statement" data-i18n="home.philos1Title">few products, made well.</h3>
+              <p class="philos-body" data-i18n="home.philos1Body">Cadence over volume.</p>
+            </div>
           </div>
-          <div class="philos-item reveal reveal-delay-1">
+          <div class="philos-row reveal">
             <span class="philos-num">ii</span>
-            <h3 class="philos-title" data-i18n="home.philos2Title">Calm by default</h3>
-            <p class="philos-body" data-i18n="home.philos2Body">No dark patterns.</p>
+            <div>
+              <h3 class="philos-statement" data-i18n="home.philos2Title">calm by default.</h3>
+              <p class="philos-body" data-i18n="home.philos2Body">No dark patterns.</p>
+            </div>
           </div>
-          <div class="philos-item reveal reveal-delay-2">
+          <div class="philos-row reveal">
             <span class="philos-num">iii</span>
-            <h3 class="philos-title" data-i18n="home.philos3Title">Independent and patient</h3>
-            <p class="philos-body" data-i18n="home.philos3Body">Self-funded, small team, long horizon.</p>
+            <div>
+              <h3 class="philos-statement" data-i18n="home.philos3Title">independent and patient.</h3>
+              <p class="philos-body" data-i18n="home.philos3Body">Self-funded, small team.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section class="contact section" id="contact">
+    <section class="contact" id="contact">
       <div class="container">
         <div class="contact-inner reveal">
-          <span class="eyebrow" data-i18n="home.contactLabel">Get in touch</span>
-          <h2 class="contact-title" data-i18n-html="home.contactTitleHtml">Tell us <em>what you are making.</em></h2>
-          <p class="contact-body" data-i18n="home.contactBody">
-            Partnership ideas, press, careful technical questions, or just hello — every message is read by a human.
-          </p>
-          <a class="contact-email-large" href="mailto:foidigitals@gmail.com">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M3 6.5h18v11H3z"/>
-              <path d="M3 7l9 6 9-6"/>
-            </svg>
-            foidigitals@gmail.com
-          </a>
-          <p class="contact-note" style="font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); margin-top: 0.8rem;" data-i18n="home.contactNote">
-            Replies within 2–3 business days
-          </p>
+          <span class="eyebrow" data-i18n="home.contactLabel">get in touch</span>
+          <h2 class="contact-title" data-i18n-html="home.contactTitleHtml">tell us <em>what you are making.</em></h2>
+          <a class="contact-email" href="mailto:foidigitals@gmail.com">foidigitals@gmail.com</a>
+          <p class="contact-meta" data-i18n="home.contactNote">replies within 2–3 business days</p>
         </div>
       </div>
     </section>
@@ -258,37 +278,34 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col footer-brand-block">
-          <a href="index.html" class="brand">
-            <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7 5h10M7 5v14M7 12h7" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-              <circle cx="17.5" cy="18" r="1.4" fill="currentColor"/>
-            </svg>
-            <span class="brand-name">Foi Digitals</span>
-          </a>
-          <p class="footer-tagline" data-i18n="footer.tagline">
-            A small studio crafting software worth keeping.
-          </p>
-        </div>
-        <div class="footer-col">
-          <h4 data-i18n="footer.col_products">Products</h4>
-          <ul>
-            <li><a href="apps/calorie-reader-ai/index.html" data-i18n="footer.link_calorie">Calorie Reader AI</a></li>
-            <li><span style="color: var(--ink-4);" data-i18n="footer.link_calorie_more">More coming</span></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4 data-i18n="footer.col_legal">Legal</h4>
-          <ul>
-            <li><a href="privacy.html" data-i18n="footer.link_privacy">Privacy</a></li>
-            <li><a href="terms.html" data-i18n="footer.link_terms">Terms</a></li>
-            <li><a href="support.html" data-i18n="footer.link_support">Support</a></li>
-          </ul>
+      <div class="footer-top">
+        <p class="footer-statement" data-i18n="footer.tagline">a small studio crafting software <em>worth keeping.</em></p>
+        <div class="footer-nav-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.col_products">products</h4>
+            <ul>
+              <li><a href="apps/calorie-reader-ai/index.html" data-i18n="footer.link_calorie">Calorie Reader AI</a></li>
+              <li><span style="color: var(--ink-4);" data-i18n="footer.link_calorie_more">more coming</span></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.col_legal">legal</h4>
+            <ul>
+              <li><a href="privacy.html" data-i18n="footer.link_privacy">privacy</a></li>
+              <li><a href="terms.html" data-i18n="footer.link_terms">terms</a></li>
+              <li><a href="support.html" data-i18n="footer.link_support">support</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>contact</h4>
+            <ul>
+              <li><a href="mailto:foidigitals@gmail.com">foidigitals@gmail.com</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <span data-i18n="footer.copyright">© 2026 Foi Digitals — All rights reserved.</span>
+        <span data-i18n="footer.copyright">© 2026 foi digitals.</span>
         <span>foidigitals.github.io</span>
       </div>
     </div>

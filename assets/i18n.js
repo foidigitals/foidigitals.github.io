@@ -53,15 +53,17 @@ const translations = {
     },
 
     home: {
-      heroPill: 'Independent studio · est. 2026',
-      heroTitleHtml: 'Apps, games, and tools <em>worth keeping.</em>',
-      heroBody: 'Foi Digitals is a small independent studio building software for everyday life — mobile apps, mobile games, web products, and AI-powered tools. We make few things, each one with care.',
-      heroStat1Value: '01',
-      heroStat1Label: 'Shipping product',
-      heroStat2Value: '06',
-      heroStat2Label: 'Supported languages',
-      heroStat3Value: '∞',
-      heroStat3Label: 'Made with care',
+      heroTag: 'studio no. 001 / istanbul',
+      heroSideHtml: 'An independent studio building <strong>mobile apps, games, web, and AI software</strong> — quietly, for the long run.',
+      heroTitleHtml: 'we make software<br>worth <em>keeping.</em>',
+      heroLede: 'Four disciplines. One small team. Few products, each one made with care.',
+      heroScroll: 'scroll to see the work',
+
+      marquee1: 'mobile apps',
+      marquee2: 'mobile games',
+      marquee3: 'web products',
+      marquee4: 'ai software',
+      marqueeAccentHtml: '<em>made with care</em>',
 
       capLabel: 'Capabilities',
       capHeading: 'What the studio makes.',
@@ -503,15 +505,17 @@ const translations = {
     },
 
     home: {
-      heroPill: 'Bağımsız stüdyo · 2026',
-      heroTitleHtml: 'Saklamaya değer <em>uygulamalar, oyunlar, araçlar.</em>',
-      heroBody: 'Foi Digitals; günlük hayata yönelik yazılımlar geliştiren küçük ve bağımsız bir stüdyodur — mobil uygulamalar, mobil oyunlar, web ürünleri ve yapay zekâ destekli araçlar. Az şey yaparız, her birini özenle.',
-      heroStat1Value: '01',
-      heroStat1Label: 'Yayında olan ürün',
-      heroStat2Value: '06',
-      heroStat2Label: 'Desteklenen dil',
-      heroStat3Value: '∞',
-      heroStat3Label: 'Özenle yapılır',
+      heroTag: 'stüdyo no. 001 / istanbul',
+      heroSideHtml: '<strong>Mobil uygulama, oyun, web ve AI yazılımı</strong> geliştiren bağımsız bir stüdyo — sessizce, uzun vadeli.',
+      heroTitleHtml: 'saklamaya değer<br><em>yazılım</em> yapıyoruz.',
+      heroLede: 'Dört disiplin. Tek küçük ekip. Az ürün, her biri özenle.',
+      heroScroll: 'aşağıda işler var',
+
+      marquee1: 'mobil uygulamalar',
+      marquee2: 'mobil oyunlar',
+      marquee3: 'web ürünleri',
+      marquee4: 'ai yazılımı',
+      marqueeAccentHtml: '<em>özenle yapılır</em>',
 
       capLabel: 'Yeteneklerimiz',
       capHeading: 'Stüdyonun ürettikleri.',
