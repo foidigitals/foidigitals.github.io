@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-i18n-title="meta.siteTitle" data-i18n-desc="meta.siteDesc">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Foi Digitals — A small studio for calm software</title>
+  <meta name="description" content="Foi Digitals is an independent atelier crafting AI-powered apps for everyday life. Maker of Calorie Reader AI." />
+  <meta name="theme-color" content="#0a0a0c" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Geist:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap"
+  />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' fill='%230a0a0c'/%3E%3Cpath d='M7 5h10M7 5v14M7 12h7' stroke='%23c9a572' stroke-width='1.6' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='17.5' cy='18' r='1.2' fill='%23c9a572'/%3E%3C/svg%3E" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand" aria-label="Foi Digitals — home">
+        <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7 5h10M7 5v14M7 12h7" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+          <circle cx="17.5" cy="18" r="1.2" fill="currentColor"/>
+        </svg>
+        <span class="brand-name">Foi Digitals</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html#apps" data-i18n="nav.apps">Apps</a>
+        <a href="support.html" data-i18n="nav.support">Support</a>
+        <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+        <a href="terms.html" data-i18n="nav.terms">Terms</a>
+      </nav>
+
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        <span class="lang-sep" aria-hidden="true">·</span>
+        <button type="button" class="lang-btn" data-lang="tr" aria-pressed="false">TR</button>
+      </div>
+
+      <button class="menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <aside class="hero-meta">
+            <span class="section-label" data-i18n="home.heroLabel">01 — Studio</span>
+          </aside>
+          <div class="hero-content">
+            <h1 class="hero-title" data-i18n-html="home.heroTitleHtml">
+              Calm, careful software <em>from a small studio.</em>
+            </h1>
+            <p class="hero-body" data-i18n="home.heroBody">
+              Foi Digitals is an independent atelier crafting AI-powered apps for everyday life. We make few things, but we make them with intention.
+            </p>
+            <div class="hero-status">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span data-i18n="home.heroStatus">Established 2026 · Independent · Self-funded</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Apps -->
+    <section class="apps section" id="apps">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label" data-i18n="home.appsLabel">02 — Catalog</span>
+          <h2 class="section-heading" data-i18n="home.appsHeading">Apps in production.</h2>
+        </header>
+
+        <ul class="apps-list">
+          <li class="app-item reveal">
+            <div class="app-index">001</div>
+            <div class="app-content">
+              <div class="app-header">
+                <h3 class="app-title" data-i18n="home.app1Title">Calorie Reader AI</h3>
+                <span class="app-status" data-i18n="home.app1Status">Coming soon — App Store</span>
+              </div>
+              <p class="app-desc" data-i18n="home.app1Desc">
+                Photograph a meal. Our vision model reads it back to you in calories, protein, carbs, and fat.
+              </p>
+              <div class="app-tags">
+                <span class="tag" data-i18n="home.app1Tag1">iOS</span>
+                <span class="tag" data-i18n="home.app1Tag2">AI Vision</span>
+                <span class="tag" data-i18n="home.app1Tag3">Health</span>
+                <span class="tag" data-i18n="home.app1Tag4">6 Languages</span>
+              </div>
+            </div>
+            <div class="app-visual" aria-hidden="true">
+              <!-- Aperture-style mark — photographing meals -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="24" cy="24" r="14"/>
+                <path d="M24 10 L28 24 L20 24 Z"/>
+                <path d="M38 24 L24 28 L24 20 Z"/>
+                <path d="M24 38 L20 24 L28 24 Z"/>
+                <path d="M10 24 L24 20 L24 28 Z"/>
+                <circle cx="24" cy="24" r="2.4" fill="currentColor"/>
+              </svg>
+            </div>
+          </li>
+
+          <li class="app-item app-item--placeholder reveal">
+            <div class="app-index">002</div>
+            <div class="app-content">
+              <div class="app-header">
+                <h3 class="app-title" data-i18n="home.appNextTitle">Untitled — 002</h3>
+                <span class="app-status app-status--muted" data-i18n="home.appNextStatus">In development</span>
+              </div>
+              <p class="app-desc" data-i18n="home.appNextDesc">
+                Something quiet, useful, and a little surprising. More when it is ready.
+              </p>
+            </div>
+            <div class="app-visual" aria-hidden="true"></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <aside class="hero-meta">
+            <span class="section-label" data-i18n="home.contactLabel">03 — Contact</span>
+          </aside>
+          <div class="contact-block reveal">
+            <h2 class="contact-heading" data-i18n="home.contactHeading">Reach the studio.</h2>
+            <p class="contact-body" data-i18n="home.contactBody">
+              For partnerships, press inquiries, or careful technical questions — write to us. We read every message.
+            </p>
+            <a class="contact-email" href="mailto:foidigitals@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 6.5h18v11H3z"/>
+                <path d="M3 7l9 6 9-6"/>
+              </svg>
+              foidigitals@gmail.com
+            </a>
+            <p class="contact-note" data-i18n="home.contactNote">
+              Replies within 2–3 business days · English &amp; Turkish
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 5h10M7 5v14M7 12h7" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+              <circle cx="17.5" cy="18" r="1.2" fill="currentColor"/>
+            </svg>
+            <span class="brand-name">Foi Digitals</span>
+          </a>
+          <p class="footer-tagline" data-i18n="footer.tagline">
+            A small studio in pursuit of calm software.
+          </p>
+        </div>
+        <div class="footer-meta">
+          <div class="footer-links">
+            <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+            <a href="terms.html" data-i18n="nav.terms">Terms</a>
+            <a href="support.html" data-i18n="nav.support">Support</a>
+          </div>
+          <div class="footer-copy" data-i18n="footer.copyright">
+            © 2026 Foi Digitals — All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/i18n.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+</html>
