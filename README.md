@@ -1,21 +1,27 @@
 # Foi Digitals
 
-The studio site for **Foi Digitals** — a small independent atelier crafting AI-powered apps for everyday life.
+Studio site for **Foi Digitals** — a small independent atelier crafting mobile apps, mobile games, web products, and AI-powered software.
 
-Live at: `https://<username>.github.io`
+Live at: `https://foidigitals.github.io`
 
-## Pages
+## Structure
 
-- **Home** — studio intro and apps catalog.
-- **Privacy** — privacy policy for our apps.
-- **Terms** — terms of use.
-- **Support** — FAQ and contact.
+```
+/                          Studio home
+/privacy · /terms · /support     Company-wide (umbrella)
 
-Bilingual: Turkish & English, auto-detected from the browser, switchable in the header.
+/apps/calorie-reader-ai/         Calorie Reader AI
+  ├── index            Product page
+  ├── privacy          App-specific privacy
+  ├── terms            App-specific terms
+  └── support          App-specific FAQ
+```
 
-## Stack
+Each app ships in its own folder so per-product privacy/terms/support URLs stay clean and stable for the App Store.
 
-Plain HTML, CSS, and JavaScript. No build step. Hosted on GitHub Pages.
+## Tech
+
+Plain HTML, CSS, vanilla JS. No build step. Bilingual TR / EN with browser auto-detect + manual toggle. Hosted on GitHub Pages.
 
 ## Contact
 
