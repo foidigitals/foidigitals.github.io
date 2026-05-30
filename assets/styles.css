@@ -1476,6 +1476,79 @@ p { color: var(--ink-2); }
   background: rgba(124,92,255,.06);
   border-radius: 0 8px 8px 0;
 }
+.longform-body hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(124,92,255,.4) 30%, rgba(0,229,255,.35) 50%, rgba(255,77,166,.4) 70%, transparent 100%);
+  margin: clamp(3rem, 6vw, 5rem) 0;
+  position: relative;
+}
+.longform-body hr::after {
+  content: "§";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--bg-1);
+  padding: 0 1rem;
+  font-family: var(--f-display);
+  font-style: italic;
+  color: var(--aur-violet);
+  text-shadow: 0 0 12px rgba(124,92,255,.6);
+  font-size: 1.25rem;
+}
+.longform-body .muted {
+  font-size: 0.88rem;
+  color: var(--ink-3);
+  background: rgba(255,255,255,.02);
+  border: 1px solid var(--ink-6);
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  margin: 1rem 0 1.5rem;
+  line-height: 1.55;
+}
+.longform-body .table-wrap {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+.longform-body table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  background: rgba(20,20,43,.42);
+  border: 1px solid var(--ink-6);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--inset-top), var(--inset-rim);
+}
+.longform-body th, .longform-body td {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--ink-6);
+}
+.longform-body th {
+  background: linear-gradient(180deg, rgba(124,92,255,.10), rgba(124,92,255,.04));
+  font-family: var(--f-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-2);
+  font-weight: 500;
+  border-bottom-color: rgba(124,92,255,.25);
+}
+.longform-body tbody tr:last-child td { border-bottom: 0; }
+.longform-body tbody tr:hover { background: rgba(255,255,255,.02); }
+.longform-body td:first-child {
+  color: var(--ink-1);
+  font-weight: 500;
+  white-space: nowrap;
+}
+@media (max-width: 640px) {
+  .longform-body td:first-child { white-space: normal; }
+  .longform-body th, .longform-body td { padding: 0.6rem 0.7rem; font-size: 0.86rem; }
+}
 
 /* App index page bits */
 .app-hero {

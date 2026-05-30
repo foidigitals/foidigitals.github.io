@@ -265,7 +265,7 @@
         f3: { title: "Edit if needed.", desc: "Disagree with an estimate? Adjust portions or items inline. Your edits help refine the next estimate." },
         f4: { title: "Six languages.", desc: "Localised meal recognition for English, Turkish, German, Spanish, French, and Italian — and growing." },
         f5: { title: "Calm interface.", desc: "No streaks, no shame loops, no manufactured anxiety. Track when you want, ignore when you don't." },
-        f6: { title: "Privacy-first.", desc: "Photos are processed and discarded — we don't keep a library of your meals on our servers." },
+        f6: { title: "Privacy-first.", desc: "Encrypted in transit, GDPR/CCPA rights honored, and full account deletion from inside the app." },
       },
 
       pagesId: "legal & support",
@@ -276,52 +276,98 @@
       back: "back to calorie reader ai",
       eyebrow: "calorie reader ai · privacy",
       title: "Privacy Policy",
-      meta: "Last updated · 2026-05-27 · v1.2",
+      meta: "Last updated · 2026-05-30 · v2.0",
       body: `
-        <p>This Privacy Policy describes how <strong>Calorie Reader AI</strong> ("the App"), a product of Foi Digitals, collects, uses, and protects information when you use the App on iOS. We follow Apple's App Store privacy guidelines and applicable data protection laws.</p>
+        <p>This Privacy Policy explains how <strong>Calorie Reader AI</strong> ("the App", "we", "us") collects, uses, shares, and protects your information. The App is operated by <strong>Foi Digitals</strong> ("the data controller"). By using the App you agree to the practices described here.</p>
 
-        <h2>1. Data we collect</h2>
-        <h3>1.1 Meal photographs</h3>
-        <p>When you photograph a meal, the image is sent to our nutrition analysis service for processing. Images are processed in real time and are <strong>not stored on our servers</strong> after the analysis is complete. We do not maintain a library of your meal photographs.</p>
+        <h2>1. Who we are &amp; how to contact us</h2>
+        <p>Data controller: Foi Digitals.<br>Contact / privacy requests: <a href="mailto:foidigitals@gmail.com">foidigitals@gmail.com</a></p>
 
-        <h3>1.2 Nutrition logs (on-device)</h3>
-        <p>The estimated nutrition data (calories, protein, carbohydrates, fat) and any notes you add are stored <strong>locally on your device</strong>. They are not transmitted to our servers unless you explicitly opt in to iCloud sync (a future feature).</p>
+        <h2>2. Data we collect</h2>
+        <p>We collect only the data needed to provide the App's features. We do <strong>not</strong> use your data for cross-app tracking or advertising, and we do not sell your data.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Category</th><th>Examples</th><th>Why</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Account &amp; contact</td>
+                <td>Email address (from Sign in with Apple or Google). If you use Apple's "Hide My Email", we only receive the relay address.</td>
+                <td>Create and secure your account.</td>
+              </tr>
+              <tr>
+                <td>Health &amp; nutrition</td>
+                <td>Weight, height, age, gender, activity level, calorie/macro goals, logged meals and nutrition values.</td>
+                <td>Provide calorie tracking, goals, and coaching insights. This data is entered by you in the App.</td>
+              </tr>
+              <tr>
+                <td>Meal photos</td>
+                <td>Photos you take or choose of your meals.</td>
+                <td>Estimate food and calories via AI image analysis (see Section 4).</td>
+              </tr>
+              <tr>
+                <td>User content</td>
+                <td>Messages to the in-app coach, meal notes, custom food names and your favorites.</td>
+                <td>Operate the coaching chat and your food log.</td>
+              </tr>
+              <tr>
+                <td>Identifiers</td>
+                <td>Account user ID, an app-generated install identifier ("device ID"), and a push-notification token with your time zone and language.</td>
+                <td>Operate the account, enforce free-tier limits / prevent abuse, and deliver reminders you enable.</td>
+              </tr>
+              <tr>
+                <td>Purchases</td>
+                <td>Subscription and credit-pack purchase status and history (processed via RevenueCat and the App Store / Google Play).</td>
+                <td>Unlock paid features, restore purchases, and manage subscriptions.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="muted">We do <strong>not</strong> collect precise or coarse location, contacts, browsing or search history, advertising identifiers (IDFA), or biometric data. The App does not include any advertising or third-party analytics/tracking SDKs.</p>
 
-        <h3>1.3 Diagnostic data</h3>
-        <p>If the App crashes or hits an error, anonymous crash logs may be sent via Apple's diagnostics. These contain no personal information and no meal data. You can disable this in iOS Settings → Privacy → Analytics & Improvements.</p>
+        <h2>3. HealthKit / Apple Health</h2>
+        <p>This version of the App does <strong>not</strong> read from or write to Apple Health (HealthKit) or Android Health Connect. Any nutrition or weight data is information you enter directly in the App.</p>
 
-        <h2>2. How we use your data</h2>
-        <ul>
-          <li><strong>Meal photographs</strong> are used solely to estimate nutritional content and are discarded after analysis.</li>
-          <li><strong>Local nutrition logs</strong> remain on your device under your control. You can delete them any time from within the App.</li>
-          <li><strong>Diagnostic data</strong> is used only to identify and fix bugs.</li>
-        </ul>
+        <h2>4. AI photo analysis (OpenAI)</h2>
+        <p>When you analyze a meal photo, the image is sent to <strong>OpenAI</strong> (OpenAI, L.L.C.) to detect foods and estimate nutrition. OpenAI processes the image to return a result; per OpenAI's API policy, API inputs are not used to train their models. Calorie and nutrition figures are <strong>estimates only</strong> and are not medical advice.</p>
 
-        <h2>3. Third-party services</h2>
-        <p>The App uses a vision model hosted by a third-party AI provider for image analysis. Photographs are transmitted to this provider over an encrypted (TLS) connection, processed for nutrition estimation, and not retained by them per our data processing agreement.</p>
+        <h2>5. How your data is stored</h2>
+        <p>Your account data, meals, weight logs, chat messages, and uploaded meal photos are stored on <strong>Supabase</strong> (our hosting and database provider) on your behalf. Data in transit is encrypted via HTTPS.</p>
+        <blockquote><strong>Meal photo access note:</strong> Uploaded meal photos are served from a storage bucket via direct URLs. Anyone who obtains the specific file URL could access that image without signing in. We rely on these URLs not being shared publicly. Do not share meal-photo URLs you do not want others to see. You can delete photos by deleting the meal or your account (Section 8).</blockquote>
 
-        <h2>4. Data we do not collect</h2>
-        <ul>
-          <li>We do not collect your name, email address, phone number, or contacts.</li>
-          <li>We do not use third-party advertising or analytics SDKs.</li>
-          <li>We do not track you across other apps or websites.</li>
-          <li>We do not sell, rent, or share your data with third parties for marketing purposes.</li>
-        </ul>
+        <h2>6. Service providers (sub-processors)</h2>
+        <p>We share data only with providers that help us run the App, under their respective terms:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Provider</th><th>Purpose</th><th>Data involved</th></tr></thead>
+            <tbody>
+              <tr><td>OpenAI</td><td>AI meal-photo analysis</td><td>Meal photos</td></tr>
+              <tr><td>Supabase</td><td>Hosting, database, authentication, storage</td><td>Account, health/nutrition, photos, chat</td></tr>
+              <tr><td>RevenueCat</td><td>Subscription &amp; purchase management</td><td>Purchase status, user/app identifiers</td></tr>
+              <tr><td>Apple / Google</td><td>Sign-in, payments, push delivery</td><td>Email (sign-in), purchase, push token</td></tr>
+              <tr><td>Expo</td><td>Push-notification delivery</td><td>Push token</td></tr>
+            </tbody>
+          </table>
+        </div>
 
-        <h2>5. Children</h2>
-        <p>The App is not directed to children under 13. We do not knowingly collect data from children under 13.</p>
+        <h2>7. Legal bases (EEA/UK)</h2>
+        <p>Where the GDPR applies, we process data to <strong>perform our contract</strong> with you (providing the App), based on your <strong>consent</strong> (e.g., camera, notifications), and for our <strong>legitimate interests</strong> (security, abuse prevention).</p>
 
-        <h2>6. Your rights</h2>
-        <p>Because nutrition logs are stored locally on your device, you can delete them at any time by removing entries within the App or by uninstalling the App. To make a request related to any other data, contact <strong>foidigitals@gmail.com</strong>.</p>
+        <h2>8. Your rights &amp; account deletion</h2>
+        <p>You can access and edit your profile in the App. You may delete your account and associated data from within the App (Profile → account deletion), which removes your profile, meals, weight logs, chat messages, and meal photos. You may also email <a href="mailto:foidigitals@gmail.com">foidigitals@gmail.com</a> to request access, correction, deletion, or a copy of your data. We honor applicable GDPR/CCPA rights.</p>
 
-        <h2>7. Security</h2>
-        <p>All network communication uses TLS. We follow industry-standard practices for the limited backend services we operate.</p>
+        <h2>9. Data retention</h2>
+        <p>We keep your data while your account is active. When you delete your account, we delete your personal data from our active systems, except where we must retain limited records (e.g., purchase/transaction records) to comply with legal obligations.</p>
 
-        <h2>8. Changes to this policy</h2>
-        <p>We may update this policy when the App changes. Material changes will be reflected in the "last updated" date above and, where required by law, surfaced inside the App.</p>
+        <h2>10. Children</h2>
+        <p>The App is not directed to children under 13 (or the minimum age in your country). We do not knowingly collect data from children under that age. If you believe a child has provided us data, contact us and we will delete it.</p>
 
-        <h2>9. Contact</h2>
-        <p>Questions, concerns, or data requests: <strong>foidigitals@gmail.com</strong>.</p>
+        <h2>11. Changes</h2>
+        <p>We may update this Policy. Material changes will be reflected by the "Last updated" date above and, where appropriate, in the App.</p>
+
+        <h2>12. Contact</h2>
+        <p>Questions? Email <a href="mailto:foidigitals@gmail.com">foidigitals@gmail.com</a>.</p>
       `,
     },
 
@@ -329,49 +375,74 @@
       back: "back to calorie reader ai",
       eyebrow: "calorie reader ai · terms",
       title: "Terms of Use",
-      meta: "Last updated · 2026-05-27 · v1.2",
+      meta: "Last updated · 2026-05-30 · v2.0",
       body: `
-        <p>These Terms of Use ("Terms") govern your use of <strong>Calorie Reader AI</strong> ("the App"), provided by Foi Digitals ("we", "us"). By downloading, installing, or using the App, you agree to be bound by these Terms.</p>
+        <p>These Terms of Use ("Terms") govern your use of the <strong>Calorie Reader AI</strong> mobile application ("the App"), operated by <strong>Foi Digitals</strong> ("we", "us"). By downloading or using the App, you agree to these Terms and to our <a href="privacy.html">Privacy Policy</a>. If you do not agree, do not use the App.</p>
 
-        <h2>1. License</h2>
-        <p>We grant you a personal, non-exclusive, non-transferable, revocable license to use the App on iOS devices that you own or control, in accordance with these Terms and the Apple App Store Terms of Service.</p>
+        <h2>1. The service</h2>
+        <p>The App helps you log meals and estimate calories and nutrition, including via AI analysis of meal photos. <strong>All nutrition figures are estimates, not exact measurements.</strong></p>
 
         <h2>2. Not medical advice</h2>
-        <blockquote>The App provides <strong>estimates</strong> of nutritional content based on image analysis. These estimates are for general informational purposes only and are <strong>not medical, nutritional, or dietary advice</strong>.</blockquote>
-        <p>If you have a medical condition, food allergy, eating disorder, or other health concern, consult a qualified healthcare professional. Do not rely on the App for medical decisions. The App is not a substitute for professional medical judgement.</p>
+        <p>The App is for general informational and wellness purposes only. It does <strong>not</strong> provide medical advice and is not a substitute for professional diagnosis, treatment, or dietary guidance. Calorie, macro, and weight targets are informational, not prescriptions. Consult a qualified health professional before making health decisions, especially if you have a medical condition. You use the App at your own risk.</p>
 
-        <h2>3. Estimate accuracy</h2>
-        <p>Vision-model estimates have inherent limitations. Portion sizes, hidden ingredients, cooking methods, and lighting can affect accuracy. You are responsible for verifying nutritional information when accuracy is critical.</p>
+        <h2>3. Eligibility &amp; accounts</h2>
+        <p>You must be at least 13 years old (or the minimum age in your country) to use the App. You are responsible for activity under your account and for keeping your sign-in credentials secure.</p>
 
         <h2>4. Acceptable use</h2>
-        <p>You agree not to:</p>
         <ul>
-          <li>reverse-engineer, decompile, or attempt to extract the App's source code;</li>
-          <li>use the App to harass, defraud, or harm others;</li>
-          <li>submit content that is illegal, infringing, or invasive of another's privacy;</li>
-          <li>interfere with or disrupt the App's services or networks.</li>
+          <li>Do not misuse, reverse-engineer, or attempt to disrupt the App or its backend.</li>
+          <li>Do not submit unlawful content or attempt to manipulate the AI coach into producing harmful output.</li>
+          <li>Do not use the App to violate the rights of others or any applicable law.</li>
         </ul>
 
-        <h2>5. Intellectual property</h2>
-        <p>The App, including all designs, code, models, and content, is owned by Foi Digitals and protected by intellectual property laws. The "Foi Digitals" and "Calorie Reader AI" names and marks are property of Foi Digitals.</p>
+        <h2 id="subscriptions">5. Subscriptions, credits &amp; payments</h2>
+        <p>The App offers optional auto-renewable subscriptions and one-time credit packs that unlock additional features and AI usage.</p>
+        <ul>
+          <li><strong>Billing:</strong> Payment is charged to your Apple ID or Google account at confirmation of purchase.</li>
+          <li><strong>Auto-renewal:</strong> Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period. Your account is charged for renewal within 24 hours before the period ends.</li>
+          <li><strong>Manage / cancel:</strong> You can manage or cancel subscriptions in your device account settings (App Store or Google Play) after purchase.</li>
+          <li><strong>Credit packs:</strong> Credit packs are one-time, consumable purchases and are non-refundable once used, except where required by law.</li>
+          <li><strong>Restore:</strong> You can restore eligible purchases from within the App.</li>
+          <li><strong>Pricing:</strong> Prices and plan details are shown in the App before purchase and may change for future periods.</li>
+        </ul>
+        <p class="muted">Refunds for App Store / Google Play purchases are handled by Apple or Google under their respective policies.</p>
 
-        <h2>6. Disclaimer of warranties</h2>
-        <p>The App is provided "as is" and "as available" without warranties of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement. We do not warrant that the App will be uninterrupted, error-free, or that estimates will be accurate.</p>
+        <h2>6. User content</h2>
+        <p>You retain ownership of the content you submit (meal photos, notes, messages). You grant us a limited licence to process and store it solely to operate the App's features for you, including sending meal photos to our AI provider for analysis as described in the <a href="privacy.html">Privacy Policy</a>.</p>
 
-        <h2>7. Limitation of liability</h2>
-        <p>To the maximum extent permitted by law, Foi Digitals shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, arising from your use of the App.</p>
+        <h2>7. Intellectual property</h2>
+        <p>The App, its design, and its content (excluding your user content) are owned by Foi Digitals and protected by applicable laws. These Terms grant you a personal, non-exclusive, non-transferable, revocable licence to use the App.</p>
 
-        <h2>8. Termination</h2>
-        <p>We may suspend or terminate your access to the App at any time for any reason, including violation of these Terms. You may stop using the App at any time by uninstalling it.</p>
+        <h2>8. Disclaimers &amp; limitation of liability</h2>
+        <p>The App is provided "as is" and "as available" without warranties of any kind, to the maximum extent permitted by law. We do not warrant that nutrition estimates are accurate or that the App will be uninterrupted or error-free. To the maximum extent permitted by law, Foi Digitals is not liable for any indirect, incidental, or consequential damages, or for any health outcomes arising from your use of the App.</p>
 
-        <h2>9. Governing law</h2>
-        <p>These Terms are governed by the laws of the Republic of Türkiye, without regard to conflict-of-laws principles. Any dispute arising under these Terms shall be brought in the courts of Istanbul, Türkiye.</p>
+        <h2>9. Termination</h2>
+        <p>You may stop using the App and delete your account at any time from within the App. We may suspend or terminate access if you breach these Terms.</p>
 
         <h2>10. Changes</h2>
-        <p>We may revise these Terms from time to time. Material changes will be reflected in the "last updated" date above.</p>
+        <p>We may update these Terms. Material changes are reflected by the "Last updated" date above. Continued use after changes means you accept the updated Terms.</p>
 
         <h2>11. Contact</h2>
-        <p>For questions about these Terms: <strong>foidigitals@gmail.com</strong>.</p>
+        <p>Questions? Email <a href="mailto:foidigitals@gmail.com">foidigitals@gmail.com</a>.</p>
+
+        <hr>
+
+        <h2 id="eula">End User License Agreement (EULA)</h2>
+        <p class="muted">Applies to the Calorie Reader AI licensed application.</p>
+        <p>This End User License Agreement supplements the Terms above. Because the App is distributed via the Apple App Store, the following acknowledgements apply (consistent with Apple's standard Licensed Application End User License Agreement):</p>
+        <ul>
+          <li>This EULA is between you and Foi Digitals only, and not with Apple. Apple is not responsible for the App or its content.</li>
+          <li>Foi Digitals grants you a non-transferable licence to use the App on any Apple-branded device you own or control, as permitted by the App Store Terms of Service.</li>
+          <li>Apple has no obligation to provide maintenance or support for the App.</li>
+          <li>In the event the App fails to conform to any applicable warranty, you may notify Apple, and Apple may refund the purchase price (if any). Apple has no other warranty obligation with respect to the App.</li>
+          <li>Foi Digitals, not Apple, is responsible for addressing any claims relating to the App, including product liability, legal/regulatory non-compliance, and consumer protection claims.</li>
+          <li>Foi Digitals, not Apple, is responsible for investigating and resolving any third-party claim that the App infringes intellectual property rights.</li>
+          <li>You represent that you are not located in a country subject to a U.S. Government embargo and are not on any U.S. Government restricted-parties list.</li>
+          <li>Apple and its subsidiaries are third-party beneficiaries of this EULA and may enforce it against you.</li>
+        </ul>
+
+        <h3>Contact</h3>
+        <p>Foi Digitals · <a href="mailto:foidigitals@gmail.com">foidigitals@gmail.com</a></p>
       `,
     },
 
@@ -394,7 +465,7 @@
         <h2>Frequently asked questions</h2>
 
         <h3>Does Calorie Reader AI store my photos?</h3>
-        <p>No. Photographs are processed in real time and discarded after the analysis. We do not maintain a server-side library of your meal photos. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+        <p>Yes. Meal photos are stored on our hosting provider (Supabase) so you can view your meal history. They are sent to OpenAI for nutrition analysis and are deleted when you remove the meal or delete your account. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
 
         <h3>How accurate are the estimates?</h3>
         <p>The model performs well on common foods photographed clearly from above. Accuracy can drop with unusual lighting, partially hidden ingredients, or unusual cuisines. You can always edit estimates manually within the App. The App is not a substitute for medical or nutritional advice.</p>
@@ -673,7 +744,7 @@
         f3: { title: "Gerekirse düzenle.", desc: "Tahmine katılmıyor musunuz? Porsiyonları veya öğeleri yerinde ayarlayın. Düzenlemeleriniz bir sonraki tahmini iyileştirir." },
         f4: { title: "Altı dil.", desc: "İngilizce, Türkçe, Almanca, İspanyolca, Fransızca ve İtalyanca için yerelleştirilmiş yemek tanıma — büyüyor." },
         f5: { title: "Sakin arayüz.", desc: "Seri yok, utanç döngüsü yok, üretilmiş kaygı yok. İstediğinizde takip edin, istemediğinizde görmezden gelin." },
-        f6: { title: "Gizlilik önce.", desc: "Fotoğraflar işlenip atılır — sunucularımızda yemeklerinizin kütüphanesini tutmuyoruz." },
+        f6: { title: "Gizlilik önce.", desc: "Aktarımda şifrelenmiş, GDPR/CCPA haklarına saygılı, uygulama içinden tam hesap silme." },
       },
 
       pagesId: "yasal ve destek",
@@ -684,52 +755,98 @@
       back: "calorie reader ai'a dön",
       eyebrow: "calorie reader ai · gizlilik",
       title: "Gizlilik Politikası",
-      meta: "Son güncelleme · 27.05.2026 · v1.2",
+      meta: "Son güncelleme · 30.05.2026 · v2.0",
       body: `
-        <p>Bu Gizlilik Politikası, Foi Digitals'in bir ürünü olan <strong>Calorie Reader AI</strong>'ın ("Uygulama") iOS'ta kullandığınız sırada bilgileri nasıl topladığını, kullandığını ve koruduğunu açıklar. Apple'ın App Store gizlilik kurallarına ve geçerli veri koruma yasalarına uyuyoruz.</p>
+        <p>Bu Gizlilik Politikası, <strong>Calorie Reader AI</strong>'ın ("Uygulama", "biz") bilgilerinizi nasıl topladığını, kullandığını, paylaştığını ve koruduğunu açıklar. Uygulama, <strong>Foi Digitals</strong> ("veri sorumlusu") tarafından işletilir. Uygulamayı kullanarak burada açıklanan uygulamaları kabul etmiş olursunuz.</p>
 
-        <h2>1. Topladığımız veriler</h2>
-        <h3>1.1 Yemek fotoğrafları</h3>
-        <p>Bir yemeğin fotoğrafını çektiğinizde, görüntü işlenmek üzere beslenme analizi hizmetimize gönderilir. Görüntüler gerçek zamanlı olarak işlenir ve analiz tamamlandıktan sonra <strong>sunucularımızda saklanmaz</strong>. Yemek fotoğraflarınızın kütüphanesini tutmuyoruz.</p>
+        <h2>1. Biz kimiz ve nasıl iletişime geçilir</h2>
+        <p>Veri sorumlusu: Foi Digitals.<br>İletişim / gizlilik talepleri: <a href="mailto:foidigitals@gmail.com">foidigitals@gmail.com</a></p>
 
-        <h3>1.2 Beslenme kayıtları (cihazda)</h3>
-        <p>Tahmini beslenme verileri (kalori, protein, karbonhidrat, yağ) ve eklediğiniz notlar <strong>yerel olarak cihazınızda</strong> saklanır. iCloud senkronizasyonunu açıkça etkinleştirmedikçe (gelecek özellik) sunucularımıza iletilmez.</p>
+        <h2>2. Topladığımız veriler</h2>
+        <p>Yalnızca Uygulamanın özelliklerini sağlamak için gereken verileri topluyoruz. Verilerinizi uygulamalar arası izleme veya reklamcılık için <strong>kullanmıyoruz</strong> ve verilerinizi satmıyoruz.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Kategori</th><th>Örnekler</th><th>Neden</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hesap ve iletişim</td>
+                <td>E-posta adresi (Apple veya Google ile Giriş Yap'tan). Apple'ın "E-postamı Gizle" seçeneğini kullanırsanız yalnızca aktarma adresini alırız.</td>
+                <td>Hesabınızı oluşturmak ve güvenceye almak.</td>
+              </tr>
+              <tr>
+                <td>Sağlık ve beslenme</td>
+                <td>Kilo, boy, yaş, cinsiyet, aktivite seviyesi, kalori/makro hedefleri, kaydedilen öğünler ve besin değerleri.</td>
+                <td>Kalori takibi, hedefler ve koçluk içgörüleri sağlamak. Bu veriler Uygulamada sizin tarafınızdan girilir.</td>
+              </tr>
+              <tr>
+                <td>Yemek fotoğrafları</td>
+                <td>Yemeklerinizi çektiğiniz veya seçtiğiniz fotoğraflar.</td>
+                <td>AI görüntü analizi ile yiyecek ve kaloriyi tahmin etmek (bkz. Bölüm 4).</td>
+              </tr>
+              <tr>
+                <td>Kullanıcı içeriği</td>
+                <td>Uygulama içi koça gönderilen mesajlar, öğün notları, özel yemek adları ve favorileriniz.</td>
+                <td>Koçluk sohbetini ve yemek günlüğünüzü işletmek.</td>
+              </tr>
+              <tr>
+                <td>Tanımlayıcılar</td>
+                <td>Hesap kullanıcı kimliği, uygulama tarafından üretilen bir kurulum tanımlayıcısı ("cihaz kimliği") ve saat dilimi ile dilinizi içeren bir push bildirim jetonu.</td>
+                <td>Hesabı işletmek, ücretsiz katman sınırlarını uygulamak / kötüye kullanımı önlemek ve etkinleştirdiğiniz hatırlatıcıları iletmek.</td>
+              </tr>
+              <tr>
+                <td>Satın almalar</td>
+                <td>Abonelik ve kredi paketi satın alma durumu ve geçmişi (RevenueCat ve App Store / Google Play üzerinden işlenir).</td>
+                <td>Ücretli özellikleri açmak, satın almaları geri yüklemek ve abonelikleri yönetmek.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="muted">Hassas veya kaba konum, kişiler, tarama veya arama geçmişi, reklam tanımlayıcıları (IDFA) veya biyometrik veri <strong>toplamıyoruz</strong>. Uygulama hiçbir reklam veya üçüncü taraf analitik/izleme SDK'sı içermez.</p>
 
-        <h3>1.3 Tanılama verileri</h3>
-        <p>Uygulama çökerse veya bir hatayla karşılaşırsa, Apple'ın tanılaması aracılığıyla anonim çökme günlükleri gönderilebilir. Bunlar kişisel bilgi ve yemek verisi içermez. iOS Ayarlar → Gizlilik → Analiz ve İyileştirmeler bölümünden devre dışı bırakabilirsiniz.</p>
+        <h2>3. HealthKit / Apple Health</h2>
+        <p>Uygulamanın bu sürümü Apple Health (HealthKit) veya Android Health Connect'i <strong>okumaz veya bunlara yazmaz</strong>. Tüm beslenme veya kilo verileri doğrudan Uygulamaya girdiğiniz bilgilerdir.</p>
 
-        <h2>2. Verilerinizi nasıl kullanıyoruz</h2>
-        <ul>
-          <li><strong>Yemek fotoğrafları</strong> yalnızca besin içeriğini tahmin etmek için kullanılır ve analizden sonra atılır.</li>
-          <li><strong>Yerel beslenme kayıtları</strong> cihazınızda kontrolünüz altında kalır. Uygulama içinden istediğiniz zaman silebilirsiniz.</li>
-          <li><strong>Tanılama verileri</strong> yalnızca hataları tespit etmek ve düzeltmek için kullanılır.</li>
-        </ul>
+        <h2>4. AI fotoğraf analizi (OpenAI)</h2>
+        <p>Bir yemek fotoğrafını analiz ettiğinizde, görüntü yiyecekleri tespit etmek ve beslenmeyi tahmin etmek için <strong>OpenAI</strong>'a (OpenAI, L.L.C.) gönderilir. OpenAI sonuç döndürmek için görüntüyü işler; OpenAI'ın API politikasına göre API girdileri modellerini eğitmek için kullanılmaz. Kalori ve beslenme rakamları yalnızca <strong>tahmindir</strong> ve tıbbi tavsiye değildir.</p>
 
-        <h2>3. Üçüncü taraf hizmetler</h2>
-        <p>Uygulama, görüntü analizi için üçüncü taraf bir AI sağlayıcısı tarafından barındırılan bir görüntü modelini kullanır. Fotoğraflar şifrelenmiş (TLS) bir bağlantı üzerinden bu sağlayıcıya iletilir, beslenme tahmini için işlenir ve veri işleme sözleşmemiz uyarınca tarafımızca saklanmaz.</p>
+        <h2>5. Verileriniz nasıl saklanır</h2>
+        <p>Hesap verileriniz, öğünleriniz, kilo kayıtlarınız, sohbet mesajlarınız ve yüklenen yemek fotoğraflarınız sizin adınıza <strong>Supabase</strong> (barındırma ve veritabanı sağlayıcımız) üzerinde saklanır. Aktarımdaki veriler HTTPS ile şifrelenir.</p>
+        <blockquote><strong>Yemek fotoğrafı erişim notu:</strong> Yüklenen yemek fotoğrafları doğrudan URL'ler aracılığıyla bir depolama kovasından sunulur. Belirli dosya URL'sini elde eden herkes oturum açmadan o görüntüye erişebilir. Bu URL'lerin kamuya açık olarak paylaşılmamasına güveniyoruz. Başkalarının görmesini istemediğiniz yemek fotoğrafı URL'lerini paylaşmayın. Öğünü veya hesabınızı silerek fotoğrafları silebilirsiniz (Bölüm 8).</blockquote>
 
-        <h2>4. Toplamadığımız veriler</h2>
-        <ul>
-          <li>Adınızı, e-posta adresinizi, telefon numaranızı veya rehberinizi toplamıyoruz.</li>
-          <li>Üçüncü taraf reklam veya analitik SDK'ları kullanmıyoruz.</li>
-          <li>Sizi diğer uygulamalar veya web sitelerinde izlemiyoruz.</li>
-          <li>Pazarlama amacıyla verilerinizi üçüncü taraflarla satmıyor, kiralamıyor veya paylaşmıyoruz.</li>
-        </ul>
+        <h2>6. Hizmet sağlayıcılar (alt işleyiciler)</h2>
+        <p>Verileri yalnızca Uygulamayı işletmemize yardımcı olan sağlayıcılarla, kendi koşulları altında paylaşırız:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Sağlayıcı</th><th>Amaç</th><th>İlgili veri</th></tr></thead>
+            <tbody>
+              <tr><td>OpenAI</td><td>AI yemek fotoğrafı analizi</td><td>Yemek fotoğrafları</td></tr>
+              <tr><td>Supabase</td><td>Barındırma, veritabanı, kimlik doğrulama, depolama</td><td>Hesap, sağlık/beslenme, fotoğraflar, sohbet</td></tr>
+              <tr><td>RevenueCat</td><td>Abonelik ve satın alma yönetimi</td><td>Satın alma durumu, kullanıcı/uygulama tanımlayıcıları</td></tr>
+              <tr><td>Apple / Google</td><td>Giriş, ödemeler, push iletimi</td><td>E-posta (giriş), satın alma, push jetonu</td></tr>
+              <tr><td>Expo</td><td>Push bildirim iletimi</td><td>Push jetonu</td></tr>
+            </tbody>
+          </table>
+        </div>
 
-        <h2>5. Çocuklar</h2>
-        <p>Uygulama 13 yaşın altındaki çocuklara yönelik değildir. 13 yaşın altındaki çocuklardan bilerek veri toplamıyoruz.</p>
+        <h2>7. Yasal dayanaklar (EEA/UK)</h2>
+        <p>GDPR'nin geçerli olduğu yerlerde verileri sizinle <strong>sözleşmemizi yerine getirmek</strong> (Uygulamayı sağlamak) için, <strong>rızanıza</strong> dayalı olarak (örn. kamera, bildirimler) ve <strong>meşru menfaatlerimiz</strong> için (güvenlik, kötüye kullanımı önleme) işleriz.</p>
 
-        <h2>6. Haklarınız</h2>
-        <p>Beslenme kayıtları cihazınızda yerel olarak saklandığından, Uygulama içindeki girdileri kaldırarak veya Uygulamayı kaldırarak istediğiniz zaman silebilirsiniz. Başka veriyle ilgili bir talepte bulunmak için <strong>foidigitals@gmail.com</strong>'a yazın.</p>
+        <h2>8. Haklarınız ve hesap silme</h2>
+        <p>Uygulama içinden profilinize erişebilir ve düzenleyebilirsiniz. Hesabınızı ve ilişkili verilerinizi Uygulama içinden silebilirsiniz (Profil → hesap silme); bu, profilinizi, öğünlerinizi, kilo kayıtlarınızı, sohbet mesajlarınızı ve yemek fotoğraflarınızı kaldırır. Erişim, düzeltme, silme veya verilerinizin bir kopyasını talep etmek için <a href="mailto:foidigitals@gmail.com">foidigitals@gmail.com</a>'a da yazabilirsiniz. Geçerli GDPR/CCPA haklarına saygı duyuyoruz.</p>
 
-        <h2>7. Güvenlik</h2>
-        <p>Tüm ağ iletişimi TLS kullanır. İşlettiğimiz sınırlı arka uç hizmetleri için endüstri standardı uygulamaları takip ediyoruz.</p>
+        <h2>9. Veri saklama</h2>
+        <p>Verilerinizi hesabınız aktif olduğu sürece tutarız. Hesabınızı sildiğinizde, yasal yükümlülüklere uymak için sınırlı kayıtları (örn. satın alma/işlem kayıtları) saklamamız gereken durumlar haricinde kişisel verilerinizi aktif sistemlerimizden sileriz.</p>
 
-        <h2>8. Bu politikadaki değişiklikler</h2>
-        <p>Uygulama değiştikçe bu politikayı güncelleyebiliriz. Önemli değişiklikler yukarıdaki "son güncelleme" tarihine ve yasaların gerektirdiği yerlerde Uygulama içinde yansıtılır.</p>
+        <h2>10. Çocuklar</h2>
+        <p>Uygulama 13 yaşın (veya ülkenizdeki asgari yaşın) altındaki çocuklara yönelik değildir. O yaşın altındaki çocuklardan bilerek veri toplamıyoruz. Bir çocuğun bize veri sağladığına inanıyorsanız, bizimle iletişime geçin; sileriz.</p>
 
-        <h2>9. İletişim</h2>
-        <p>Sorular, endişeler veya veri talepleri: <strong>foidigitals@gmail.com</strong>.</p>
+        <h2>11. Değişiklikler</h2>
+        <p>Bu Politikayı güncelleyebiliriz. Önemli değişiklikler yukarıdaki "Son güncelleme" tarihine ve uygun olduğunda Uygulamaya yansıtılır.</p>
+
+        <h2>12. İletişim</h2>
+        <p>Sorular? <a href="mailto:foidigitals@gmail.com">foidigitals@gmail.com</a> adresine e-posta gönderin.</p>
       `,
     },
 
@@ -737,49 +854,74 @@
       back: "calorie reader ai'a dön",
       eyebrow: "calorie reader ai · koşullar",
       title: "Kullanım Koşulları",
-      meta: "Son güncelleme · 27.05.2026 · v1.2",
+      meta: "Son güncelleme · 30.05.2026 · v2.0",
       body: `
-        <p>Bu Kullanım Koşulları ("Koşullar"), Foi Digitals ("biz") tarafından sağlanan <strong>Calorie Reader AI</strong> ("Uygulama") kullanımınızı düzenler. Uygulamayı indirerek, kurarak veya kullanarak bu Koşullarla bağlı olmayı kabul edersiniz.</p>
+        <p>Bu Kullanım Koşulları ("Koşullar"), <strong>Foi Digitals</strong> ("biz") tarafından işletilen <strong>Calorie Reader AI</strong> mobil uygulamasının ("Uygulama") kullanımını düzenler. Uygulamayı indirerek veya kullanarak bu Koşulları ve <a href="privacy.html">Gizlilik Politikamızı</a> kabul etmiş olursunuz. Kabul etmiyorsanız Uygulamayı kullanmayın.</p>
 
-        <h2>1. Lisans</h2>
-        <p>Bu Koşullara ve Apple App Store Hizmet Şartlarına uygun olarak, sahip olduğunuz veya kontrol ettiğiniz iOS cihazlarda Uygulamayı kullanmanız için size kişisel, münhasır olmayan, devredilemez ve geri alınabilir bir lisans veriyoruz.</p>
+        <h2>1. Hizmet</h2>
+        <p>Uygulama, yemek fotoğraflarınızın AI analizi de dahil olmak üzere öğünleri kaydetmenize ve kalori ile beslenmeyi tahmin etmenize yardımcı olur. <strong>Tüm beslenme rakamları tahmindir, kesin ölçümler değildir.</strong></p>
 
         <h2>2. Tıbbi tavsiye değildir</h2>
-        <blockquote>Uygulama, görüntü analizine dayalı besin içeriği <strong>tahminleri</strong> sağlar. Bu tahminler yalnızca genel bilgi amaçlıdır ve <strong>tıbbi, beslenme veya diyet tavsiyesi değildir</strong>.</blockquote>
-        <p>Tıbbi durumunuz, gıda alerjiniz, yeme bozukluğunuz veya başka bir sağlık endişeniz varsa, nitelikli bir sağlık uzmanına danışın. Tıbbi kararlar için Uygulamaya güvenmeyin. Uygulama profesyonel tıbbi muhakemenin yerine geçmez.</p>
+        <p>Uygulama yalnızca genel bilgi ve sağlık amaçlıdır. Tıbbi tavsiye <strong>vermez</strong> ve profesyonel teşhis, tedavi veya diyet rehberliğinin yerini almaz. Kalori, makro ve kilo hedefleri bilgi amaçlıdır, reçete değildir. Özellikle bir tıbbi durumunuz varsa, sağlık kararları vermeden önce nitelikli bir sağlık uzmanına danışın. Uygulamayı kendi sorumluluğunuzda kullanırsınız.</p>
 
-        <h2>3. Tahmin doğruluğu</h2>
-        <p>Görüntü modeli tahminlerinin doğal sınırları vardır. Porsiyon boyutları, gizli malzemeler, pişirme yöntemleri ve aydınlatma doğruluğu etkileyebilir. Doğruluk kritik olduğunda besin bilgisini doğrulamak sizin sorumluluğunuzdadır.</p>
+        <h2>3. Uygunluk ve hesaplar</h2>
+        <p>Uygulamayı kullanmak için en az 13 yaşında (veya ülkenizdeki asgari yaşta) olmalısınız. Hesabınız altındaki etkinliklerden ve giriş bilgilerinizi güvende tutmaktan siz sorumlusunuz.</p>
 
         <h2>4. Kabul edilebilir kullanım</h2>
-        <p>Şunları yapmamayı kabul edersiniz:</p>
         <ul>
-          <li>Uygulamanın kaynak kodunu tersine mühendislik yapmak, derlemek veya çıkarmaya çalışmak;</li>
-          <li>Uygulamayı başkalarını taciz etmek, dolandırmak veya zarar vermek için kullanmak;</li>
-          <li>Yasadışı, ihlal eden veya başkalarının gizliliğini ihlal eden içerik göndermek;</li>
-          <li>Uygulamanın hizmetlerine veya ağlarına müdahale etmek veya bunları bozmak.</li>
+          <li>Uygulamayı veya arka uçunu kötüye kullanmayın, tersine mühendislik yapmayın veya bozmaya çalışmayın.</li>
+          <li>Yasadışı içerik göndermeyin ve AI koçu zararlı çıktı üretmeye yönlendirmeye çalışmayın.</li>
+          <li>Uygulamayı başkalarının haklarını veya geçerli yasaları ihlal etmek için kullanmayın.</li>
         </ul>
 
-        <h2>5. Fikri mülkiyet</h2>
-        <p>Tüm tasarımları, kodu, modelleri ve içeriği dahil olmak üzere Uygulama, Foi Digitals'in mülkiyetindedir ve fikri mülkiyet yasalarıyla korunur. "Foi Digitals" ve "Calorie Reader AI" adları ve markaları Foi Digitals'in mülküdür.</p>
+        <h2 id="subscriptions">5. Abonelikler, krediler ve ödemeler</h2>
+        <p>Uygulama, ek özellikler ve AI kullanımı sunan, isteğe bağlı otomatik yenilenen abonelikler ve tek seferlik kredi paketleri sunar.</p>
+        <ul>
+          <li><strong>Faturalama:</strong> Ödeme, satın alma onayında Apple ID veya Google hesabınızdan tahsil edilir.</li>
+          <li><strong>Otomatik yenileme:</strong> Mevcut dönemin bitiminden en az 24 saat önce iptal edilmediği sürece abonelikler otomatik yenilenir. Dönem bitimine 24 saat kala hesabınızdan yenileme ücreti tahsil edilir.</li>
+          <li><strong>Yönetim / iptal:</strong> Satın aldıktan sonra abonelikleri cihaz hesap ayarlarınızdan (App Store veya Google Play) yönetebilir veya iptal edebilirsiniz.</li>
+          <li><strong>Kredi paketleri:</strong> Kredi paketleri tek seferlik, tüketilebilir satın almalardır ve yasanın gerektirdiği durumlar haricinde kullanıldıktan sonra iade edilmez.</li>
+          <li><strong>Geri yükleme:</strong> Uygun satın almaları Uygulama içinden geri yükleyebilirsiniz.</li>
+          <li><strong>Fiyatlandırma:</strong> Fiyatlar ve plan ayrıntıları satın alma öncesi Uygulamada gösterilir ve gelecek dönemler için değişebilir.</li>
+        </ul>
+        <p class="muted">App Store / Google Play satın almaları için iadeler, kendi politikaları uyarınca Apple veya Google tarafından yönetilir.</p>
 
-        <h2>6. Garanti reddi</h2>
-        <p>Uygulama, satılabilirlik, belirli bir amaca uygunluk veya ihlal etmeme garantileri dahil ancak bunlarla sınırlı olmamak üzere, açık veya zımni hiçbir garanti olmaksızın "olduğu gibi" ve "mevcut olduğu gibi" sağlanır. Uygulamanın kesintisiz, hatasız veya tahminlerin doğru olacağını garanti etmiyoruz.</p>
+        <h2>6. Kullanıcı içeriği</h2>
+        <p>Gönderdiğiniz içeriğin (yemek fotoğrafları, notlar, mesajlar) sahipliği size aittir. Bize, yalnızca sizin için Uygulamanın özelliklerini işletmek amacıyla — yemek fotoğraflarını <a href="privacy.html">Gizlilik Politikası</a>'nda açıklandığı şekilde AI sağlayıcımıza analiz için göndermek dahil — bunu işleme ve saklama yönünde sınırlı bir lisans verirsiniz.</p>
 
-        <h2>7. Sorumluluğun sınırlandırılması</h2>
-        <p>Yasaların izin verdiği azami ölçüde, Foi Digitals, Uygulamayı kullanımınızdan kaynaklanan dolaylı, arızi, özel, sonuç olarak ortaya çıkan veya cezai zararlardan veya kar veya gelir kaybından sorumlu tutulamaz.</p>
+        <h2>7. Fikri mülkiyet</h2>
+        <p>Uygulama, tasarımı ve içeriği (kullanıcı içeriğiniz hariç) Foi Digitals'in mülkiyetindedir ve geçerli yasalarla korunur. Bu Koşullar size Uygulamayı kullanmak için kişisel, münhasır olmayan, devredilemez ve geri alınabilir bir lisans verir.</p>
 
-        <h2>8. Fesih</h2>
-        <p>Bu Koşulların ihlali dahil herhangi bir nedenle Uygulamaya erişiminizi herhangi bir zamanda askıya alabilir veya sonlandırabiliriz. Uygulamayı kaldırarak istediğiniz zaman kullanmayı bırakabilirsiniz.</p>
+        <h2>8. Sorumluluk reddi ve sorumluluğun sınırlandırılması</h2>
+        <p>Uygulama, yasaların izin verdiği azami ölçüde hiçbir garanti olmaksızın "olduğu gibi" ve "mevcut olduğu gibi" sağlanır. Beslenme tahminlerinin doğru olduğunu veya Uygulamanın kesintisiz ya da hatasız olacağını garanti etmiyoruz. Yasaların izin verdiği azami ölçüde, Foi Digitals herhangi bir dolaylı, arızi veya sonuç olarak ortaya çıkan zarardan veya Uygulamayı kullanımınızdan doğan herhangi bir sağlık sonucundan sorumlu değildir.</p>
 
-        <h2>9. Geçerli hukuk</h2>
-        <p>Bu Koşullar, kanunlar ihtilafı kuralları gözetilmeksizin Türkiye Cumhuriyeti yasalarına tabidir. Bu Koşullar kapsamında doğacak uyuşmazlıklar İstanbul mahkemelerinde çözülecektir.</p>
+        <h2>9. Fesih</h2>
+        <p>Uygulamayı kullanmayı bırakabilir ve hesabınızı istediğiniz zaman Uygulama içinden silebilirsiniz. Bu Koşulları ihlal etmeniz durumunda erişimi askıya alabilir veya sonlandırabiliriz.</p>
 
         <h2>10. Değişiklikler</h2>
-        <p>Bu Koşulları zaman zaman güncelleyebiliriz. Önemli değişiklikler yukarıdaki "son güncelleme" tarihine yansıtılır.</p>
+        <p>Bu Koşulları güncelleyebiliriz. Önemli değişiklikler yukarıdaki "Son güncelleme" tarihine yansıtılır. Değişikliklerden sonra kullanmaya devam etmek, güncellenmiş Koşulları kabul ettiğiniz anlamına gelir.</p>
 
         <h2>11. İletişim</h2>
-        <p>Bu Koşullar hakkında sorular için: <strong>foidigitals@gmail.com</strong>.</p>
+        <p>Sorular? <a href="mailto:foidigitals@gmail.com">foidigitals@gmail.com</a> adresine e-posta gönderin.</p>
+
+        <hr>
+
+        <h2 id="eula">Son Kullanıcı Lisans Sözleşmesi (EULA)</h2>
+        <p class="muted">Calorie Reader AI lisanslı uygulamasına uygulanır.</p>
+        <p>Bu Son Kullanıcı Lisans Sözleşmesi yukarıdaki Koşulları tamamlar. Uygulama Apple App Store üzerinden dağıtıldığı için, aşağıdaki onaylar (Apple'ın standart Lisanslı Uygulama Son Kullanıcı Lisans Sözleşmesi ile uyumlu olarak) uygulanır:</p>
+        <ul>
+          <li>Bu EULA yalnızca sizinle Foi Digitals arasındadır, Apple ile değildir. Apple, Uygulamadan veya içeriğinden sorumlu değildir.</li>
+          <li>Foi Digitals, App Store Hizmet Şartlarının izin verdiği şekilde, sahip olduğunuz veya kontrol ettiğiniz herhangi bir Apple markalı cihazda Uygulamayı kullanmanız için size devredilemez bir lisans verir.</li>
+          <li>Apple'ın Uygulama için bakım veya destek sağlama yükümlülüğü yoktur.</li>
+          <li>Uygulamanın geçerli bir garantiye uymaması durumunda Apple'a bildirimde bulunabilirsiniz; Apple satın alma fiyatını (varsa) iade edebilir. Apple'ın Uygulama ile ilgili başka bir garanti yükümlülüğü yoktur.</li>
+          <li>Ürün sorumluluğu, yasal/düzenleyici uyumsuzluk ve tüketici koruma talepleri dahil olmak üzere Uygulama ile ilgili tüm taleplerin ele alınmasından Apple değil Foi Digitals sorumludur.</li>
+          <li>Uygulamanın fikri mülkiyet haklarını ihlal ettiğine dair herhangi bir üçüncü taraf talebini araştırma ve çözmekten Apple değil Foi Digitals sorumludur.</li>
+          <li>ABD Hükümeti ambargosuna tabi bir ülkede bulunmadığınızı ve herhangi bir ABD Hükümeti kısıtlanmış taraflar listesinde olmadığınızı beyan edersiniz.</li>
+          <li>Apple ve iştirakleri bu EULA'nın üçüncü taraf yararlanıcılarıdır ve size karşı uygulayabilirler.</li>
+        </ul>
+
+        <h3>İletişim</h3>
+        <p>Foi Digitals · <a href="mailto:foidigitals@gmail.com">foidigitals@gmail.com</a></p>
       `,
     },
 
@@ -802,7 +944,7 @@
         <h2>Sıkça sorulan sorular</h2>
 
         <h3>Calorie Reader AI fotoğraflarımı saklıyor mu?</h3>
-        <p>Hayır. Fotoğraflar gerçek zamanlı işlenir ve analiz sonrası atılır. Yemek fotoğraflarınızın sunucu tarafı kütüphanesini tutmuyoruz. Ayrıntılar için <a href="privacy.html">Gizlilik Politikası</a>'na bakın.</p>
+        <p>Evet. Yemek fotoğrafları, geçmişinizi görüntüleyebilmeniz için barındırma sağlayıcımızda (Supabase) saklanır. Beslenme analizi için OpenAI'a gönderilir ve öğünü veya hesabınızı sildiğinizde silinir. Ayrıntılar için <a href="privacy.html">Gizlilik Politikası</a>'na bakın.</p>
 
         <h3>Tahminler ne kadar doğru?</h3>
         <p>Model, yukarıdan net çekilmiş yaygın yiyeceklerde iyi performans gösterir. Olağandışı aydınlatma, kısmen gizli malzemeler veya alışılmadık mutfaklarda doğruluk düşebilir. Tahminleri Uygulama içinde manuel düzenleyebilirsiniz. Uygulama tıbbi veya beslenme tavsiyesinin yerine geçmez.</p>
