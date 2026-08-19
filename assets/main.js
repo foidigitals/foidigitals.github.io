@@ -74,11 +74,11 @@
     });
   }
 
-  /* ---- 3D tilt on Calorie Reader logo --------------------- */
+  /* ---- 3D tilt on product logos --------------------------- */
   if (!prefersReducedMotion) {
-    const logo = $("#featuredLogo");
-    const wrap = logo ? logo.parentElement : null;
-    if (logo && wrap) {
+    $$(".featured-logo").forEach((logo) => {
+      const wrap = logo.parentElement;
+      if (!wrap) return;
       const maxTilt = 12;
       wrap.addEventListener("pointermove", (e) => {
         const r = wrap.getBoundingClientRect();
@@ -93,7 +93,7 @@
         logo.style.setProperty("--ry", `-8deg`);
         logo.style.setProperty("--rx", `6deg`);
       });
-    }
+    });
   }
 
   /* ---- Hero subtle parallax on compass + mouse-tracked ---- */
