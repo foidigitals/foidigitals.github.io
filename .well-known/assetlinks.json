@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.beautystudio.glowupai",
+      "sha256_cert_fingerprints": [
+        "D8:C3:CB:DB:0E:66:76:66:EE:5B:16:C3:15:D3:7A:3C:95:43:F2:3E:1A:7C:81:44:28:2F:3A:DE:BA:85:B9:9C",
+        "51:51:DD:51:8C:48:1C:F5:C5:F7:8E:FD:41:7D:D2:75:47:54:4B:DD:45:00:89:4F:54:4D:66:56:8A:82:97:1B"
+      ]
+    }
+  }
+]
