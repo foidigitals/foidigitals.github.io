@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="referrer" content="no-referrer" />
+  <meta name="theme-color" content="#120306" />
+  <meta name="color-scheme" content="dark" />
+  <title>Beauty Studio</title>
+  <link rel="icon" type="image/png" href="../../assets/images/beauty-studio.png" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 18px 26px;
+      background-color: #120306;
+      background-image: radial-gradient(ellipse 130% 90% at 50% 0%, #6B1122 0%, #33090F 46%, #120306 100%);
+      background-attachment: fixed;
+      color: #F6EFE4;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { width: 100%; max-width: 520px; text-align: center; }
+    .mark {
+      width: 88px; height: 88px; margin: 0 auto; padding: 3px;
+      border-radius: 27px;
+      background-image: linear-gradient(135deg, #F0DCA8 0%, #D7B982 50%, #A87E48 100%);
+    }
+    .mark span {
+      display: flex; align-items: center; justify-content: center;
+      width: 100%; height: 100%;
+      border-radius: 24px; background-color: #0E0C0A;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 36px; letter-spacing: 2px; color: #F0DCA8;
+    }
+    .brand {
+      margin: 24px 0 30px; font-size: 21px; font-weight: 800; letter-spacing: 6px;
+      color: #F0DCA8; text-shadow: 0 0 18px rgba(240, 220, 168, 0.35);
+    }
+    .panel {
+      text-align: left;
+      padding: 38px 28px 32px;
+      border: 1px solid #3E3427; border-top-color: #6B5A3C;
+      border-radius: 26px; background-color: #1C1512;
+    }
+    .eyebrow {
+      display: flex; align-items: center; gap: 11px;
+      margin: 0 0 18px;
+      font-size: 10px; font-weight: 800; letter-spacing: 3px; color: #A08E6A;
+    }
+    .eyebrow::before {
+      content: ""; flex: 0 0 24px; height: 1px; background-color: #8A7448;
+    }
+    h1 {
+      margin: 0 0 16px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 30px; line-height: 39px; font-weight: 400; color: #F6EFE4;
+    }
+    .body { margin: 0; font-size: 15px; line-height: 26px; color: #A39A8F; }
+    .cta {
+      display: block; margin: 32px 0 0; padding: 19px 24px;
+      border-radius: 999px;
+      border-top: 1px solid #FFFDF9; border-bottom: 2px solid #4E3311;
+      background-image: linear-gradient(135deg, #F4E2B0 0%, #D7B982 50%, #A87E48 100%);
+      font-size: 14px; font-weight: 800; letter-spacing: 1.4px; text-transform: uppercase;
+      color: #141312; text-align: center; text-decoration: none;
+    }
+    .cta:active { filter: brightness(0.94); }
+    .hint {
+      margin: 26px 0 0; padding-top: 22px;
+      border-top: 1px solid #2F2820;
+      font-size: 13px; line-height: 22px; color: #8C8375;
+    }
+    .foot { margin: 26px 0 0; font-size: 12px; letter-spacing: 1.6px; }
+    .foot a { color: #8C8375; text-decoration: none; }
+    .notranslate { white-space: nowrap; }
+    main { animation: rise 420ms ease-out both; }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+    @media (prefers-reduced-motion: reduce) { main { animation: none; } }
+    @media (max-width: 380px) {
+      h1 { font-size: 26px; line-height: 34px; }
+      .panel { padding: 32px 22px 28px; }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="mark"><span translate="no">BS</span></div>
+    <p class="brand" translate="no">BEAUTY&nbsp;STUDIO</p>
+
+    <section class="panel">
+      <p class="eyebrow" id="eyebrow"></p>
+      <h1 id="title"></h1>
+      <p class="body" id="body"></p>
+      <a class="cta" id="cta" href="beautystudio://auth/callback"></a>
+      <p class="hint" id="hint"></p>
+    </section>
+
+    <p class="foot"><a href="support.html" id="support"></a></p>
+  </main>
+
+  <script>
+    (function () {
+      var T = {
+        en: {
+          ok: ["ACCOUNT", "Your email is confirmed", "Your Beauty Studio account is ready. Head back to the app and pick up where you left off."],
+          reset: ["PASSWORD", "You can set a new password", "Head back to the app to choose your new password."],
+          err: ["LINK", "This link is no longer valid", "A link opens once and expires after a while. Ask the app to send a fresh one."],
+          plain: ["BEAUTY STUDIO", "Back to the app", "This page opens from the link in your email."],
+          cta: "Open Beauty Studio",
+          hint: "If the app does not open on its own, open Beauty Studio from your phone and sign in with your email.",
+          hintErr: "Open Beauty Studio and request a new email.",
+          support: "HELP"
+        },
+        tr: {
+          ok: ["HESAP", "E-postan doğrulandı", "Beauty Studio hesabın hazır. Uygulamaya dön ve kaldığın yerden devam et."],
+          reset: ["ŞİFRE", "Yeni şifreni belirleyebilirsin", "Yeni şifreni seçmek için uygulamaya dön."],
+          err: ["BAĞLANTI", "Bu bağlantı artık geçerli değil", "Bağlantı bir kez açılır ve bir süre sonra geçerliliğini yitirir. Uygulamadan yenisini iste."],
+          plain: ["BEAUTY STUDIO", "Uygulamaya dön", "Bu sayfa e-postandaki bağlantıyla açılır."],
+          cta: "Beauty Studio'yu aç",
+          hint: "Uygulama kendiliğinden açılmazsa Beauty Studio'yu telefonundan aç ve e-postanla giriş yap.",
+          hintErr: "Beauty Studio'yu aç ve yeni bir e-posta iste.",
+          support: "YARDIM"
+        },
+        de: {
+          ok: ["KONTO", "Deine E-Mail ist bestätigt", "Dein Beauty-Studio-Konto ist bereit. Geh zurück in die App und mach dort weiter, wo du aufgehört hast."],
+          reset: ["PASSWORT", "Du kannst ein neues Passwort setzen", "Geh zurück in die App, um dein neues Passwort zu wählen."],
+          err: ["LINK", "Dieser Link gilt nicht mehr", "Ein Link öffnet sich einmal und läuft nach einer Weile ab. Lass dir in der App einen neuen schicken."],
+          plain: ["BEAUTY STUDIO", "Zurück zur App", "Diese Seite öffnet sich über den Link in deiner E-Mail."],
+          cta: "Beauty Studio öffnen",
+          hint: "Wenn die App nicht von selbst aufgeht, öffne Beauty Studio auf deinem Handy und melde dich mit deiner E-Mail an.",
+          hintErr: "Öffne Beauty Studio und fordere eine neue E-Mail an.",
+          support: "HILFE"
+        },
+        fr: {
+          ok: ["COMPTE", "Votre e-mail est confirmé", "Votre compte Beauty Studio est prêt. Retournez dans l'application et reprenez où vous en étiez."],
+          reset: ["MOT DE PASSE", "Vous pouvez définir un nouveau mot de passe", "Retournez dans l'application pour choisir votre nouveau mot de passe."],
+          err: ["LIEN", "Ce lien n'est plus valide", "Un lien s'ouvre une seule fois et expire au bout d'un moment. Demandez-en un nouveau depuis l'application."],
+          plain: ["BEAUTY STUDIO", "Retour à l'application", "Cette page s'ouvre depuis le lien reçu par e-mail."],
+          cta: "Ouvrir Beauty Studio",
+          hint: "Si l'application ne s'ouvre pas d'elle-même, ouvrez Beauty Studio depuis votre téléphone et connectez-vous avec votre e-mail.",
+          hintErr: "Ouvrez Beauty Studio et demandez un nouvel e-mail.",
+          support: "AIDE"
+        },
+        es: {
+          ok: ["CUENTA", "Tu correo está confirmado", "Tu cuenta de Beauty Studio está lista. Vuelve a la app y sigue donde lo dejaste."],
+          reset: ["CONTRASEÑA", "Puedes elegir una contraseña nueva", "Vuelve a la app para elegir tu nueva contraseña."],
+          err: ["ENLACE", "Este enlace ya no es válido", "Un enlace se abre una vez y caduca al cabo de un rato. Pide uno nuevo desde la app."],
+          plain: ["BEAUTY STUDIO", "Volver a la app", "Esta página se abre desde el enlace de tu correo."],
+          cta: "Abrir Beauty Studio",
+          hint: "Si la app no se abre sola, abre Beauty Studio en tu teléfono e inicia sesión con tu correo.",
+          hintErr: "Abre Beauty Studio y pide un correo nuevo.",
+          support: "AYUDA"
+        },
+        it: {
+          ok: ["ACCOUNT", "La tua email è confermata", "Il tuo account Beauty Studio è pronto. Torna nell'app e riprendi da dove eri rimasto."],
+          reset: ["PASSWORD", "Puoi scegliere una nuova password", "Torna nell'app per scegliere la tua nuova password."],
+          err: ["LINK", "Questo link non è più valido", "Un link si apre una volta sola e dopo un po' scade. Chiedine uno nuovo dall'app."],
+          plain: ["BEAUTY STUDIO", "Torna all'app", "Questa pagina si apre dal link ricevuto per email."],
+          cta: "Apri Beauty Studio",
+          hint: "Se l'app non si apre da sola, apri Beauty Studio dal telefono e accedi con la tua email.",
+          hintErr: "Apri Beauty Studio e richiedi una nuova email.",
+          support: "AIUTO"
+        },
+        nl: {
+          ok: ["ACCOUNT", "Je e-mailadres is bevestigd", "Je Beauty Studio-account is klaar. Ga terug naar de app en ga verder waar je gebleven was."],
+          reset: ["WACHTWOORD", "Je kunt een nieuw wachtwoord instellen", "Ga terug naar de app om je nieuwe wachtwoord te kiezen."],
+          err: ["LINK", "Deze link is niet meer geldig", "Een link opent één keer en verloopt na een tijdje. Vraag in de app een nieuwe aan."],
+          plain: ["BEAUTY STUDIO", "Terug naar de app", "Deze pagina opent vanuit de link in je e-mail."],
+          cta: "Beauty Studio openen",
+          hint: "Gaat de app niet vanzelf open, open Beauty Studio dan op je telefoon en meld je aan met je e-mailadres.",
+          hintErr: "Open Beauty Studio en vraag een nieuwe e-mail aan.",
+          support: "HULP"
+        },
+        pt: {
+          ok: ["CONTA", "O teu e-mail está confirmado", "A tua conta Beauty Studio está pronta. Volta à aplicação e continua de onde ficaste."],
+          reset: ["PALAVRA-PASSE", "Podes definir uma nova palavra-passe", "Volta à aplicação para escolheres a tua nova palavra-passe."],
+          err: ["LIGAÇÃO", "Esta ligação já não é válida", "Uma ligação abre uma vez e expira passado algum tempo. Pede uma nova na aplicação."],
+          plain: ["BEAUTY STUDIO", "Voltar à aplicação", "Esta página abre a partir da ligação no teu e-mail."],
+          cta: "Abrir o Beauty Studio",
+          hint: "Se a aplicação não abrir sozinha, abre o Beauty Studio no telemóvel e inicia sessão com o teu e-mail.",
+          hintErr: "Abre o Beauty Studio e pede um novo e-mail.",
+          support: "AJUDA"
+        },
+        ru: {
+          ok: ["АККАУНТ", "Почта подтверждена", "Аккаунт Beauty Studio готов. Вернитесь в приложение и продолжайте с того места, где остановились."],
+          reset: ["ПАРОЛЬ", "Можно задать новый пароль", "Вернитесь в приложение, чтобы выбрать новый пароль."],
+          err: ["ССЫЛКА", "Ссылка больше не действует", "Ссылка открывается один раз и через некоторое время истекает. Запросите новую в приложении."],
+          plain: ["BEAUTY STUDIO", "Вернуться в приложение", "Эта страница открывается по ссылке из письма."],
+          cta: "Открыть Beauty Studio",
+          hint: "Если приложение не открылось само, откройте Beauty Studio на телефоне и войдите по своей почте.",
+          hintErr: "Откройте Beauty Studio и запросите новое письмо.",
+          support: "ПОМОЩЬ"
+        }
+      };
+
+      var tags = (navigator.languages && navigator.languages.length)
+        ? navigator.languages
+        : [navigator.language || "en"];
+      var code = "en";
+      for (var i = 0; i < tags.length; i += 1) {
+        var short = String(tags[i] || "").slice(0, 2).toLowerCase();
+        if (T[short]) { code = short; break; }
+      }
+      var t = T[code];
+      document.documentElement.lang = code;
+
+      var search = location.search || "";
+      var hash = location.hash || "";
+      var raw = search.replace(/^\?/, "") + "&" + hash.replace(/^#/, "");
+      var params = new URLSearchParams(raw);
+
+      var failed = Boolean(params.get("error") || params.get("error_code") || params.get("error_description"));
+      var hasCredentials = Boolean(params.get("access_token") || params.get("code"));
+      var state = failed ? "err"
+        : params.get("type") === "recovery" ? "reset"
+        : hasCredentials ? "ok"
+        : "plain";
+
+      var copy = t[state];
+      document.getElementById("eyebrow").textContent = copy[0];
+      document.getElementById("title").textContent = copy[1];
+      document.getElementById("body").textContent = copy[2];
+      document.getElementById("hint").textContent = state === "err" ? t.hintErr : t.hint;
+      document.getElementById("support").textContent = t.support;
+      document.title = "Beauty Studio — " + copy[1];
+
+      var cta = document.getElementById("cta");
+      cta.textContent = t.cta;
+      cta.href = "beautystudio://auth/callback" + search + hash;
+    })();
+  </script>
+</body>
+</html>
