@@ -611,7 +611,7 @@
         <p>This is the part most people want to know, so here it is step by step.</p>
         <ul>
           <li><strong>You choose it.</strong> You take a photo with the camera or pick one from your library. The App never accesses your photo library in the background.</li>
-          <li><strong>It is shrunk on your device.</strong> Before anything leaves your phone, the image is resized to a maximum of 768 pixels on its longest side and re-encoded as a JPEG. Because it is fully re-encoded, the original file's embedded metadata — including any GPS coordinates your camera may have written — is not carried through.</li>
+          <li><strong>It is shrunk on your device.</strong> Before anything leaves your phone, the image is resized to at most 1,600 pixels on its longest side (1,920 for full-length shots) and re-encoded as a JPEG. Because it is fully re-encoded, the original file's embedded metadata — including any GPS coordinates your camera may have written — is not carried through.</li>
           <li><strong>It is uploaded to private storage.</strong> The photo goes to our storage provider (Supabase) into a <strong>private</strong> bucket, under a path belonging to your account ID. Access rules permit only your own signed-in account to read, add or delete files under that path. It is not published, not indexed, and not visible to other users.</li>
           <li><strong>It is sent for analysis.</strong> Our server fetches the photo and passes it to <strong>fal.ai</strong>, the AI infrastructure provider that runs the vision models, together with the styling instructions. We do <strong>not</strong> send your account ID, email or name to fal.ai — the request contains the image and the prompt.</li>
           <li><strong>Generated images.</strong> For visual try-ons (hair, color, makeup, outfits, glow-up, nails) the same photo is used to generate new images of you. These are produced by fal.ai and returned as image links hosted on fal.ai's infrastructure; those links are saved to your report so the App can show them again. Deleting the report removes our reference to them.</li>
@@ -648,7 +648,7 @@
         <p>Some things never reach us at all. Your sign-in session is held in the device's secure keystore (iOS Keychain / Android Keystore). Your display name, avatar color, favourite colors and previews, report tone, language, notification settings, the three onboarding answers (hair type, goal, metal preference), your saved Lookbook images, cached reports and cached previews are stored in the App's local storage and files. Uninstalling the App removes them.</p>
 
         <h2>10. Service providers (sub-processors)</h2>
-        <p>We share data only with the providers that make the App work, under their respective terms:</p>
+        <p>We share data only with the providers that make the App work, under their respective terms. Each of them is bound by data processing terms that require it to protect your information to a standard at least equal to the one described in this policy, to process it only on our instructions and only to deliver the service listed below, and never to use it for its own purposes or to train its own models:</p>
         <div class="table-wrap">
           <table>
             <thead><tr><th>Provider</th><th>Purpose</th><th>Data involved</th></tr></thead>
@@ -1292,7 +1292,7 @@
         <blockquote><strong>Yemek fotoğrafı erişim notu:</strong> Yüklenen yemek fotoğrafları doğrudan URL'ler aracılığıyla bir depolama kovasından sunulur. Belirli dosya URL'sini elde eden herkes oturum açmadan o görüntüye erişebilir. Bu URL'lerin kamuya açık olarak paylaşılmamasına güveniyoruz. Başkalarının görmesini istemediğiniz yemek fotoğrafı URL'lerini paylaşmayın. Öğünü veya hesabınızı silerek fotoğrafları silebilirsiniz (Bölüm 8).</blockquote>
 
         <h2>6. Hizmet sağlayıcılar (alt işleyiciler)</h2>
-        <p>Verileri yalnızca Uygulamayı işletmemize yardımcı olan sağlayıcılarla, kendi koşulları altında paylaşırız:</p>
+        <p>Verileri yalnızca Uygulamayı işletmemize yardımcı olan sağlayıcılarla, kendi koşulları altında paylaşırız. Her biri, bilgilerinizi bu politikada anlatılan düzeye en az eşdeğer bir standartta korumakla, yalnızca bizim talimatımızla ve aşağıda sayılan hizmeti vermek için işlemekle yükümlüdür; kendi amaçları için kullanamaz, kendi modellerini eğitmekte kullanamaz:</p>
         <div class="table-wrap">
           <table>
             <thead><tr><th>Sağlayıcı</th><th>Amaç</th><th>İlgili veri</th></tr></thead>
@@ -1548,7 +1548,7 @@
         <p>Çoğu kişinin asıl merak ettiği kısım bu; adım adım anlatalım.</p>
         <ul>
           <li><strong>Siz seçersiniz.</strong> Kamerayla çekersiniz ya da galerinizden seçersiniz. Uygulama fotoğraf kitaplığınıza arka planda hiç erişmez.</li>
-          <li><strong>Cihazınızda küçültülür.</strong> Telefonunuzdan hiçbir şey çıkmadan önce görsel, uzun kenarı en fazla 768 piksel olacak şekilde yeniden boyutlandırılır ve JPEG olarak yeniden kodlanır. Tamamen yeniden kodlandığı için orijinal dosyanın gömülü meta verisi — kameranızın yazmış olabileceği GPS koordinatları dahil — aktarılmaz.</li>
+          <li><strong>Cihazınızda küçültülür.</strong> Telefonunuzdan hiçbir şey çıkmadan önce görsel, uzun kenarı en fazla 1.600 piksel (boy fotoğraflarında 1.920) olacak şekilde yeniden boyutlandırılır ve JPEG olarak yeniden kodlanır. Tamamen yeniden kodlandığı için orijinal dosyanın gömülü meta verisi — kameranızın yazmış olabileceği GPS koordinatları dahil — aktarılmaz.</li>
           <li><strong>Özel depolamaya yüklenir.</strong> Fotoğraf, depolama sağlayıcımızda (Supabase) <strong>özel</strong> bir alana, hesap kimliğinize ait bir yol altına gider. Erişim kuralları o yol altındaki dosyaları yalnızca kendi oturum açmış hesabınızın okumasına, eklemesine ve silmesine izin verir. Yayımlanmaz, dizine eklenmez ve başka kullanıcılara görünmez.</li>
           <li><strong>Analiz için gönderilir.</strong> Sunucumuz fotoğrafı alır ve görüntü modellerini çalıştıran yapay zekâ altyapı sağlayıcısı <strong>fal.ai</strong>'a stil talimatlarıyla birlikte iletir. fal.ai'a hesap kimliğinizi, e-postanızı ya da adınızı <strong>göndermiyoruz</strong> — istek görselden ve komuttan ibarettir.</li>
           <li><strong>Üretilen görseller.</strong> Görsel denemelerde (saç, renk, makyaj, kombin, glow-up, tırnak) aynı fotoğraf sizin yeni görsellerinizi üretmek için kullanılır. Bunlar fal.ai tarafından üretilir ve fal.ai altyapısında barındırılan görsel bağlantıları olarak döner; Uygulama tekrar gösterebilsin diye bu bağlantılar raporunuza kaydedilir. Raporu silmek, bizdeki referansı kaldırır.</li>
