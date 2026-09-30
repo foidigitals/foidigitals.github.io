@@ -80,7 +80,7 @@
     featured2: {
       pill: "beauty studio · glow up ai",
       title: "photograph a face. <em>style it.</em>",
-      desc: "Face structure, seasonal color palette, hair, makeup and outfits — 94 analyses returned as written reports, plus try-ons rendered on your own photo before you commit to anything.",
+      desc: "Face structure, seasonal color palette, hair, makeup and outfits — 92 analyses returned as written reports, plus try-ons rendered on your own photo before you commit to anything.",
       tag2: "AI vision",
       tag3: "lifestyle",
       tag4: "9 languages",
@@ -532,7 +532,7 @@
         f1: { title: "Start with your structure.", desc: "Face shape, proportions, and the feature worth leading with. Eye shape and where liner belongs. Brow architecture, lip proportions, and frames that suit your bone structure." },
         f2: { title: "Find your colors.", desc: "Your seasonal palette, your five best colors, and the neutrals that hold them together. Gold or silver. Colors for an interview, an evening, a wedding invitation. Hold a garment to your face and get a verdict." },
         f3: { title: "See it before you commit.", desc: "Try a cut, a shade, a makeup look or an outfit on your own photo first — then decide. Hair length and color, natural to glam makeup, capsule outfits, a 30-day glow-up preview." },
-        f4: { title: "94 analyses, one library.", desc: "Face, skin, color, hair, makeup, outfits, style identity and glow-up planning across ten categories. Every result is saved as a report you can reopen while you shop, compare over time, or export as a card." },
+        f4: { title: "92 analyses, one library.", desc: "Face, skin, color, hair, makeup, outfits, style identity and glow-up planning across ten categories. Every result is saved as a report you can reopen while you shop, compare over time, or export as a card." },
         f5: { title: "Nine languages.", desc: "English, Turkish, German, French, Portuguese, Italian, Russian, Spanish and Dutch — interface and written reports alike, following your device language." },
         f6: { title: "Your photos stay yours.", desc: "Photos are stored privately to your account, never shown to other users, and never sold. Delete a photo, delete every report, or delete your whole account from inside the app." },
       },
@@ -546,7 +546,7 @@
       back: "back to beauty studio",
       eyebrow: "beauty studio · privacy",
       title: "Privacy Policy",
-      meta: "Last updated · 2026-08-20 · v1.0",
+      meta: "Last updated · 2026-09-30 · v1.1",
       body: `
         <p>This Privacy Policy explains how <strong>Beauty Studio: Glow Up AI</strong> ("the App", "Beauty Studio", "we", "us") collects, uses, shares, and protects your information. The App is operated by <strong>Foi Digitals</strong>, Istanbul, Türkiye ("the data controller"). It applies to the iOS and Android versions of the App. By using the App you agree to the practices described here.</p>
         <p class="muted">Written to be read, not to be survived. If anything here is unclear, email us and we will explain it in plain language.</p>
@@ -555,8 +555,8 @@
         <p>Data controller: <strong>Foi Digitals</strong> — Istanbul, Türkiye.<br>Privacy requests, questions, and deletion requests: <a href="mailto:foidigitals@gmail.com">foidigitals@gmail.com</a></p>
 
         <h2>2. You can use Beauty Studio without giving us your name or email</h2>
-        <p>The App's default sign-in path is an <strong>anonymous account</strong>. When you tap "continue as guest", we create an account identified only by a random ID (a UUID). In that mode we hold <strong>no email address, no name, and no contact details for you at all</strong> — only the random ID, and whatever you then create inside the App.</p>
-        <p>You may optionally sign in with an <strong>email address and password</strong>, with <strong>Google</strong>, or with <strong>Sign in with Apple</strong>. Doing so lets you keep your reports if you change device. If you use Apple's <em>Hide My Email</em>, we only ever receive the private relay address, not your real one. Apple may return your full name to us at first sign-in; we <strong>do not store it</strong>.</p>
+        <p>The App starts every new install on an <strong>anonymous account</strong>; there is no sign-in screen to get through. The account is identified only by a random ID (a UUID). In that mode we hold <strong>no email address, no name, and no contact details for you at all</strong> — only the random ID, and whatever you then create inside the App.</p>
+        <p>You may optionally link an <strong>email address and password</strong>, <strong>Google</strong>, or <strong>Sign in with Apple</strong> from your profile. Doing so lets you keep your reports if you change device. If you use Apple's <em>Hide My Email</em>, we only ever receive the private relay address, not your real one. Apple may return your full name to us at first sign-in; we <strong>do not store it</strong>.</p>
         <blockquote>Anonymous accounts live on the device that created them. If you delete the App, or lose the device, an anonymous account and its reports cannot be recovered by us — we have no way to identify you. Add an email or a social login if you want your reports to survive a device change.</blockquote>
 
         <h2>3. Data we collect</h2>
@@ -579,7 +579,7 @@
               </tr>
               <tr>
                 <td>Analysis reports</td>
-                <td>The written report the AI returns — face-shape and structure notes, seasonal color palette and hex values, hair, makeup and outfit recommendations, style archetype, glow-up suggestions — together with the type of analysis, the date, links to any generated preview images, and any note you attach.</td>
+                <td>The written report the AI returns — face-shape and structure notes, seasonal color palette and hex values, hair, makeup and outfit recommendations, style archetype, glow-up suggestions — together with the type of analysis, the date, references to any generated preview images, and any note you attach.</td>
                 <td>Save your results so you can reopen, compare and export them.</td>
               </tr>
               <tr>
@@ -599,8 +599,8 @@
               </tr>
               <tr>
                 <td>Device-only data</td>
-                <td>Display name, avatar color, favourites, report tone, language, notification settings, onboarding answers (hair type, goal, metal preference), your Lookbook, and cached previews.</td>
-                <td>Kept <strong>on your device only</strong> — never uploaded to us. See Section 9.</td>
+                <td>Display name, avatar color, report tone, language, notification settings, the two onboarding answers (hair type and goal), your Lookbook, the steps you saved, the date you allowed photo sharing, and cached reports and previews.</td>
+                <td>Stored <strong>on your device</strong>, not on our servers. See Section 9.</td>
               </tr>
             </tbody>
           </table>
@@ -612,18 +612,20 @@
         <ul>
           <li><strong>You choose it.</strong> You take a photo with the camera or pick one from your library. The App never accesses your photo library in the background.</li>
           <li><strong>It is shrunk on your device.</strong> Before anything leaves your phone, the image is resized to at most 1,600 pixels on its longest side (1,920 for full-length shots) and re-encoded as a JPEG. Because it is fully re-encoded, the original file's embedded metadata — including any GPS coordinates your camera may have written — is not carried through.</li>
+          <li><strong>We ask before it leaves your phone.</strong> The first time you start an analysis, the App shows a panel that says what will be sent and who receives it, and asks for your permission. Nothing is uploaded until you tap <em>Allow</em>. You can withdraw that permission at any time in <em>Profile → Data Management</em>; the App then asks again before the next analysis.</li>
           <li><strong>It is uploaded to private storage.</strong> The photo goes to our storage provider (Supabase) into a <strong>private</strong> bucket, under a path belonging to your account ID. Access rules permit only your own signed-in account to read, add or delete files under that path. It is not published, not indexed, and not visible to other users.</li>
-          <li><strong>It is sent for analysis.</strong> Our server fetches the photo and passes it to <strong>fal.ai</strong>, the AI infrastructure provider that runs the vision models, together with the styling instructions. We do <strong>not</strong> send your account ID, email or name to fal.ai — the request contains the image and the prompt.</li>
-          <li><strong>Generated images.</strong> For visual try-ons (hair, color, makeup, outfits, glow-up, nails) the same photo is used to generate new images of you. These are produced by fal.ai and returned as image links hosted on fal.ai's infrastructure; those links are saved to your report so the App can show them again. Deleting the report removes our reference to them.</li>
-          <li><strong>It stays until you remove it.</strong> There is no automatic expiry. Your photo remains in your private storage until you delete it, delete the report, or delete your account (Section 12).</li>
+          <li><strong>It is sent for analysis.</strong> Our server fetches the photo and passes it to <strong>fal.ai</strong>, the AI infrastructure provider that runs the vision models, together with the styling instructions. To keep your reports consistent, those instructions can include the goals you chose, a correction you made to an earlier reading, and a few descriptive notes from your earlier reports (for example the face shape already read). We do <strong>not</strong> send your email or name to fal.ai. The request contains the prompt and a temporary link to the photo; that link expires within hours, and its address includes your random account ID (Section 2). We send fal.ai nothing that connects that ID to a name or an email.</li>
+          <li><strong>Generated images.</strong> For visual try-ons (hair, color, makeup, outfits, glow-up, nails) the same photo is used to generate new images of you. They are produced by fal.ai, which returns each result from its own servers. Our server copies each one into the same private storage as your photo, under your account, and the App shows that copy through signed links that expire on their own. Deleting the report deletes our copy; what remains on fal.ai's side is covered in Section 14.</li>
+          <li><strong>It stays until you remove it.</strong> There is no automatic expiry. Your photo remains in your private storage until you delete your uploaded photos or delete your account (Section 12). Deleting a single report removes that report and its generated images, not the photo you uploaded.</li>
         </ul>
         <p>You should only upload photos of <strong>yourself</strong>, or of someone who has agreed to it. Please do not upload photos of children.</p>
 
         <h2>5. AI processing</h2>
-        <p>All AI processing runs through <strong>fal.ai</strong> (Features and Labels, Inc.), which hosts and routes to the underlying models. Two things happen there:</p>
+        <p>All AI processing runs through <strong>fal.ai</strong> (Features and Labels, Inc.), which hosts and routes to the underlying models. Three things happen there:</p>
         <ul>
           <li><strong>Reading the photo.</strong> A vision model produces the written report. The models currently used are <em>Google Gemini 2.5 Flash</em>, <em>Gemini 2.5 Flash Lite</em>, and <em>Qwen3-VL</em> as a fallback, in that order. We may change this list to keep quality up; the processing route (through fal.ai) stays the same.</li>
           <li><strong>Generating images.</strong> An image model creates try-on previews from your photo, with the provider's safety filter enabled.</li>
+          <li><strong>Checking the result.</strong> Before a generated image is shown, a vision model compares it with your photo to check that the change you asked for was actually made.</li>
         </ul>
         <p>We do not use your photos, reports, or any other content to train AI models, and we do not permit our providers to train their models on data we send them.</p>
         <p><strong>The output is an estimate.</strong> AI-generated analysis and imagery can be wrong, unflattering, or simply odd. The App deliberately does not score attractiveness, rate beauty, or comment on weight or skin conditions, and the models are instructed not to infer or mention age, ethnicity, nationality or religion. Treat every result as a suggestion, not a fact about you.</p>
@@ -645,7 +647,8 @@
         <p>All notifications in Beauty Studio are <strong>scheduled locally on your device</strong>. The App does not generate or store a push token, and we operate no push server — which means we cannot send you a message remotely, and there is no notification identifier of yours held anywhere. Your notification preferences never leave your phone. You can turn notifications off in the App or in your device settings.</p>
 
         <h2>9. Data kept only on your device</h2>
-        <p>Some things never reach us at all. Your sign-in session is held in the device's secure keystore (iOS Keychain / Android Keystore). Your display name, avatar color, favourite colors and previews, report tone, language, notification settings, the three onboarding answers (hair type, goal, metal preference), your saved Lookbook images, cached reports and cached previews are stored in the App's local storage and files. Uninstalling the App removes them.</p>
+        <p>Some things are stored only on your device. Your sign-in session is held in the device's secure keystore (iOS Keychain / Android Keystore). Your display name, avatar color, report tone, language, notification settings, the two onboarding answers (hair type and goal), your saved Lookbook images, the steps you saved from reports, the date you allowed photo sharing, cached reports and cached previews are stored in the App's local storage and files. Uninstalling the App removes all of it. Deleting your account from inside the App erases it too, apart from your language choice.</p>
+        <p>Most of it never reaches us. The exceptions travel with an analysis request, as part of its instructions (Section 4): the language and report tone you chose, so the report comes back the way you asked, and a short note of your most recent readings and of any correction you made, so the next analysis stays consistent with the last one. A correction is also saved inside the report it belongs to.</p>
 
         <h2>10. Service providers (sub-processors)</h2>
         <p>We share data only with the providers that make the App work, under their respective terms. Each of them is bound by data processing terms that require it to protect your information to a standard at least equal to the one described in this policy, to process it only on our instructions and only to deliver the service listed below, and never to use it for its own purposes or to train its own models:</p>
@@ -654,7 +657,7 @@
             <thead><tr><th>Provider</th><th>Purpose</th><th>Data involved</th></tr></thead>
             <tbody>
               <tr><td>Supabase</td><td>Authentication, database, private photo storage, server functions</td><td>Account ID, email (if you signed in), photos, reports, credits, subscription status</td></tr>
-              <tr><td>fal.ai</td><td>Runs the vision and image-generation models</td><td>Your photo and the analysis prompt — no account ID, email or name</td></tr>
+              <tr><td>fal.ai</td><td>Runs the vision and image-generation models</td><td>Your photo, through a temporary link whose address includes your random account ID, and the analysis prompt — no email or name</td></tr>
               <tr><td>RevenueCat</td><td>Subscription and purchase management</td><td>Account ID, purchase and entitlement status</td></tr>
               <tr><td>Apple / Google</td><td>Sign-in, app distribution, payment processing</td><td>Email (if you use their sign-in), purchase records</td></tr>
               <tr><td>Meta Platforms</td><td>Advertising measurement and attribution</td><td>Install / session / purchase events; advertising identifier where permitted (Section 6)</td></tr>
@@ -665,13 +668,14 @@
         <h2>11. International transfers</h2>
         <p>Foi Digitals is based in Türkiye and our providers operate infrastructure in the United States and the European Union. Using the App therefore involves transferring your data outside your country, including to the United States. Where the GDPR or UK GDPR applies, these transfers rely on the European Commission's Standard Contractual Clauses or an equivalent safeguard offered by the provider. Where Turkish law (KVKK) applies, transfers are made on the basis of your explicit consent or the applicable legal ground under Article 9.</p>
 
-        <h2>12. Your rights, and the four tools inside the App</h2>
+        <h2>12. Your rights, and the tools inside the App</h2>
         <p>Open <strong>Profile → Data Management</strong> in the App. You do not need to email us for any of this:</p>
         <ul>
           <li><strong>Export my data</strong> — writes a JSON file containing your account details and every report, and hands it to the share sheet so you can save or send it. Nothing is uploaded.</li>
           <li><strong>Delete uploaded photos</strong> — removes every photo you have uploaded from our storage. If any file cannot be removed, the App tells you so rather than claiming success.</li>
-          <li><strong>Delete all analysis data</strong> — deletes every saved report from our database and clears the local cache.</li>
-          <li><strong>Delete account</strong> — deletes every photo you have uploaded, then deletes the account itself. Your profile, reports, credit wallet, credit history and subscription record are removed with it. This cannot be undone.</li>
+          <li><strong>Delete all analysis data</strong> — deletes every saved report from our database together with the images generated for them, and clears the local cache.</li>
+          <li><strong>Delete account</strong> — deletes everything stored under your account (the photos you uploaded and the images generated for you), then deletes the account itself. Your profile, reports, credit wallet, credit history and subscription record are removed with it, along with any guest account that was merged into it. The App then erases what it kept on the device (Section 9), apart from your language choice, and starts again as a new install. This cannot be undone.</li>
+          <li><strong>What we send to the AI provider</strong> — shows what is sent, who receives it and the date you gave permission, with a button to withdraw that permission.</li>
         </ul>
         <blockquote><strong>Deleting your account does not cancel your subscription.</strong> Subscriptions are billed by Apple or Google and must be cancelled separately in <em>Settings → Apple Account → Subscriptions</em> or in <em>Google Play → Subscriptions</em>, otherwise billing continues.</blockquote>
         <p>Under the GDPR / UK GDPR, Türkiye's KVKK, and comparable laws, you also have the right to <strong>access</strong>, <strong>rectify</strong>, <strong>erase</strong>, <strong>restrict</strong>, and <strong>port</strong> your data, to <strong>object</strong> to processing based on legitimate interests, and to <strong>withdraw consent</strong> at any time. Email <a href="mailto:foidigitals@gmail.com">foidigitals@gmail.com</a> and we will respond within 30 days. You may also complain to your local data protection authority — in Türkiye, the Kişisel Verileri Koruma Kurumu (KVKK).</p>
@@ -684,6 +688,7 @@
             <tbody>
               <tr><td>Creating your account, running analyses, storing your reports, handling purchases</td><td>Performance of a contract (Art. 6(1)(b))</td></tr>
               <tr><td>Camera and photo-library access, notifications, advertising measurement / ATT</td><td>Consent (Art. 6(1)(a)) — withdrawable at any time in device settings</td></tr>
+              <tr><td>Sending your photo to fal.ai for analysis and try-ons</td><td>Consent (Art. 6(1)(a)) — asked in the App before the first upload, withdrawable in Profile → Data Management</td></tr>
               <tr><td>Keeping the service secure, preventing abuse, metering AI cost</td><td>Legitimate interests (Art. 6(1)(f))</td></tr>
               <tr><td>Keeping purchase and tax records</td><td>Legal obligation (Art. 6(1)(c))</td></tr>
             </tbody>
@@ -692,7 +697,7 @@
         <p>A photograph of your face processed to describe your features is treated by us with care. We do not use it for biometric identification, we do not create a faceprint or template from it, and we do not use it to recognise you across images or sessions.</p>
 
         <h2>14. Retention</h2>
-        <p>We keep your account, photos and reports <strong>for as long as your account exists</strong> — there is no automatic expiry, because we would rather you decide when your reports stop being useful. When you delete a photo, a report, or your account, the data is removed from our active systems. Purchase and transaction records may be retained where tax or accounting law requires it. Backups are cycled out in the ordinary course.</p>
+        <p>We keep your account, photos and reports <strong>for as long as your account exists</strong> — there is no automatic expiry, because we would rather you decide when your reports stop being useful. When you delete a photo, a report, or your account, the data is removed from our active systems. What fal.ai holds in order to process a request (the photo it fetched, the prompt, and the images it generated) is outside the reach of those delete buttons and follows fal.ai's own retention rules. Purchase and transaction records may be retained where tax or accounting law requires it. Backups are cycled out in the ordinary course.</p>
 
         <h2>15. Security</h2>
         <p>All traffic is encrypted in transit over HTTPS. Photos live in a private storage bucket with row-level access rules that permit only your own account. Your sign-in session is stored in the device's hardware-backed secure store. Server-side functions verify your signed token before acting, and derive your identity from that token rather than from anything the client claims. No system is perfectly secure, but we do not take shortcuts here.</p>
@@ -741,12 +746,12 @@
       back: "back to beauty studio",
       eyebrow: "beauty studio · terms",
       title: "Terms of Use",
-      meta: "Last updated · 2026-08-20 · v1.0",
+      meta: "Last updated · 2026-09-30 · v1.1",
       body: `
         <p>These Terms of Use ("Terms") govern your use of the <strong>Beauty Studio: Glow Up AI</strong> mobile application ("the App"), operated by <strong>Foi Digitals</strong>, Istanbul, Türkiye ("we", "us"). By downloading or using the App, you agree to these Terms and to our <a href="privacy.html">Privacy Policy</a>. If you do not agree, do not use the App.</p>
 
         <h2>1. What the App is</h2>
-        <p>Beauty Studio analyses a photograph you provide and returns styling guidance: face structure and proportions, seasonal color palettes, hair, makeup and outfit recommendations, a style archetype, and glow-up suggestions. For many analyses it also generates preview images from your own photo so you can see a change before committing to it. The catalogue currently holds <strong>94 analyses across ten categories</strong>.</p>
+        <p>Beauty Studio analyses a photograph you provide and returns styling guidance: face structure and proportions, seasonal color palettes, hair, makeup and outfit recommendations, a style archetype, and glow-up suggestions. For many analyses it also generates preview images from your own photo so you can see a change before committing to it. The catalogue currently holds <strong>92 analyses across ten categories</strong>.</p>
 
         <h2>2. What the App is not</h2>
         <p>Beauty Studio is a <strong>styling and self-expression tool</strong>. It is <strong>not</strong> medical, dermatological, psychological, nutritional or cosmetic-procedure advice, and it is not a diagnostic device. Nothing in the App should be used to identify, diagnose or treat any condition of the skin, hair or body. If you have a health concern, consult a qualified professional.</p>
@@ -790,7 +795,7 @@
         <p>Beauty Studio is free to download. Paid plans and credit packs unlock the analysis catalogue and the AI processing that powers it.</p>
         <h3>Plans</h3>
         <ul>
-          <li><strong>Weekly</strong> — premium access to written analyses, with a weekly credit allowance. Visual try-ons are not included in this plan.</li>
+          <li><strong>Weekly</strong> — full access including visual try-ons, with a weekly credit allowance.</li>
           <li><strong>Monthly</strong> — full access including visual try-ons, with a monthly credit allowance.</li>
           <li><strong>Yearly</strong> — full access including visual try-ons, billed annually, with the credit allowance refilled each month.</li>
         </ul>
@@ -798,7 +803,7 @@
         <h3>Credits</h3>
         <ul>
           <li>Credits meter AI usage. Written analyses cost a small number of credits; generating images on your own face costs substantially more, because it genuinely costs us more to produce. Nothing in the App is unlimited, and we would rather say so than promise otherwise.</li>
-          <li>New accounts do <strong>not</strong> include free credits.</li>
+          <li>New accounts start with a balance of 1 credit. That is <strong>not</strong> a free allowance: no analysis can be run with it.</li>
           <li><strong>Credit packs</strong> are one-time consumable purchases. They add credits but do not unlock premium access on their own.</li>
           <li>Credits have no cash value, cannot be exchanged for money, cannot be transferred between accounts, and expire when your account is deleted.</li>
           <li>Where a plan grants a periodic allowance, unused allowance credits do not roll over unless the App states otherwise.</li>
@@ -884,13 +889,13 @@
         <h2>Photos &amp; privacy</h2>
 
         <h3>What happens to the photo I upload?</h3>
-        <p>It is shrunk and re-encoded on your device, uploaded to a private storage area belonging to your account, and sent to our AI provider (fal.ai) for analysis. It is never shown to other users and never sold. It stays until you delete it. The <a href="privacy.html">Privacy Policy</a> walks through every step.</p>
+        <p>The App asks for your permission first. Once you allow it, the photo is shrunk and re-encoded on your device, uploaded to a private storage area belonging to your account, and sent to our AI provider (fal.ai) for analysis. It is never shown to other users and never sold. It stays until you delete it. The <a href="privacy.html">Privacy Policy</a> walks through every step.</p>
 
         <h3>How do I delete my photos, my reports, or my whole account?</h3>
-        <p>Open <strong>Profile → Data Management</strong>. There are four buttons: export your data as a JSON file, delete uploaded photos, delete all analysis data, and delete your account. Account deletion removes your photos and every report with it, and cannot be undone.</p>
+        <p>Open <strong>Profile → Data Management</strong>. From there you can export your data as a JSON file, delete uploaded photos, delete all analysis data, delete your account, and see or withdraw the permission to send your photo to the AI provider. Account deletion removes your photos, the images generated for you and every report, erases what the App kept on the device, and cannot be undone.</p>
 
         <h3>Do I have to create an account?</h3>
-        <p>No. You can continue as a guest, and we will hold no email address or name for you at all. The trade-off: a guest account lives on that device only. If you reinstall the App or change phone, it cannot be recovered — we have no way to identify it as yours. Adding an email, Google or Apple sign-in fixes that.</p>
+        <p>No. The App starts you on a guest account, and we hold no email address or name for you at all. The trade-off: a guest account lives on that device only. If you reinstall the App or change phone, it cannot be recovered — we have no way to identify it as yours. Adding an email, Google or Apple sign-in fixes that.</p>
 
         <h3>Are my photos used to train AI?</h3>
         <p>No. We do not train models on your content and do not permit our providers to.</p>
@@ -921,7 +926,7 @@
         <p>Because running a vision model on a photo and generating new images of your face costs us real money per run. Credits meter that. Written analyses cost a little; image generation costs considerably more. Nothing is unlimited, and we would rather be straight about it than promise otherwise.</p>
 
         <h3>Which plan includes the visual try-ons?</h3>
-        <p>The monthly and yearly plans. The weekly plan covers the written analyses. Exact allowances and prices are shown in the App before you buy.</p>
+        <p>All three: weekly, monthly and yearly. The plans differ in price and in how many credits they include, and a try-on costs more credits than a written analysis. Exact allowances and prices are shown in the App before you buy.</p>
 
         <h3>How do I cancel?</h3>
         <p>On iOS: <em>Settings → your name → Subscriptions</em>. On Android: <em>Google Play → Subscriptions</em>. Cancel at least 24 hours before the period ends. <strong>Deleting the App or your account does not cancel a subscription.</strong></p>
@@ -1021,7 +1026,7 @@
     featured2: {
       pill: "beauty studio · glow up ai",
       title: "bir yüzün fotoğrafını çek. <em>stilini bul.</em>",
-      desc: "Yüz yapısı, mevsimsel renk paleti, saç, makyaj ve kombinler — yazılı rapor olarak dönen 94 analiz; üstüne, karar vermeden önce kendi fotoğrafında görebileceğin denemeler.",
+      desc: "Yüz yapısı, mevsimsel renk paleti, saç, makyaj ve kombinler — yazılı rapor olarak dönen 92 analiz; üstüne, karar vermeden önce kendi fotoğrafında görebileceğin denemeler.",
       tag2: "AI görüntü",
       tag3: "yaşam tarzı",
       tag4: "9 dil",
@@ -1469,7 +1474,7 @@
         f1: { title: "Kendi yapınla başla.", desc: "Yüz şekli, oranlar ve öne çıkarmaya değer özelliğin. Göz şeklin ve eyeliner'ın yeri. Kaş mimarisi, dudak oranları ve kemik yapına yakışan gözlük çerçeveleri." },
         f2: { title: "Renklerini bul.", desc: "Mevsim paletin, en iyi beş rengin ve onları bir arada tutan nötrler. Altın mı gümüş mü. İş görüşmesi, bir akşam, bir düğün daveti için renkler. Bir kıyafeti yüzüne tut, cevabını al." },
         f3: { title: "Denemeden önce gör.", desc: "Bir kesimi, bir tonu, bir makyajı ya da bir kombini önce kendi fotoğrafında dene — sonra karar ver. Saç boyu ve rengi, doğaldan gösterişliye makyaj, kapsül kombinler, 30 günlük glow-up önizlemesi." },
-        f4: { title: "94 analiz, tek kütüphane.", desc: "On kategori boyunca yüz, cilt, renk, saç, makyaj, kıyafet, stil kimliği ve glow-up planlaması. Her sonuç, alışveriş yaparken yeniden açabileceğin, zaman içinde karşılaştırabileceğin ya da kart olarak dışa aktarabileceğin bir rapor olarak kaydedilir." },
+        f4: { title: "92 analiz, tek kütüphane.", desc: "On kategori boyunca yüz, cilt, renk, saç, makyaj, kıyafet, stil kimliği ve glow-up planlaması. Her sonuç, alışveriş yaparken yeniden açabileceğin, zaman içinde karşılaştırabileceğin ya da kart olarak dışa aktarabileceğin bir rapor olarak kaydedilir." },
         f5: { title: "Dokuz dil.", desc: "İngilizce, Türkçe, Almanca, Fransızca, Portekizce, İtalyanca, Rusça, İspanyolca ve Felemenkçe — hem arayüz hem yazılı raporlar, cihazının dilini izleyerek." },
         f6: { title: "Fotoğrafların senin kalır.", desc: "Fotoğraflar hesabına özel olarak saklanır, başka kullanıcılara asla gösterilmez ve asla satılmaz. Bir fotoğrafı, tüm raporlarını ya da hesabının tamamını uygulama içinden silebilirsin." },
       },
@@ -1483,7 +1488,7 @@
       back: "beauty studio'ya dön",
       eyebrow: "beauty studio · gizlilik",
       title: "Gizlilik Politikası",
-      meta: "Son güncelleme · 20.08.2026 · v1.0",
+      meta: "Son güncelleme · 30.09.2026 · v1.1",
       body: `
         <p>Bu Gizlilik Politikası, <strong>Beauty Studio: Glow Up AI</strong>'ın ("Uygulama", "Beauty Studio", "biz") bilgilerinizi nasıl topladığını, kullandığını, paylaştığını ve koruduğunu açıklar. Uygulama, <strong>Foi Digitals</strong> (İstanbul, Türkiye — "veri sorumlusu") tarafından işletilir. Uygulamanın hem iOS hem Android sürümü için geçerlidir. Uygulamayı kullanarak burada açıklanan uygulamaları kabul etmiş olursunuz.</p>
         <p class="muted">Okunmak için yazıldı, atlatılmak için değil. Bir yer belirsiz kalırsa bize yazın, sade bir dille açıklayalım.</p>
@@ -1492,8 +1497,8 @@
         <p>Veri sorumlusu: <strong>Foi Digitals</strong> — İstanbul, Türkiye.<br>Gizlilik talepleri, sorular ve silme istekleri: <a href="mailto:foidigitals@gmail.com">foidigitals@gmail.com</a></p>
 
         <h2>2. Beauty Studio'yu adınızı ya da e-postanızı vermeden kullanabilirsiniz</h2>
-        <p>Uygulamanın varsayılan giriş yolu <strong>anonim hesap</strong>tır. "Misafir olarak devam et" dediğinizde yalnızca rastgele bir kimlikle (UUID) tanımlanan bir hesap oluşturulur. Bu modda sizin hakkınızda <strong>hiçbir e-posta adresi, isim ya da iletişim bilgisi tutmayız</strong> — yalnızca o rastgele kimlik ve sonrasında Uygulama içinde ürettikleriniz.</p>
-        <p>İsterseniz <strong>e-posta ve parola</strong> ile, <strong>Google</strong> ile ya da <strong>Apple ile Giriş Yap</strong> ile oturum açabilirsiniz. Bu, cihaz değiştirdiğinizde raporlarınızı korumanızı sağlar. Apple'ın <em>E-postamı Gizle</em> seçeneğini kullanırsanız yalnızca özel aktarma adresini alırız, gerçek adresinizi değil. Apple ilk girişte bize tam adınızı iletebilir; bu bilgiyi <strong>saklamıyoruz</strong>.</p>
+        <p>Uygulama her yeni kurulumu <strong>anonim bir hesapla</strong> başlatır; geçilmesi gereken bir giriş ekranı yoktur. Hesap yalnızca rastgele bir kimlikle (UUID) tanımlanır. Bu modda sizin hakkınızda <strong>hiçbir e-posta adresi, isim ya da iletişim bilgisi tutmayız</strong> — yalnızca o rastgele kimlik ve sonrasında Uygulama içinde ürettikleriniz.</p>
+        <p>İsterseniz profilinizden bir <strong>e-posta ve parola</strong>, <strong>Google</strong> ya da <strong>Apple ile Giriş Yap</strong> bağlayabilirsiniz. Bu, cihaz değiştirdiğinizde raporlarınızı korumanızı sağlar. Apple'ın <em>E-postamı Gizle</em> seçeneğini kullanırsanız yalnızca özel aktarma adresini alırız, gerçek adresinizi değil. Apple ilk girişte bize tam adınızı iletebilir; bu bilgiyi <strong>saklamıyoruz</strong>.</p>
         <blockquote>Anonim hesaplar, kendilerini oluşturan cihazda yaşar. Uygulamayı silerseniz ya da cihazı kaybederseniz anonim bir hesabı ve raporlarını sizin için geri getiremeyiz — sizi tanımlamanın hiçbir yolu yoktur. Raporlarınızın cihaz değişikliğinden sağ çıkmasını istiyorsanız bir e-posta ya da sosyal giriş ekleyin.</blockquote>
 
         <h2>3. Topladığımız veriler</h2>
@@ -1516,7 +1521,7 @@
               </tr>
               <tr>
                 <td>Analiz raporları</td>
-                <td>Yapay zekânın döndürdüğü yazılı rapor — yüz şekli ve yapı notları, mevsimsel renk paleti ve hex değerleri, saç, makyaj ve kombin önerileri, stil arketipi, glow-up önerileri — ayrıca analiz türü, tarih, üretilen önizleme görsellerinin bağlantıları ve eklediğiniz notlar.</td>
+                <td>Yapay zekânın döndürdüğü yazılı rapor — yüz şekli ve yapı notları, mevsimsel renk paleti ve hex değerleri, saç, makyaj ve kombin önerileri, stil arketipi, glow-up önerileri — ayrıca analiz türü, tarih, üretilen önizleme görsellerinin referansları ve eklediğiniz notlar.</td>
                 <td>Sonuçlarınızı yeniden açabilmeniz, karşılaştırabilmeniz ve dışa aktarabilmeniz için saklamak.</td>
               </tr>
               <tr>
@@ -1536,8 +1541,8 @@
               </tr>
               <tr>
                 <td>Yalnızca cihazdaki veriler</td>
-                <td>Görünen ad, avatar rengi, favoriler, rapor tonu, dil, bildirim ayarları, tanıtım yanıtları (saç tipi, hedef, metal tercihi), Lookbook'unuz ve önbelleğe alınmış önizlemeler.</td>
-                <td><strong>Yalnızca cihazınızda</strong> tutulur — bize hiç yüklenmez. Bkz. 9. bölüm.</td>
+                <td>Görünen ad, avatar rengi, rapor tonu, dil, bildirim ayarları, iki tanıtım yanıtı (saç tipi ve hedef), Lookbook'unuz, kaydettiğiniz adımlar, fotoğraf gönderme iznini verdiğiniz tarih ve önbelleğe alınmış raporlar ile önizlemeler.</td>
+                <td><strong>Cihazınızda</strong> saklanır, sunucularımızda değil. Bkz. 9. bölüm.</td>
               </tr>
             </tbody>
           </table>
@@ -1549,18 +1554,20 @@
         <ul>
           <li><strong>Siz seçersiniz.</strong> Kamerayla çekersiniz ya da galerinizden seçersiniz. Uygulama fotoğraf kitaplığınıza arka planda hiç erişmez.</li>
           <li><strong>Cihazınızda küçültülür.</strong> Telefonunuzdan hiçbir şey çıkmadan önce görsel, uzun kenarı en fazla 1.600 piksel (boy fotoğraflarında 1.920) olacak şekilde yeniden boyutlandırılır ve JPEG olarak yeniden kodlanır. Tamamen yeniden kodlandığı için orijinal dosyanın gömülü meta verisi — kameranızın yazmış olabileceği GPS koordinatları dahil — aktarılmaz.</li>
+          <li><strong>Telefonunuzdan çıkmadan önce sorarız.</strong> İlk analizinizi başlattığınızda Uygulama neyin gönderileceğini ve kimin alacağını yazan bir panel gösterir ve izninizi ister. Siz <em>İzin ver</em>'e dokunmadan hiçbir şey yüklenmez. Bu izni istediğiniz zaman <em>Profil → Veri Yönetimi</em>'nden geri alabilirsiniz; Uygulama bir sonraki analizden önce yeniden sorar.</li>
           <li><strong>Özel depolamaya yüklenir.</strong> Fotoğraf, depolama sağlayıcımızda (Supabase) <strong>özel</strong> bir alana, hesap kimliğinize ait bir yol altına gider. Erişim kuralları o yol altındaki dosyaları yalnızca kendi oturum açmış hesabınızın okumasına, eklemesine ve silmesine izin verir. Yayımlanmaz, dizine eklenmez ve başka kullanıcılara görünmez.</li>
-          <li><strong>Analiz için gönderilir.</strong> Sunucumuz fotoğrafı alır ve görüntü modellerini çalıştıran yapay zekâ altyapı sağlayıcısı <strong>fal.ai</strong>'a stil talimatlarıyla birlikte iletir. fal.ai'a hesap kimliğinizi, e-postanızı ya da adınızı <strong>göndermiyoruz</strong> — istek görselden ve komuttan ibarettir.</li>
-          <li><strong>Üretilen görseller.</strong> Görsel denemelerde (saç, renk, makyaj, kombin, glow-up, tırnak) aynı fotoğraf sizin yeni görsellerinizi üretmek için kullanılır. Bunlar fal.ai tarafından üretilir ve fal.ai altyapısında barındırılan görsel bağlantıları olarak döner; Uygulama tekrar gösterebilsin diye bu bağlantılar raporunuza kaydedilir. Raporu silmek, bizdeki referansı kaldırır.</li>
-          <li><strong>Siz kaldırana kadar kalır.</strong> Otomatik bir süre sonu yoktur. Fotoğrafınız; siz silene, raporu silene ya da hesabınızı silene kadar özel depolamanızda durur (12. bölüm).</li>
+          <li><strong>Analiz için gönderilir.</strong> Sunucumuz fotoğrafı alır ve görüntü modellerini çalıştıran yapay zekâ altyapı sağlayıcısı <strong>fal.ai</strong>'a stil talimatlarıyla birlikte iletir. Raporlarınız birbiriyle tutarlı kalsın diye bu talimatlar seçtiğiniz hedefleri, önceki bir okumada yaptığınız düzeltmeyi ve önceki raporlarınızdan birkaç tanımlayıcı notu (örneğin daha önce okunan yüz şeklini) içerebilir. fal.ai'a e-postanızı ya da adınızı <strong>göndermiyoruz</strong>. İstek, komuttan ve fotoğrafa giden geçici bir bağlantıdan oluşur; bu bağlantı birkaç saat içinde geçersiz olur ve adresinde rastgele hesap kimliğiniz yer alır (2. bölüm). fal.ai'a bu kimliği bir isme ya da e-postaya bağlayacak hiçbir şey göndermiyoruz.</li>
+          <li><strong>Üretilen görseller.</strong> Görsel denemelerde (saç, renk, makyaj, kombin, glow-up, tırnak) aynı fotoğraf sizin yeni görsellerinizi üretmek için kullanılır. Bunlar fal.ai tarafından üretilir ve sonuç önce fal.ai'ın kendi sunucularından döner. Sunucumuz her birini fotoğrafınızla aynı özel depolamaya, hesabınızın altına kopyalar; Uygulama bu kopyayı kendiliğinden süresi dolan imzalı bağlantılarla gösterir. Raporu silmek bizdeki kopyayı siler; fal.ai tarafında kalanlar 14. bölümde anlatılır.</li>
+          <li><strong>Siz kaldırana kadar kalır.</strong> Otomatik bir süre sonu yoktur. Fotoğrafınız; yüklediğiniz fotoğrafları ya da hesabınızı silene kadar özel depolamanızda durur (12. bölüm). Tek bir raporu silmek o raporu ve üretilmiş görsellerini kaldırır, yüklediğiniz fotoğrafı değil.</li>
         </ul>
         <p>Yalnızca <strong>kendinize</strong> ait ya da bunu kabul etmiş bir kişinin fotoğrafını yükleyin. Lütfen çocuk fotoğrafı yüklemeyin.</p>
 
         <h2>5. Yapay zekâ işleme</h2>
-        <p>Tüm yapay zekâ işleme, modelleri barındıran ve yönlendiren <strong>fal.ai</strong> (Features and Labels, Inc.) üzerinden çalışır. Orada iki şey olur:</p>
+        <p>Tüm yapay zekâ işleme, modelleri barındıran ve yönlendiren <strong>fal.ai</strong> (Features and Labels, Inc.) üzerinden çalışır. Orada üç şey olur:</p>
         <ul>
           <li><strong>Fotoğrafın okunması.</strong> Bir görüntü modeli yazılı raporu üretir. Şu anda kullanılan modeller sırasıyla <em>Google Gemini 2.5 Flash</em>, <em>Gemini 2.5 Flash Lite</em> ve yedek olarak <em>Qwen3-VL</em>'dir. Kaliteyi korumak için bu listeyi değiştirebiliriz; işleme yolu (fal.ai üzerinden) aynı kalır.</li>
           <li><strong>Görsel üretimi.</strong> Bir görsel modeli, sağlayıcının güvenlik filtresi açıkken fotoğrafınızdan deneme önizlemeleri oluşturur.</li>
+          <li><strong>Sonucun kontrolü.</strong> Üretilen bir görsel gösterilmeden önce bir görüntü modeli onu fotoğrafınızla karşılaştırır ve istediğiniz değişikliğin gerçekten yapılıp yapılmadığını denetler.</li>
         </ul>
         <p>Fotoğraflarınızı, raporlarınızı ya da başka içeriğinizi yapay zekâ modeli eğitmek için kullanmıyoruz ve sağlayıcılarımızın da gönderdiğimiz veriyle model eğitmesine izin vermiyoruz.</p>
         <p><strong>Çıktı bir tahmindir.</strong> Yapay zekâ ile üretilen analiz ve görseller yanlış, gurur okşamayan ya da tuhaf olabilir. Uygulama bilinçli olarak çekicilik puanı vermez, güzellik derecelendirmez, kilo ya da cilt rahatsızlıkları hakkında yorum yapmaz; modellere yaş, etnik köken, milliyet veya din çıkarımı yapmamaları ve bunlardan söz etmemeleri talimatı verilmiştir. Her sonucu hakkınızda bir gerçek değil, bir öneri olarak değerlendirin.</p>
@@ -1582,16 +1589,17 @@
         <p>Beauty Studio'daki tüm bildirimler <strong>cihazınızda yerel olarak planlanır</strong>. Uygulama bir push token üretmez ya da saklamaz; bir push sunucusu işletmiyoruz — yani size uzaktan mesaj gönderemeyiz ve hiçbir yerde size ait bir bildirim tanımlayıcısı tutulmuyor. Bildirim tercihleriniz telefonunuzdan hiç çıkmaz. Bildirimleri Uygulamadan ya da cihaz ayarlarınızdan kapatabilirsiniz.</p>
 
         <h2>9. Yalnızca cihazınızda kalan veriler</h2>
-        <p>Bazı şeyler bize hiç ulaşmaz. Oturum bilginiz cihazın güvenli anahtar deposunda (iOS Keychain / Android Keystore) tutulur. Görünen adınız, avatar renginiz, favori renkleriniz ve önizlemeleriniz, rapor tonunuz, diliniz, bildirim ayarlarınız, üç tanıtım yanıtınız (saç tipi, hedef, metal tercihi), kaydettiğiniz Lookbook görselleri, önbelleğe alınmış raporlar ve önizlemeler Uygulamanın yerel depolamasında ve dosyalarında saklanır. Uygulamayı kaldırmak bunları siler.</p>
+        <p>Bazı şeyler yalnızca cihazınızda saklanır. Oturum bilginiz cihazın güvenli anahtar deposunda (iOS Keychain / Android Keystore) tutulur. Görünen adınız, avatar renginiz, rapor tonunuz, diliniz, bildirim ayarlarınız, iki tanıtım yanıtınız (saç tipi ve hedef), kaydettiğiniz Lookbook görselleri, raporlardan kaydettiğiniz adımlar, fotoğraf gönderme iznini verdiğiniz tarih, önbelleğe alınmış raporlar ve önizlemeler Uygulamanın yerel depolamasında ve dosyalarında saklanır. Uygulamayı kaldırmak bunların hepsini siler. Uygulama içinden hesabınızı silmek de siler; yalnızca dil seçiminiz kalır.</p>
+        <p>Bunların çoğu bize hiç ulaşmaz. İstisnalar bir analiz isteğiyle birlikte, talimatların parçası olarak gider (4. bölüm): rapor istediğiniz biçimde dönsün diye seçtiğiniz dil ve rapor tonu; bir sonraki analiz öncekiyle tutarlı kalsın diye de en son okumalarınızın ve yaptığınız düzeltmelerin kısa bir notu. Yaptığınız düzeltme ayrıca ait olduğu raporun içine kaydedilir.</p>
 
         <h2>10. Hizmet sağlayıcılar (alt işleyenler)</h2>
-        <p>Verileri yalnızca Uygulamayı çalıştıran sağlayıcılarla, kendi koşulları kapsamında paylaşıyoruz:</p>
+        <p>Verileri yalnızca Uygulamayı çalıştıran sağlayıcılarla, kendi koşulları kapsamında paylaşıyoruz. Her biri; bilgilerinizi en az bu politikada anlatılan düzeyde korumasını, yalnızca bizim talimatımızla ve yalnızca aşağıda yazan hizmeti sunmak için işlemesini, kendi amaçları için ya da kendi modellerini eğitmek için asla kullanmamasını gerektiren veri işleme koşullarına bağlıdır:</p>
         <div class="table-wrap">
           <table>
             <thead><tr><th>Sağlayıcı</th><th>Amaç</th><th>İlgili veri</th></tr></thead>
             <tbody>
               <tr><td>Supabase</td><td>Kimlik doğrulama, veritabanı, özel fotoğraf depolama, sunucu fonksiyonları</td><td>Hesap kimliği, e-posta (oturum açtıysanız), fotoğraflar, raporlar, krediler, abonelik durumu</td></tr>
-              <tr><td>fal.ai</td><td>Görüntü ve görsel üretim modellerini çalıştırır</td><td>Fotoğrafınız ve analiz komutu — hesap kimliği, e-posta ya da isim yok</td></tr>
+              <tr><td>fal.ai</td><td>Görüntü ve görsel üretim modellerini çalıştırır</td><td>Fotoğrafınız (adresinde rastgele hesap kimliğiniz bulunan geçici bir bağlantıyla) ve analiz komutu — e-posta ya da isim yok</td></tr>
               <tr><td>RevenueCat</td><td>Abonelik ve satın alma yönetimi</td><td>Hesap kimliği, satın alma ve hak durumu</td></tr>
               <tr><td>Apple / Google</td><td>Giriş, uygulama dağıtımı, ödeme işleme</td><td>E-posta (girişlerini kullanırsanız), satın alma kayıtları</td></tr>
               <tr><td>Meta Platforms</td><td>Reklam ölçümü ve atıf</td><td>Kurulum / oturum / satın alma olayları; izin verildiğinde reklam tanımlayıcısı (6. bölüm)</td></tr>
@@ -1602,13 +1610,14 @@
         <h2>11. Yurt dışına aktarım</h2>
         <p>Foi Digitals Türkiye merkezlidir ve sağlayıcılarımız Amerika Birleşik Devletleri ile Avrupa Birliği'nde altyapı işletir. Bu nedenle Uygulamayı kullanmak, verilerinizin ülkenizin dışına — ABD dahil — aktarılmasını içerir. GDPR ya da UK GDPR'ın uygulandığı hallerde bu aktarımlar Avrupa Komisyonu'nun Standart Sözleşme Hükümlerine ya da sağlayıcının sunduğu eşdeğer bir güvenceye dayanır. KVKK'nın uygulandığı hallerde aktarım, açık rızanıza ya da 9. maddedeki ilgili hukuki sebebe dayanır.</p>
 
-        <h2>12. Haklarınız ve Uygulama içindeki dört araç</h2>
+        <h2>12. Haklarınız ve Uygulama içindeki araçlar</h2>
         <p>Uygulamada <strong>Profil → Veri Yönetimi</strong>'ni açın. Bunların hiçbiri için bize e-posta atmanız gerekmez:</p>
         <ul>
           <li><strong>Verilerimi dışa aktar</strong> — hesap bilgilerinizi ve tüm raporlarınızı içeren bir JSON dosyası oluşturur ve paylaşım sayfasına verir; kaydedebilir ya da gönderebilirsiniz. Hiçbir şey yüklenmez.</li>
           <li><strong>Yüklenen fotoğrafları sil</strong> — yüklediğiniz her fotoğrafı depolamamızdan kaldırır. Herhangi bir dosya kaldırılamazsa Uygulama başarı iddia etmek yerine size bunu söyler.</li>
-          <li><strong>Tüm analiz verilerini sil</strong> — kayıtlı her raporu veritabanımızdan siler ve yerel önbelleği temizler.</li>
-          <li><strong>Hesabı sil</strong> — yüklediğiniz her fotoğrafı, ardından hesabın kendisini siler. Profiliniz, raporlarınız, kredi cüzdanınız, kredi geçmişiniz ve abonelik kaydınız da onunla gider. Geri alınamaz.</li>
+          <li><strong>Tüm analiz verilerini sil</strong> — kayıtlı her raporu, onlar için üretilmiş görsellerle birlikte siler ve yerel önbelleği temizler.</li>
+          <li><strong>Hesabı sil</strong> — hesabınızın altında duran her şeyi (yüklediğiniz fotoğrafları ve sizin için üretilen görselleri), ardından hesabın kendisini siler. Profiliniz, raporlarınız, kredi cüzdanınız, kredi geçmişiniz ve abonelik kaydınız, bu hesaba birleştirilmiş misafir hesaplarla birlikte gider. Uygulama ardından cihazda tuttuklarını da siler (9. bölüm; dil seçiminiz hariç) ve yeni kurulmuş gibi baştan başlar. Geri alınamaz.</li>
+          <li><strong>Yapay zekâ sağlayıcısına ne gönderiyoruz</strong> — neyin gönderildiğini, kimin aldığını ve izni verdiğiniz tarihi gösterir; izni geri alma düğmesi de oradadır.</li>
         </ul>
         <blockquote><strong>Hesabınızı silmek aboneliğinizi iptal etmez.</strong> Abonelikler Apple ya da Google tarafından faturalandırılır ve ayrıca <em>Ayarlar → Apple Hesabı → Abonelikler</em> veya <em>Google Play → Abonelikler</em> üzerinden iptal edilmelidir; aksi hâlde faturalandırma devam eder.</blockquote>
         <p>GDPR / UK GDPR, Türkiye'de KVKK ve benzer mevzuat kapsamında ayrıca verilerinize <strong>erişme</strong>, <strong>düzeltme</strong>, <strong>silme</strong>, <strong>işlemeyi kısıtlama</strong> ve <strong>taşıma</strong> haklarına; meşru menfaate dayanan işlemeye <strong>itiraz</strong> etme ve <strong>açık rızanızı geri çekme</strong> hakkına sahipsiniz. <a href="mailto:foidigitals@gmail.com">foidigitals@gmail.com</a> adresine yazın, 30 gün içinde yanıtlayalım. Ayrıca yerel veri koruma otoritesine şikâyette bulunabilirsiniz — Türkiye'de Kişisel Verileri Koruma Kurumu (KVKK).</p>
@@ -1621,6 +1630,7 @@
             <tbody>
               <tr><td>Hesabınızı oluşturmak, analizleri çalıştırmak, raporlarınızı saklamak, satın alımları yürütmek</td><td>Sözleşmenin ifası (m. 6(1)(b))</td></tr>
               <tr><td>Kamera ve fotoğraf kitaplığı erişimi, bildirimler, reklam ölçümü / ATT</td><td>Açık rıza (m. 6(1)(a)) — cihaz ayarlarından istediğiniz zaman geri çekilebilir</td></tr>
+              <tr><td>Fotoğrafınızın analiz ve görsel denemeler için fal.ai'a gönderilmesi</td><td>Açık rıza (m. 6(1)(a)) — ilk yüklemeden önce Uygulama içinde sorulur, Profil → Veri Yönetimi'nden geri çekilebilir</td></tr>
               <tr><td>Hizmeti güvende tutmak, kötüye kullanımı önlemek, yapay zekâ maliyetini ölçmek</td><td>Meşru menfaat (m. 6(1)(f))</td></tr>
               <tr><td>Satın alma ve vergi kayıtlarını tutmak</td><td>Hukuki yükümlülük (m. 6(1)(c))</td></tr>
             </tbody>
@@ -1629,7 +1639,7 @@
         <p>Özelliklerinizi tarif etmek için işlenen bir yüz fotoğrafına özenle yaklaşıyoruz. Bunu biyometrik kimlik tespiti için kullanmıyoruz, ondan bir yüz şablonu çıkarmıyoruz ve sizi görseller ya da oturumlar arasında tanımak için kullanmıyoruz.</p>
 
         <h2>14. Saklama süresi</h2>
-        <p>Hesabınızı, fotoğraflarınızı ve raporlarınızı <strong>hesabınız var olduğu sürece</strong> saklarız — otomatik bir süre sonu yoktur, çünkü raporlarınızın ne zaman işe yaramaz hâle geldiğine sizin karar vermenizi tercih ediyoruz. Bir fotoğrafı, bir raporu ya da hesabınızı sildiğinizde veri aktif sistemlerimizden kaldırılır. Satın alma ve işlem kayıtları, vergi ya da muhasebe mevzuatının gerektirdiği ölçüde saklanabilir. Yedekler olağan döngüsü içinde tasfiye olur.</p>
+        <p>Hesabınızı, fotoğraflarınızı ve raporlarınızı <strong>hesabınız var olduğu sürece</strong> saklarız — otomatik bir süre sonu yoktur, çünkü raporlarınızın ne zaman işe yaramaz hâle geldiğine sizin karar vermenizi tercih ediyoruz. Bir fotoğrafı, bir raporu ya da hesabınızı sildiğinizde veri aktif sistemlerimizden kaldırılır. fal.ai'ın bir isteği işlemek için elinde tuttukları (çektiği fotoğraf, komut ve ürettiği görseller) bu silme düğmelerinin erişimi dışındadır ve fal.ai'ın kendi saklama kurallarına tabidir. Satın alma ve işlem kayıtları, vergi ya da muhasebe mevzuatının gerektirdiği ölçüde saklanabilir. Yedekler olağan döngüsü içinde tasfiye olur.</p>
 
         <h2>15. Güvenlik</h2>
         <p>Tüm trafik HTTPS ile aktarım sırasında şifrelenir. Fotoğraflar, yalnızca kendi hesabınıza izin veren satır düzeyi erişim kurallarına sahip özel bir depolama alanında durur. Oturum bilginiz cihazın donanım destekli güvenli deposunda saklanır. Sunucu tarafındaki fonksiyonlar işlem yapmadan önce imzalı belirtecinizi doğrular ve kimliğinizi istemcinin iddiasından değil, o belirteçten türetir. Hiçbir sistem kusursuz güvenli değildir, ama burada kestirmeye sapmıyoruz.</p>
@@ -1678,12 +1688,12 @@
       back: "beauty studio'ya dön",
       eyebrow: "beauty studio · koşullar",
       title: "Kullanım Koşulları",
-      meta: "Son güncelleme · 20.08.2026 · v1.0",
+      meta: "Son güncelleme · 30.09.2026 · v1.1",
       body: `
         <p>Bu Kullanım Koşulları ("Koşullar"), <strong>Foi Digitals</strong> (İstanbul, Türkiye — "biz") tarafından işletilen <strong>Beauty Studio: Glow Up AI</strong> mobil uygulamasının ("Uygulama") kullanımını düzenler. Uygulamayı indirerek ya da kullanarak bu Koşulları ve <a href="privacy.html">Gizlilik Politikamızı</a> kabul etmiş olursunuz. Kabul etmiyorsanız Uygulamayı kullanmayın.</p>
 
         <h2>1. Uygulama nedir</h2>
-        <p>Beauty Studio, sağladığınız bir fotoğrafı analiz eder ve stil yönlendirmesi döndürür: yüz yapısı ve oranları, mevsimsel renk paletleri, saç, makyaj ve kombin önerileri, bir stil arketipi ve glow-up önerileri. Birçok analizde ayrıca kendi fotoğrafınızdan önizleme görselleri üretir; böylece bir değişikliği uygulamadan önce görebilirsiniz. Katalog şu anda <strong>on kategoride 94 analiz</strong> içerir.</p>
+        <p>Beauty Studio, sağladığınız bir fotoğrafı analiz eder ve stil yönlendirmesi döndürür: yüz yapısı ve oranları, mevsimsel renk paletleri, saç, makyaj ve kombin önerileri, bir stil arketipi ve glow-up önerileri. Birçok analizde ayrıca kendi fotoğrafınızdan önizleme görselleri üretir; böylece bir değişikliği uygulamadan önce görebilirsiniz. Katalog şu anda <strong>on kategoride 92 analiz</strong> içerir.</p>
 
         <h2>2. Uygulama ne değildir</h2>
         <p>Beauty Studio bir <strong>stil ve kendini ifade aracıdır</strong>. Tıbbi, dermatolojik, psikolojik, beslenmeye ilişkin ya da estetik işlem tavsiyesi <strong>değildir</strong> ve bir tanı cihazı değildir. Uygulamadaki hiçbir şey cilt, saç ya da vücutla ilgili bir durumu tespit etmek, teşhis etmek veya tedavi etmek için kullanılmamalıdır. Bir sağlık endişeniz varsa nitelikli bir uzmana danışın.</p>
@@ -1727,7 +1737,7 @@
         <p>Beauty Studio'yu indirmek ücretsizdir. Ücretli planlar ve kredi paketleri, analiz kataloğunu ve onu çalıştıran yapay zekâ işlemesini açar.</p>
         <h3>Planlar</h3>
         <ul>
-          <li><strong>Haftalık</strong> — haftalık kredi hakkıyla, yazılı analizlere premium erişim. Görsel denemeler bu plana dahil değildir.</li>
+          <li><strong>Haftalık</strong> — haftalık kredi hakkıyla, görsel denemeler dahil tam erişim.</li>
           <li><strong>Aylık</strong> — aylık kredi hakkıyla, görsel denemeler dahil tam erişim.</li>
           <li><strong>Yıllık</strong> — yıllık faturalandırılan, görsel denemeler dahil tam erişim; kredi hakkı her ay yenilenir.</li>
         </ul>
@@ -1735,7 +1745,7 @@
         <h3>Krediler</h3>
         <ul>
           <li>Krediler yapay zekâ kullanımını ölçer. Yazılı analizler az sayıda kredi tüketir; kendi yüzünüzde görsel üretmek belirgin biçimde daha fazlasını tüketir, çünkü bize gerçekten daha pahalıya mal olur. Uygulamada hiçbir şey sınırsız değildir ve bunu aksini vaat etmeye tercih ediyoruz.</li>
-          <li>Yeni hesaplarda ücretsiz kredi <strong>bulunmaz</strong>.</li>
+          <li>Yeni hesaplar 1 kredilik bakiyeyle başlar. Bu bir ücretsiz hak <strong>değildir</strong>: bu bakiyeyle hiçbir analiz çalıştırılamaz.</li>
           <li><strong>Kredi paketleri</strong> tek seferlik, tüketilebilir satın alımlardır. Kredi ekler ancak tek başlarına premium erişimi açmaz.</li>
           <li>Kredilerin nakit değeri yoktur, paraya çevrilemez, hesaplar arasında aktarılamaz ve hesabınız silindiğinde sona erer.</li>
           <li>Bir planın dönemsel hak tanıdığı hâllerde, kullanılmayan hak kredileri Uygulama aksini belirtmedikçe sonraki döneme devretmez.</li>
@@ -1821,13 +1831,13 @@
         <h2>Fotoğraflar ve gizlilik</h2>
 
         <h3>Yüklediğim fotoğrafa ne oluyor?</h3>
-        <p>Cihazınızda küçültülüp yeniden kodlanır, hesabınıza ait özel bir depolama alanına yüklenir ve analiz için yapay zekâ sağlayıcımıza (fal.ai) gönderilir. Başka kullanıcılara asla gösterilmez ve asla satılmaz. Siz silene kadar kalır. <a href="privacy.html">Gizlilik Politikası</a> her adımı tek tek anlatır.</p>
+        <p>Uygulama önce izninizi ister. İzin verdiğinizde fotoğraf cihazınızda küçültülüp yeniden kodlanır, hesabınıza ait özel bir depolama alanına yüklenir ve analiz için yapay zekâ sağlayıcımıza (fal.ai) gönderilir. Başka kullanıcılara asla gösterilmez ve asla satılmaz. Siz silene kadar kalır. <a href="privacy.html">Gizlilik Politikası</a> her adımı tek tek anlatır.</p>
 
         <h3>Fotoğraflarımı, raporlarımı ya da hesabımın tamamını nasıl silerim?</h3>
-        <p><strong>Profil → Veri Yönetimi</strong>'ni açın. Dört düğme var: verilerinizi JSON dosyası olarak dışa aktarma, yüklenen fotoğrafları silme, tüm analiz verilerini silme ve hesabı silme. Hesap silme, fotoğraflarınızı ve her raporu da beraberinde götürür ve geri alınamaz.</p>
+        <p><strong>Profil → Veri Yönetimi</strong>'ni açın. Oradan verilerinizi JSON dosyası olarak dışa aktarabilir, yüklenen fotoğrafları, tüm analiz verilerini ya da hesabınızı silebilir ve fotoğrafınızın yapay zekâ sağlayıcısına gönderilmesi iznini görebilir ya da geri alabilirsiniz. Hesap silme; fotoğraflarınızı, sizin için üretilen görselleri ve her raporu kaldırır, Uygulamanın cihazda tuttuklarını siler ve geri alınamaz.</p>
 
         <h3>Hesap açmak zorunda mıyım?</h3>
-        <p>Hayır. Misafir olarak devam edebilirsiniz; sizin hakkınızda hiçbir e-posta ya da isim tutmayız. Karşılığı şu: misafir hesap yalnızca o cihazda yaşar. Uygulamayı yeniden kurarsanız ya da telefon değiştirirseniz geri getirilemez — onun size ait olduğunu tespit etmenin bir yolu yoktur. E-posta, Google ya da Apple girişi eklemek bunu çözer.</p>
+        <p>Hayır. Uygulama sizi bir misafir hesabıyla başlatır; sizin hakkınızda hiçbir e-posta ya da isim tutmayız. Karşılığı şu: misafir hesap yalnızca o cihazda yaşar. Uygulamayı yeniden kurarsanız ya da telefon değiştirirseniz geri getirilemez — onun size ait olduğunu tespit etmenin bir yolu yoktur. E-posta, Google ya da Apple girişi eklemek bunu çözer.</p>
 
         <h3>Fotoğraflarım yapay zekâ eğitmek için kullanılıyor mu?</h3>
         <p>Hayır. İçeriğinizle model eğitmiyoruz ve sağlayıcılarımızın eğitmesine de izin vermiyoruz.</p>
@@ -1858,7 +1868,7 @@
         <p>Çünkü bir fotoğrafta görüntü modeli çalıştırmak ve yüzünüzden yeni görseller üretmek bize her çalıştırmada gerçek para maliyeti çıkarıyor. Krediler bunu ölçüyor. Yazılı analizler az, görsel üretimi belirgin biçimde daha fazla tüketir. Hiçbir şey sınırsız değil ve bunu aksini vaat etmeye tercih ediyoruz.</p>
 
         <h3>Görsel denemeler hangi planda var?</h3>
-        <p>Aylık ve yıllık planlarda. Haftalık plan yazılı analizleri kapsar. Kesin haklar ve fiyatlar, satın almadan önce Uygulamada gösterilir.</p>
+        <p>Üçünde de: haftalık, aylık ve yıllık. Planlar fiyatta ve içerdikleri kredi miktarında ayrışır; bir görsel deneme, yazılı analizden daha fazla kredi harcar. Kesin haklar ve fiyatlar, satın almadan önce Uygulamada gösterilir.</p>
 
         <h3>Nasıl iptal ederim?</h3>
         <p>iOS'ta: <em>Ayarlar → adınız → Abonelikler</em>. Android'de: <em>Google Play → Abonelikler</em>. Dönem bitmeden en az 24 saat önce iptal edin. <strong>Uygulamayı ya da hesabınızı silmek aboneliği iptal etmez.</strong></p>
