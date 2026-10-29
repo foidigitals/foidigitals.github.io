@@ -546,7 +546,7 @@
       back: "back to beauty studio",
       eyebrow: "beauty studio · privacy",
       title: "Privacy Policy",
-      meta: "Last updated · 2026-09-30 · v1.1",
+      meta: "Last updated · 2026-10-29 · v1.2",
       body: `
         <p>This Privacy Policy explains how <strong>Beauty Studio: Glow Up AI</strong> ("the App", "Beauty Studio", "we", "us") collects, uses, shares, and protects your information. The App is operated by <strong>Foi Digitals</strong>, Istanbul, Türkiye ("the data controller"). It applies to the iOS and Android versions of the App. By using the App you agree to the practices described here.</p>
         <p class="muted">Written to be read, not to be survived. If anything here is unclear, email us and we will explain it in plain language.</p>
@@ -560,7 +560,7 @@
         <blockquote>Anonymous accounts live on the device that created them. If you delete the App, or lose the device, an anonymous account and its reports cannot be recovered by us — we have no way to identify you. Add an email or a social login if you want your reports to survive a device change.</blockquote>
 
         <h2>3. Data we collect</h2>
-        <p>We collect only what the App's features need. We do <strong>not</strong> sell your data. Section 6 describes the one place where data leaves us for advertising measurement, and how to switch it off.</p>
+        <p>We collect only what the App's features need. We do <strong>not</strong> sell your data. Section 6 describes where data goes for advertising (the ads shown in the free version from version 2.4, and advertising measurement) and how to limit it.</p>
         <div class="table-wrap">
           <table>
             <thead>
@@ -594,8 +594,8 @@
               </tr>
               <tr>
                 <td>Advertising identifiers</td>
-                <td>On iOS, your IDFA — <strong>only if you allow tracking</strong> when asked. On Android, the Google Advertising ID. Plus app install / session / purchase events sent to Meta.</td>
-                <td>Measure which ads bring people to the App. See Section 6, including how to refuse.</td>
+                <td>On iOS, your IDFA — <strong>only if you allow tracking</strong> when asked. On Android, the Google Advertising ID. App install / session / purchase events sent to Meta. From version 2.4: ad requests, the ads you see and tap, and your IP address, handled by Google AdMob.</td>
+                <td>Show ads in the free version, give you the reward for ads you choose to watch, and measure which ads bring people to the App. See Section 6, including how to refuse.</td>
               </tr>
               <tr>
                 <td>Device-only data</td>
@@ -605,7 +605,7 @@
             </tbody>
           </table>
         </div>
-        <p class="muted">We do <strong>not</strong> collect location (precise or coarse), contacts, calendar, microphone or audio, video, browsing or search history, health or fitness data, biometric templates, or financial account details. Beauty Studio contains <strong>no in-app advertising</strong>, no third-party analytics SDK, and no crash-reporting SDK.</p>
+        <p class="muted">We do <strong>not</strong> collect precise location, contacts, calendar, microphone or audio, video, browsing or search history, health or fitness data, biometric templates, or financial account details. Beauty Studio has no third-party analytics SDK and no crash-reporting SDK of its own. From version 2.4 the free version shows ads through Google AdMob, whose SDK receives your IP address (from which Google may estimate an approximate location) and its own crash and performance data (Section 6).</p>
 
         <h2>4. Your photo: exactly what happens to it</h2>
         <p>This is the part most people want to know, so here it is step by step.</p>
@@ -630,18 +630,35 @@
         <p>We do not use your photos, reports, or any other content to train AI models, and we do not permit our providers to train their models on data we send them.</p>
         <p><strong>The output is an estimate.</strong> AI-generated analysis and imagery can be wrong, unflattering, or simply odd. The App deliberately does not score attractiveness, rate beauty, or comment on weight or skin conditions, and the models are instructed not to infer or mention age, ethnicity, nationality or religion. Treat every result as a suggestion, not a fact about you.</p>
 
-        <h2>6. Advertising measurement, Meta, and App Tracking Transparency</h2>
-        <p>We want to be direct about this, because it is the only part of Beauty Studio that involves tracking in Apple's sense of the word.</p>
-        <p>The App includes the <strong>Meta (Facebook) SDK</strong> so we can tell which advertising actually brings people to the App and stop paying for the advertising that does not. Through it, Meta receives standard app events — <em>install</em>, <em>session</em>, and <em>purchase</em> (purchase amount, currency and the product identifier) — and, where permitted, your device's advertising identifier.</p>
+        <h2>6. Ads, advertising measurement, and App Tracking Transparency</h2>
+        <p>We want to be direct about this, because it is the part of Beauty Studio that involves tracking in Apple's sense of the word.</p>
+        <h3>Ads in the App (from version 2.4)</h3>
+        <p>The free version of Beauty Studio shows ads: banners, and full-screen ads between screens. It also offers <strong>rewarded ads</strong> that you can choose to watch in exchange for something in the App, such as opening a report or a filter pack. Ads are served by <strong>Google AdMob</strong> (Google LLC; Google Ireland Limited in the EEA, the UK and Switzerland). When an ad is requested or shown, Google receives:</p>
         <ul>
-          <li><strong>On iOS</strong>, the SDK starts with advertiser tracking switched <strong>off</strong>. The App asks for App Tracking Transparency permission only <em>after</em> your first report is on screen — not at launch. If you choose <strong>"Ask App Not to Track"</strong>, your IDFA is not used and the tracking flag stays off. You can change your mind at any time in <em>Settings → Privacy &amp; Security → Tracking</em>.</li>
+          <li>your device's advertising identifier — on iOS <strong>only if you allow tracking</strong>;</li>
+          <li>your IP address, from which Google may estimate an approximate location;</li>
+          <li>the ads you see and tap, and basic information about your device and the App;</li>
+          <li>crash and performance data about Google's ad software.</li>
+        </ul>
+        <ul>
+          <li><strong>Rewarded ads.</strong> When you choose to watch one, the request carries your random account ID (Section 2) so that Google can confirm to our server that the ad finished and we can give you the reward. We send Google no name and no email.</li>
+          <li><strong>Personalised ads only where you allow them.</strong> In the EEA, the UK and Switzerland the App shows Google's consent form before any ad is loaded, and you can change your choice at any time in <em>Profile → Data Management → Ad privacy choices</em>. On iOS, ads are personalised only if you allow tracking. On Android you can opt out of ad personalisation in your device settings. Otherwise Google shows non-personalised or limited ads.</li>
+          <li><strong>Who sees no ads.</strong> Premium subscribers see no ads. A one-time <em>Remove Ads</em> purchase removes banners and full-screen ads; rewarded ads stay optional for everyone.</li>
+          <li><strong>Your photos never reach advertisers.</strong> We do not pass your photos, edits, reports or analysis results to Google or to any advertiser, and ads are not chosen based on them.</li>
+        </ul>
+        <p>Google processes this data under its own privacy policy, including to measure ads and prevent fraud: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses information from apps that use its services</a>.</p>
+        <h3>Advertising measurement with Meta</h3>
+        <p>The App includes the <strong>Meta (Facebook) SDK</strong> so we can tell which advertising actually brings people to the App and stop paying for the advertising that does not. Through it, Meta receives standard app events — <em>install</em>, <em>session</em>, and <em>purchase</em> (purchase amount, currency and the product identifier) — and, where permitted, your device's advertising identifier.</p>
+        <h3>Your choices</h3>
+        <ul>
+          <li><strong>On iOS</strong>, advertiser tracking starts switched <strong>off</strong>. The App asks for App Tracking Transparency permission once, and not at launch. If you choose <strong>"Ask App Not to Track"</strong>, your IDFA is used neither by Meta nor by Google, and the tracking flag stays off. You can change your mind at any time in <em>Settings → Privacy &amp; Security → Tracking</em>.</li>
           <li><strong>On Android</strong>, you can limit this in <em>Settings → Google → Ads</em> by deleting or opting out of the advertising ID.</li>
           <li><strong>Refusing costs you nothing.</strong> No feature, report, credit or purchase depends on it.</li>
         </ul>
-        <p>This data is used for advertising measurement and attribution. We do not use it to personalise your reports, and it plays no part in the AI analysis.</p>
+        <p>This data is used for ads and advertising measurement. We do not use it to personalise your reports, and it plays no part in the AI analysis.</p>
 
         <h2>7. Purchases and subscriptions</h2>
-        <p>Subscriptions and credit packs are sold through the <strong>App Store</strong> and <strong>Google Play</strong> and managed for us by <strong>RevenueCat</strong>. RevenueCat receives your account ID (the same random UUID) and your purchase and entitlement status. <strong>We do not send RevenueCat your email address or name</strong>, and neither we nor RevenueCat ever see your payment card — Apple and Google handle payment entirely.</p>
+        <p>Subscriptions and credit packs are sold through the <strong>App Store</strong> and <strong>Google Play</strong> and managed for us by <strong>RevenueCat</strong>. RevenueCat receives your account ID (the same random UUID) and your purchase and entitlement status. <strong>We do not send RevenueCat your email address or name</strong>, and neither we nor RevenueCat ever see your payment card — Apple and Google handle payment entirely. From version 2.4 you can also buy <strong>Remove Ads</strong>, a one-time purchase handled the same way.</p>
 
         <h2>8. Notifications</h2>
         <p>All notifications in Beauty Studio are <strong>scheduled locally on your device</strong>. The App does not generate or store a push token, and we operate no push server — which means we cannot send you a message remotely, and there is no notification identifier of yours held anywhere. Your notification preferences never leave your phone. You can turn notifications off in the App or in your device settings.</p>
@@ -661,9 +678,11 @@
               <tr><td>RevenueCat</td><td>Subscription and purchase management</td><td>Account ID, purchase and entitlement status</td></tr>
               <tr><td>Apple / Google</td><td>Sign-in, app distribution, payment processing</td><td>Email (if you use their sign-in), purchase records</td></tr>
               <tr><td>Meta Platforms</td><td>Advertising measurement and attribution</td><td>Install / session / purchase events; advertising identifier where permitted (Section 6)</td></tr>
+              <tr><td>Google (AdMob)</td><td>Ads in the free version and confirmation of rewarded ads (from version 2.4)</td><td>Advertising identifier where permitted, IP address, ad interactions, ad software diagnostics; your random account ID when you watch a rewarded ad (Section 6)</td></tr>
             </tbody>
           </table>
         </div>
+        <p>Meta and Google act as independent controllers for the advertising data they receive and process it under their own privacy policies.</p>
 
         <h2>11. International transfers</h2>
         <p>Foi Digitals is based in Türkiye and our providers operate infrastructure in the United States and the European Union. Using the App therefore involves transferring your data outside your country, including to the United States. Where the GDPR or UK GDPR applies, these transfers rely on the European Commission's Standard Contractual Clauses or an equivalent safeguard offered by the provider. Where Turkish law (KVKK) applies, transfers are made on the basis of your explicit consent or the applicable legal ground under Article 9.</p>
@@ -676,6 +695,7 @@
           <li><strong>Delete all analysis data</strong> — deletes every saved report from our database together with the images generated for them, and clears the local cache.</li>
           <li><strong>Delete account</strong> — deletes everything stored under your account (the photos you uploaded and the images generated for you), then deletes the account itself. Your profile, reports, credit wallet, credit history and subscription record are removed with it, along with any guest account that was merged into it. The App then erases what it kept on the device (Section 9), apart from your language choice, and starts again as a new install. This cannot be undone.</li>
           <li><strong>What we send to the AI provider</strong> — shows what is sent, who receives it and the date you gave permission, with a button to withdraw that permission.</li>
+          <li><strong>Ad privacy choices</strong> (from version 2.4, where it applies) — reopens Google's consent form so you can change whether ads may be personalised.</li>
         </ul>
         <blockquote><strong>Deleting your account does not cancel your subscription.</strong> Subscriptions are billed by Apple or Google and must be cancelled separately in <em>Settings → Apple Account → Subscriptions</em> or in <em>Google Play → Subscriptions</em>, otherwise billing continues.</blockquote>
         <p>Under the GDPR / UK GDPR, Türkiye's KVKK, and comparable laws, you also have the right to <strong>access</strong>, <strong>rectify</strong>, <strong>erase</strong>, <strong>restrict</strong>, and <strong>port</strong> your data, to <strong>object</strong> to processing based on legitimate interests, and to <strong>withdraw consent</strong> at any time. Email <a href="mailto:foidigitals@gmail.com">foidigitals@gmail.com</a> and we will respond within 30 days. You may also complain to your local data protection authority — in Türkiye, the Kişisel Verileri Koruma Kurumu (KVKK).</p>
@@ -690,6 +710,8 @@
               <tr><td>Camera and photo-library access, notifications, advertising measurement / ATT</td><td>Consent (Art. 6(1)(a)) — withdrawable at any time in device settings</td></tr>
               <tr><td>Sending your photo to fal.ai for analysis and try-ons</td><td>Consent (Art. 6(1)(a)) — asked in the App before the first upload, withdrawable in Profile → Data Management</td></tr>
               <tr><td>Keeping the service secure, preventing abuse, metering AI cost</td><td>Legitimate interests (Art. 6(1)(f))</td></tr>
+              <tr><td>Personalised ads in the free version</td><td>Consent (Art. 6(1)(a)) — asked through the consent form before ads load, changeable in Profile → Data Management</td></tr>
+              <tr><td>Non-personalised ads, confirming rewarded ads, preventing ad fraud</td><td>Legitimate interests (Art. 6(1)(f))</td></tr>
               <tr><td>Keeping purchase and tax records</td><td>Legal obligation (Art. 6(1)(c))</td></tr>
             </tbody>
           </table>
@@ -706,7 +728,7 @@
         <p>Beauty Studio is <strong>not intended for anyone under 13</strong> (or the higher minimum age in your country — 16 in parts of the EEA). We do not knowingly collect data from children. Please do not upload photographs of children. If you believe a child has used the App or that a child's photo has been uploaded, email us and we will delete the account and its contents.</p>
 
         <h2>17. California residents (CCPA / CPRA)</h2>
-        <p>We <strong>do not sell</strong> personal information for money. However, sharing app events and advertising identifiers with Meta for advertising measurement may qualify as "sharing for cross-context behavioural advertising" under the CPRA. You can opt out at any time by declining App Tracking Transparency on iOS or opting out of the advertising ID on Android (Section 6), and we honour Global Privacy Control signals where they reach us. You have the rights to know, delete, correct, and to be free from discrimination for exercising them.</p>
+        <p>We <strong>do not sell</strong> personal information for money. However, sharing app events and advertising identifiers with Meta for advertising measurement, and with Google for the ads in the free version, may qualify as "sharing for cross-context behavioural advertising" under the CPRA. You can opt out at any time by declining App Tracking Transparency on iOS or opting out of the advertising ID and ad personalisation on Android (Section 6), and we honour Global Privacy Control signals where they reach us. You have the rights to know, delete, correct, and to be free from discrimination for exercising them.</p>
 
         <h2>18. Store privacy labels</h2>
         <p>For transparency, this is what we declare to Apple and Google:</p>
@@ -720,7 +742,10 @@
               <tr><td>Purchase history</td><td>Yes</td><td>Yes</td><td><strong>Yes</strong></td></tr>
               <tr><td>Device ID (advertising identifier)</td><td>With your permission</td><td>Yes</td><td><strong>Yes</strong></td></tr>
               <tr><td>Product interaction</td><td>Yes</td><td>Yes</td><td><strong>Yes</strong></td></tr>
-              <tr><td>Location, contacts, health, browsing history, diagnostics</td><td>No</td><td>—</td><td>—</td></tr>
+              <tr><td>Advertising data (ads seen and tapped)</td><td>From version 2.4</td><td>Yes</td><td><strong>Yes</strong></td></tr>
+              <tr><td>Coarse location (estimated by Google from your IP address)</td><td>From version 2.4</td><td>No</td><td><strong>Yes</strong></td></tr>
+              <tr><td>Diagnostics (crash and performance data of the ad software)</td><td>From version 2.4</td><td>Performance data only</td><td>No</td></tr>
+              <tr><td>Precise location, contacts, health, browsing history</td><td>No</td><td>—</td><td>—</td></tr>
             </tbody>
           </table>
         </div>
@@ -731,6 +756,7 @@
           <li>We never show your photos or reports to other users — Beauty Studio has no social feed and no public profiles.</li>
           <li>We never use your photos or reports to train AI models.</li>
           <li>We never use advertising data to shape what your report says.</li>
+          <li>We never send your photos, edits or reports to advertisers.</li>
           <li>We never require you to give us an email address to use the App.</li>
         </ul>
 
@@ -746,7 +772,7 @@
       back: "back to beauty studio",
       eyebrow: "beauty studio · terms",
       title: "Terms of Use",
-      meta: "Last updated · 2026-09-30 · v1.1",
+      meta: "Last updated · 2026-10-29 · v1.2",
       body: `
         <p>These Terms of Use ("Terms") govern your use of the <strong>Beauty Studio: Glow Up AI</strong> mobile application ("the App"), operated by <strong>Foi Digitals</strong>, Istanbul, Türkiye ("we", "us"). By downloading or using the App, you agree to these Terms and to our <a href="privacy.html">Privacy Policy</a>. If you do not agree, do not use the App.</p>
 
@@ -787,17 +813,18 @@
           <li>Do not reverse-engineer, decompile, scrape, or attempt to disrupt the App, its servers, or its AI providers.</li>
           <li>Do not attempt to bypass credit metering, entitlement checks, or paywalls, or to obtain paid features without paying.</li>
           <li>Do not use automated systems to submit analyses at scale.</li>
+          <li>Do not obtain ad rewards through automated, simulated or fraudulent ad views.</li>
           <li>Do not use the App to harass, impersonate, or produce material about another person without their consent.</li>
           <li>Do not attempt to manipulate the AI into producing harmful, unlawful, or sexual output.</li>
         </ul>
 
         <h2 id="subscriptions">8. Subscriptions, credits &amp; payments</h2>
-        <p>Beauty Studio is free to download. Paid plans and credit packs unlock the analysis catalogue and the AI processing that powers it.</p>
+        <p>Beauty Studio is free to download. Paid plans and credit packs unlock the analysis catalogue and the AI processing that powers it. From version 2.4 the free version shows ads (<a href="privacy.html">Privacy Policy</a>, Section 6); subscribers see no ads, and a one-time <strong>Remove Ads</strong> purchase removes banners and full-screen ads.</p>
         <h3>Plans</h3>
         <ul>
           <li><strong>Weekly</strong> — full access including visual try-ons, with a weekly credit allowance.</li>
           <li><strong>Monthly</strong> — full access including visual try-ons, with a monthly credit allowance.</li>
-          <li><strong>Yearly</strong> — full access including visual try-ons, billed annually, with the credit allowance refilled each month.</li>
+          <li><strong>Yearly</strong> — full access including visual try-ons, billed annually (in some countries Apple also offers the same plan with a 12-month commitment billed monthly), with the credit allowance refilled each month.</li>
         </ul>
         <p>The exact price, duration and credit allowance of every plan are shown in the App, in your local currency, before you confirm anything.</p>
         <h3>Credits</h3>
@@ -805,6 +832,8 @@
           <li>Credits meter AI usage. Written analyses cost a small number of credits; generating images on your own face costs substantially more, because it genuinely costs us more to produce. Nothing in the App is unlimited, and we would rather say so than promise otherwise.</li>
           <li>New accounts start with a balance of 1 credit. That is <strong>not</strong> a free allowance: no analysis can be run with it.</li>
           <li><strong>Credit packs</strong> are one-time consumable purchases. They add credits but do not unlock premium access on their own.</li>
+          <li><strong>Rewarded ads</strong> are optional. A reward is given only after the ad network confirms that the ad was watched to the end; rewards have no cash value, are limited per day, and may be changed or withdrawn.</li>
+          <li><strong>Remove Ads</strong> (from version 2.4) is a one-time purchase that can be restored on the same store account. It does not unlock premium features or add credits.</li>
           <li>Credits have no cash value, cannot be exchanged for money, cannot be transferred between accounts, and expire when your account is deleted.</li>
           <li>Where a plan grants a periodic allowance, unused allowance credits do not roll over unless the App states otherwise.</li>
         </ul>
@@ -901,7 +930,10 @@
         <p>No. We do not train models on your content and do not permit our providers to.</p>
 
         <h3>Why does the App ask permission to track me?</h3>
-        <p>Only to measure which ads bring people to the App. Declining changes nothing about how the App works — every feature, credit and report behaves identically. See <a href="privacy.html">the Privacy Policy</a>, Section 6.</p>
+        <p>To measure which ads bring people to the App and, from version 2.4, to let the ads in the free version be personalised. Declining changes nothing about how the App works — every feature, credit and report behaves identically; ads you see are simply not personalised. See <a href="privacy.html">the Privacy Policy</a>, Section 6.</p>
+
+        <h3>Why are there ads, and how do I remove them?</h3>
+        <p>From version 2.4 the free version shows ads; they keep the editor and the basic tools free. Premium subscribers see no ads, and a one-time <strong>Remove Ads</strong> purchase removes banners and full-screen ads. Rewarded ads are always optional: you watch one only when you choose to, in exchange for something in the App.</p>
 
         <h2>Results</h2>
 
@@ -1488,7 +1520,7 @@
       back: "beauty studio'ya dön",
       eyebrow: "beauty studio · gizlilik",
       title: "Gizlilik Politikası",
-      meta: "Son güncelleme · 30.09.2026 · v1.1",
+      meta: "Son güncelleme · 29.10.2026 · v1.2",
       body: `
         <p>Bu Gizlilik Politikası, <strong>Beauty Studio: Glow Up AI</strong>'ın ("Uygulama", "Beauty Studio", "biz") bilgilerinizi nasıl topladığını, kullandığını, paylaştığını ve koruduğunu açıklar. Uygulama, <strong>Foi Digitals</strong> (İstanbul, Türkiye — "veri sorumlusu") tarafından işletilir. Uygulamanın hem iOS hem Android sürümü için geçerlidir. Uygulamayı kullanarak burada açıklanan uygulamaları kabul etmiş olursunuz.</p>
         <p class="muted">Okunmak için yazıldı, atlatılmak için değil. Bir yer belirsiz kalırsa bize yazın, sade bir dille açıklayalım.</p>
@@ -1502,7 +1534,7 @@
         <blockquote>Anonim hesaplar, kendilerini oluşturan cihazda yaşar. Uygulamayı silerseniz ya da cihazı kaybederseniz anonim bir hesabı ve raporlarını sizin için geri getiremeyiz — sizi tanımlamanın hiçbir yolu yoktur. Raporlarınızın cihaz değişikliğinden sağ çıkmasını istiyorsanız bir e-posta ya da sosyal giriş ekleyin.</blockquote>
 
         <h2>3. Topladığımız veriler</h2>
-        <p>Yalnızca Uygulamanın özelliklerinin ihtiyaç duyduğu kadarını topluyoruz. Verilerinizi <strong>satmıyoruz</strong>. 6. bölüm, verinin reklam ölçümü için bizden çıktığı tek yeri ve bunu nasıl kapatacağınızı anlatır.</p>
+        <p>Yalnızca Uygulamanın özelliklerinin ihtiyaç duyduğu kadarını topluyoruz. Verilerinizi <strong>satmıyoruz</strong>. 6. bölüm, verinin reklam için nereye gittiğini (2.4 sürümünden itibaren ücretsiz sürümde gösterilen reklamlar ve reklam ölçümü) ve bunu nasıl sınırlayacağınızı anlatır.</p>
         <div class="table-wrap">
           <table>
             <thead>
@@ -1536,8 +1568,8 @@
               </tr>
               <tr>
                 <td>Reklam tanımlayıcıları</td>
-                <td>iOS'ta IDFA — <strong>yalnızca sorulduğunda izin verirseniz</strong>. Android'de Google Reklam Kimliği. Ayrıca Meta'ya gönderilen uygulama kurulum / oturum / satın alma olayları.</td>
-                <td>Hangi reklamların insanları Uygulamaya getirdiğini ölçmek. Reddetme yolu dahil, bkz. 6. bölüm.</td>
+                <td>iOS'ta IDFA — <strong>yalnızca sorulduğunda izin verirseniz</strong>. Android'de Google Reklam Kimliği. Meta'ya gönderilen uygulama kurulum / oturum / satın alma olayları. 2.4 sürümünden itibaren: reklam istekleri, gördüğünüz ve dokunduğunuz reklamlar ve IP adresiniz (Google AdMob işler).</td>
+                <td>Ücretsiz sürümde reklam göstermek, izlemeyi seçtiğiniz reklamların ödülünü vermek ve hangi reklamların insanları Uygulamaya getirdiğini ölçmek. Reddetme yolu dahil, bkz. 6. bölüm.</td>
               </tr>
               <tr>
                 <td>Yalnızca cihazdaki veriler</td>
@@ -1547,7 +1579,7 @@
             </tbody>
           </table>
         </div>
-        <p class="muted">Konum (kesin ya da yaklaşık), kişiler, takvim, mikrofon ya da ses, video, gezinme veya arama geçmişi, sağlık ve fitness verisi, biyometrik şablon ya da finansal hesap bilgisi <strong>toplamıyoruz</strong>. Beauty Studio'da <strong>uygulama içi reklam yok</strong>, üçüncü taraf analitik SDK'sı yok, çökme raporlama SDK'sı yok.</p>
+        <p class="muted">Kesin konum, kişiler, takvim, mikrofon ya da ses, video, gezinme veya arama geçmişi, sağlık ve fitness verisi, biyometrik şablon ya da finansal hesap bilgisi <strong>toplamıyoruz</strong>. Beauty Studio'da üçüncü taraf analitik SDK'sı ve kendimize ait bir çökme raporlama SDK'sı yok. 2.4 sürümünden itibaren ücretsiz sürüm Google AdMob üzerinden reklam gösterir; bu yazılım IP adresinizi (Google bundan yaklaşık konum tahmin edebilir) ve kendi çökme ve performans verisini alır (6. bölüm).</p>
 
         <h2>4. Fotoğrafınıza tam olarak ne oluyor</h2>
         <p>Çoğu kişinin asıl merak ettiği kısım bu; adım adım anlatalım.</p>
@@ -1572,18 +1604,35 @@
         <p>Fotoğraflarınızı, raporlarınızı ya da başka içeriğinizi yapay zekâ modeli eğitmek için kullanmıyoruz ve sağlayıcılarımızın da gönderdiğimiz veriyle model eğitmesine izin vermiyoruz.</p>
         <p><strong>Çıktı bir tahmindir.</strong> Yapay zekâ ile üretilen analiz ve görseller yanlış, gurur okşamayan ya da tuhaf olabilir. Uygulama bilinçli olarak çekicilik puanı vermez, güzellik derecelendirmez, kilo ya da cilt rahatsızlıkları hakkında yorum yapmaz; modellere yaş, etnik köken, milliyet veya din çıkarımı yapmamaları ve bunlardan söz etmemeleri talimatı verilmiştir. Her sonucu hakkınızda bir gerçek değil, bir öneri olarak değerlendirin.</p>
 
-        <h2>6. Reklam ölçümü, Meta ve App Tracking Transparency</h2>
-        <p>Bu konuda açık olmak istiyoruz, çünkü Beauty Studio'nun Apple'ın tanımıyla "izleme" içeren tek kısmı burası.</p>
-        <p>Uygulamada <strong>Meta (Facebook) SDK</strong> bulunuyor; böylece hangi reklamın gerçekten insan getirdiğini görebiliyor ve getirmeyen reklamlara para ödemeyi bırakabiliyoruz. Bu yolla Meta standart uygulama olaylarını alır — <em>kurulum</em>, <em>oturum</em> ve <em>satın alma</em> (tutar, para birimi ve ürün kimliği) — ve izin verildiği ölçüde cihazınızın reklam tanımlayıcısını.</p>
+        <h2>6. Reklamlar, reklam ölçümü ve App Tracking Transparency</h2>
+        <p>Bu konuda açık olmak istiyoruz, çünkü Beauty Studio'nun Apple'ın tanımıyla "izleme" içeren kısmı burası.</p>
+        <h3>Uygulamadaki reklamlar (2.4 sürümünden itibaren)</h3>
+        <p>Beauty Studio'nun ücretsiz sürümü reklam gösterir: banner'lar ve ekranlar arasında tam ekran reklamlar. Ayrıca Uygulamada bir karşılık için, örneğin bir raporu ya da bir filtre paketini açmak için, izlemeyi kendinizin seçtiği <strong>ödüllü reklamlar</strong> sunar. Reklamları <strong>Google AdMob</strong> sunar (Google LLC; AEA, Birleşik Krallık ve İsviçre'de Google Ireland Limited). Bir reklam istendiğinde ya da gösterildiğinde Google şunları alır:</p>
         <ul>
-          <li><strong>iOS'ta</strong> SDK, reklam izleme <strong>kapalı</strong> başlar. Uygulama, App Tracking Transparency iznini yalnızca ilk raporunuz ekrana geldikten <em>sonra</em> ister — açılışta değil. <strong>"Uygulamanın İzlememesini İste"</strong> derseniz IDFA'nız kullanılmaz ve izleme bayrağı kapalı kalır. Fikrinizi istediğiniz zaman <em>Ayarlar → Gizlilik ve Güvenlik → İzleme</em>'den değiştirebilirsiniz.</li>
+          <li>cihazınızın reklam tanımlayıcısı — iOS'ta <strong>yalnızca izlemeye izin verirseniz</strong>;</li>
+          <li>IP adresiniz; Google bundan yaklaşık bir konum tahmin edebilir;</li>
+          <li>gördüğünüz ve dokunduğunuz reklamlar, cihazınız ve Uygulama hakkında temel bilgiler;</li>
+          <li>Google'ın reklam yazılımına ait çökme ve performans verisi.</li>
+        </ul>
+        <ul>
+          <li><strong>Ödüllü reklamlar.</strong> Birini izlemeyi seçtiğinizde, Google'ın reklamın bittiğini sunucumuza doğrulayabilmesi ve ödülünüzü verebilmemiz için istek rastgele hesap kimliğinizi (2. bölüm) taşır. Google'a adınızı ya da e-postanızı göndermeyiz.</li>
+          <li><strong>Kişiselleştirilmiş reklam yalnızca izin verdiğiniz yerde.</strong> AEA, Birleşik Krallık ve İsviçre'de Uygulama, herhangi bir reklam yüklenmeden önce Google'ın onay formunu gösterir; seçiminizi istediğiniz zaman <em>Profil → Veri Yönetimi → Reklam gizliliği tercihleri</em>'nden değiştirebilirsiniz. iOS'ta reklamlar yalnızca izlemeye izin verirseniz kişiselleştirilir. Android'de reklam kişiselleştirmesini cihaz ayarlarınızdan kapatabilirsiniz. Aksi hâlde Google kişiselleştirilmemiş ya da sınırlı reklam gösterir.</li>
+          <li><strong>Kimler reklam görmez.</strong> Premium abonelere reklam gösterilmez. Tek seferlik <em>Reklamları Kaldır</em> satın alımı banner'ları ve tam ekran reklamları kaldırır; ödüllü reklamlar herkes için isteğe bağlı kalır.</li>
+          <li><strong>Fotoğraflarınız reklamcılara asla ulaşmaz.</strong> Fotoğraflarınızı, düzenlemelerinizi, raporlarınızı ya da analiz sonuçlarınızı Google'a veya herhangi bir reklamcıya vermeyiz; reklamlar bunlara göre seçilmez.</li>
+        </ul>
+        <p>Google bu veriyi, reklamları ölçmek ve sahteciliği önlemek dahil, kendi gizlilik politikasına göre işler: <a href="https://policies.google.com/technologies/partner-sites?hl=tr" target="_blank" rel="noopener">Google'ın, hizmetlerini kullanan uygulamalardan gelen bilgileri nasıl kullandığı</a>.</p>
+        <h3>Meta ile reklam ölçümü</h3>
+        <p>Uygulamada <strong>Meta (Facebook) SDK</strong> bulunuyor; böylece hangi reklamın gerçekten insan getirdiğini görebiliyor ve getirmeyen reklamlara para ödemeyi bırakabiliyoruz. Bu yolla Meta standart uygulama olaylarını alır — <em>kurulum</em>, <em>oturum</em> ve <em>satın alma</em> (tutar, para birimi ve ürün kimliği) — ve izin verildiği ölçüde cihazınızın reklam tanımlayıcısını.</p>
+        <h3>Seçimleriniz</h3>
+        <ul>
+          <li><strong>iOS'ta</strong> reklam izleme <strong>kapalı</strong> başlar. Uygulama, App Tracking Transparency iznini bir kez ve açılışta değil, sonra ister. <strong>"Uygulamanın İzlememesini İste"</strong> derseniz IDFA'nızı ne Meta ne Google kullanır ve izleme bayrağı kapalı kalır. Fikrinizi istediğiniz zaman <em>Ayarlar → Gizlilik ve Güvenlik → İzleme</em>'den değiştirebilirsiniz.</li>
           <li><strong>Android'de</strong> bunu <em>Ayarlar → Google → Reklamlar</em> bölümünden reklam kimliğini silerek ya da devre dışı bırakarak sınırlayabilirsiniz.</li>
           <li><strong>Reddetmenin size hiçbir maliyeti yok.</strong> Hiçbir özellik, rapor, kredi ya da satın alma buna bağlı değildir.</li>
         </ul>
-        <p>Bu veri reklam ölçümü ve atıf için kullanılır. Raporlarınızı kişiselleştirmek için kullanmıyoruz ve yapay zekâ analizinde hiçbir rolü yok.</p>
+        <p>Bu veri reklamlar ve reklam ölçümü için kullanılır. Raporlarınızı kişiselleştirmek için kullanmıyoruz ve yapay zekâ analizinde hiçbir rolü yok.</p>
 
         <h2>7. Satın almalar ve abonelikler</h2>
-        <p>Abonelikler ve kredi paketleri <strong>App Store</strong> ve <strong>Google Play</strong> üzerinden satılır ve bizim adımıza <strong>RevenueCat</strong> tarafından yönetilir. RevenueCat, hesap kimliğinizi (aynı rastgele UUID) ve satın alma / hak durumunuzu alır. <strong>RevenueCat'e e-posta adresinizi ya da adınızı göndermiyoruz</strong>; ne biz ne de RevenueCat ödeme kartınızı görür — ödemeyi tamamen Apple ve Google yürütür.</p>
+        <p>Abonelikler ve kredi paketleri <strong>App Store</strong> ve <strong>Google Play</strong> üzerinden satılır ve bizim adımıza <strong>RevenueCat</strong> tarafından yönetilir. RevenueCat, hesap kimliğinizi (aynı rastgele UUID) ve satın alma / hak durumunuzu alır. <strong>RevenueCat'e e-posta adresinizi ya da adınızı göndermiyoruz</strong>; ne biz ne de RevenueCat ödeme kartınızı görür — ödemeyi tamamen Apple ve Google yürütür. 2.4 sürümünden itibaren tek seferlik <strong>Reklamları Kaldır</strong> satın alımı da aynı yolla yapılır.</p>
 
         <h2>8. Bildirimler</h2>
         <p>Beauty Studio'daki tüm bildirimler <strong>cihazınızda yerel olarak planlanır</strong>. Uygulama bir push token üretmez ya da saklamaz; bir push sunucusu işletmiyoruz — yani size uzaktan mesaj gönderemeyiz ve hiçbir yerde size ait bir bildirim tanımlayıcısı tutulmuyor. Bildirim tercihleriniz telefonunuzdan hiç çıkmaz. Bildirimleri Uygulamadan ya da cihaz ayarlarınızdan kapatabilirsiniz.</p>
@@ -1603,9 +1652,11 @@
               <tr><td>RevenueCat</td><td>Abonelik ve satın alma yönetimi</td><td>Hesap kimliği, satın alma ve hak durumu</td></tr>
               <tr><td>Apple / Google</td><td>Giriş, uygulama dağıtımı, ödeme işleme</td><td>E-posta (girişlerini kullanırsanız), satın alma kayıtları</td></tr>
               <tr><td>Meta Platforms</td><td>Reklam ölçümü ve atıf</td><td>Kurulum / oturum / satın alma olayları; izin verildiğinde reklam tanımlayıcısı (6. bölüm)</td></tr>
+              <tr><td>Google (AdMob)</td><td>Ücretsiz sürümdeki reklamlar ve ödüllü reklamların doğrulanması (2.4 sürümünden itibaren)</td><td>İzin verildiğinde reklam tanımlayıcısı, IP adresi, reklam etkileşimleri, reklam yazılımı tanılama verisi; ödüllü reklam izlediğinizde rastgele hesap kimliğiniz (6. bölüm)</td></tr>
             </tbody>
           </table>
         </div>
+        <p>Meta ve Google, aldıkları reklam verisi için bağımsız veri sorumlusudur ve bu veriyi kendi gizlilik politikalarına göre işler.</p>
 
         <h2>11. Yurt dışına aktarım</h2>
         <p>Foi Digitals Türkiye merkezlidir ve sağlayıcılarımız Amerika Birleşik Devletleri ile Avrupa Birliği'nde altyapı işletir. Bu nedenle Uygulamayı kullanmak, verilerinizin ülkenizin dışına — ABD dahil — aktarılmasını içerir. GDPR ya da UK GDPR'ın uygulandığı hallerde bu aktarımlar Avrupa Komisyonu'nun Standart Sözleşme Hükümlerine ya da sağlayıcının sunduğu eşdeğer bir güvenceye dayanır. KVKK'nın uygulandığı hallerde aktarım, açık rızanıza ya da 9. maddedeki ilgili hukuki sebebe dayanır.</p>
@@ -1618,6 +1669,7 @@
           <li><strong>Tüm analiz verilerini sil</strong> — kayıtlı her raporu, onlar için üretilmiş görsellerle birlikte siler ve yerel önbelleği temizler.</li>
           <li><strong>Hesabı sil</strong> — hesabınızın altında duran her şeyi (yüklediğiniz fotoğrafları ve sizin için üretilen görselleri), ardından hesabın kendisini siler. Profiliniz, raporlarınız, kredi cüzdanınız, kredi geçmişiniz ve abonelik kaydınız, bu hesaba birleştirilmiş misafir hesaplarla birlikte gider. Uygulama ardından cihazda tuttuklarını da siler (9. bölüm; dil seçiminiz hariç) ve yeni kurulmuş gibi baştan başlar. Geri alınamaz.</li>
           <li><strong>Yapay zekâ sağlayıcısına ne gönderiyoruz</strong> — neyin gönderildiğini, kimin aldığını ve izni verdiğiniz tarihi gösterir; izni geri alma düğmesi de oradadır.</li>
+          <li><strong>Reklam gizliliği tercihleri</strong> (2.4 sürümünden itibaren, geçerli olduğu yerlerde) — reklamların kişiselleştirilip kişiselleştirilmeyeceğini değiştirebilmeniz için Google'ın onay formunu yeniden açar.</li>
         </ul>
         <blockquote><strong>Hesabınızı silmek aboneliğinizi iptal etmez.</strong> Abonelikler Apple ya da Google tarafından faturalandırılır ve ayrıca <em>Ayarlar → Apple Hesabı → Abonelikler</em> veya <em>Google Play → Abonelikler</em> üzerinden iptal edilmelidir; aksi hâlde faturalandırma devam eder.</blockquote>
         <p>GDPR / UK GDPR, Türkiye'de KVKK ve benzer mevzuat kapsamında ayrıca verilerinize <strong>erişme</strong>, <strong>düzeltme</strong>, <strong>silme</strong>, <strong>işlemeyi kısıtlama</strong> ve <strong>taşıma</strong> haklarına; meşru menfaate dayanan işlemeye <strong>itiraz</strong> etme ve <strong>açık rızanızı geri çekme</strong> hakkına sahipsiniz. <a href="mailto:foidigitals@gmail.com">foidigitals@gmail.com</a> adresine yazın, 30 gün içinde yanıtlayalım. Ayrıca yerel veri koruma otoritesine şikâyette bulunabilirsiniz — Türkiye'de Kişisel Verileri Koruma Kurumu (KVKK).</p>
@@ -1632,6 +1684,8 @@
               <tr><td>Kamera ve fotoğraf kitaplığı erişimi, bildirimler, reklam ölçümü / ATT</td><td>Açık rıza (m. 6(1)(a)) — cihaz ayarlarından istediğiniz zaman geri çekilebilir</td></tr>
               <tr><td>Fotoğrafınızın analiz ve görsel denemeler için fal.ai'a gönderilmesi</td><td>Açık rıza (m. 6(1)(a)) — ilk yüklemeden önce Uygulama içinde sorulur, Profil → Veri Yönetimi'nden geri çekilebilir</td></tr>
               <tr><td>Hizmeti güvende tutmak, kötüye kullanımı önlemek, yapay zekâ maliyetini ölçmek</td><td>Meşru menfaat (m. 6(1)(f))</td></tr>
+              <tr><td>Ücretsiz sürümde kişiselleştirilmiş reklamlar</td><td>Açık rıza (m. 6(1)(a)) — reklamlar yüklenmeden önce onay formuyla sorulur, Profil → Veri Yönetimi'nden değiştirilebilir</td></tr>
+              <tr><td>Kişiselleştirilmemiş reklamlar, ödüllü reklamların doğrulanması, reklam sahteciliğinin önlenmesi</td><td>Meşru menfaat (m. 6(1)(f))</td></tr>
               <tr><td>Satın alma ve vergi kayıtlarını tutmak</td><td>Hukuki yükümlülük (m. 6(1)(c))</td></tr>
             </tbody>
           </table>
@@ -1648,7 +1702,7 @@
         <p>Beauty Studio <strong>13 yaşından küçükler için tasarlanmamıştır</strong> (ya da ülkenizdeki daha yüksek asgari yaş — AEA'nın bazı bölgelerinde 16). Çocuklardan bilerek veri toplamıyoruz. Lütfen çocuk fotoğrafı yüklemeyin. Bir çocuğun Uygulamayı kullandığını ya da bir çocuğun fotoğrafının yüklendiğini düşünüyorsanız bize yazın; hesabı ve içeriğini silelim.</p>
 
         <h2>17. Kaliforniya sakinleri (CCPA / CPRA)</h2>
-        <p>Kişisel bilgileri para karşılığı <strong>satmıyoruz</strong>. Ancak reklam ölçümü için uygulama olaylarının ve reklam tanımlayıcılarının Meta ile paylaşılması, CPRA kapsamında "bağlamlar arası davranışsal reklamcılık için paylaşım" sayılabilir. iOS'ta App Tracking Transparency'yi reddederek ya da Android'de reklam kimliğinden çıkarak istediğiniz zaman vazgeçebilirsiniz (6. bölüm); bize ulaşan Global Privacy Control sinyallerine uyarız. Bilme, silme, düzeltme ve bu hakları kullandığınız için ayrımcılığa uğramama haklarına sahipsiniz.</p>
+        <p>Kişisel bilgileri para karşılığı <strong>satmıyoruz</strong>. Ancak reklam ölçümü için uygulama olaylarının ve reklam tanımlayıcılarının Meta ile, ücretsiz sürümdeki reklamlar için de Google ile paylaşılması, CPRA kapsamında "bağlamlar arası davranışsal reklamcılık için paylaşım" sayılabilir. iOS'ta App Tracking Transparency'yi reddederek ya da Android'de reklam kimliğinden ve reklam kişiselleştirmesinden çıkarak istediğiniz zaman vazgeçebilirsiniz (6. bölüm); bize ulaşan Global Privacy Control sinyallerine uyarız. Bilme, silme, düzeltme ve bu hakları kullandığınız için ayrımcılığa uğramama haklarına sahipsiniz.</p>
 
         <h2>18. Mağaza gizlilik etiketleri</h2>
         <p>Şeffaflık için, Apple ve Google'a beyan ettiğimiz tablo:</p>
@@ -1662,7 +1716,10 @@
               <tr><td>Satın alma geçmişi</td><td>Evet</td><td>Evet</td><td><strong>Evet</strong></td></tr>
               <tr><td>Cihaz kimliği (reklam tanımlayıcısı)</td><td>İzninizle</td><td>Evet</td><td><strong>Evet</strong></td></tr>
               <tr><td>Ürün etkileşimi</td><td>Evet</td><td>Evet</td><td><strong>Evet</strong></td></tr>
-              <tr><td>Konum, kişiler, sağlık, gezinme geçmişi, tanılama</td><td>Hayır</td><td>—</td><td>—</td></tr>
+              <tr><td>Reklam verisi (görülen ve dokunulan reklamlar)</td><td>2.4 sürümünden itibaren</td><td>Evet</td><td><strong>Evet</strong></td></tr>
+              <tr><td>Yaklaşık konum (Google'ın IP adresinizden tahmini)</td><td>2.4 sürümünden itibaren</td><td>Hayır</td><td><strong>Evet</strong></td></tr>
+              <tr><td>Tanılama (reklam yazılımının çökme ve performans verisi)</td><td>2.4 sürümünden itibaren</td><td>Yalnız performans verisi</td><td>Hayır</td></tr>
+              <tr><td>Kesin konum, kişiler, sağlık, gezinme geçmişi</td><td>Hayır</td><td>—</td><td>—</td></tr>
             </tbody>
           </table>
         </div>
@@ -1673,6 +1730,7 @@
           <li>Fotoğraflarınızı ya da raporlarınızı başka kullanıcılara asla göstermeyiz — Beauty Studio'da sosyal akış ve herkese açık profil yoktur.</li>
           <li>Fotoğraflarınızı ya da raporlarınızı yapay zekâ modeli eğitmek için asla kullanmayız.</li>
           <li>Reklam verisini raporunuzun içeriğini şekillendirmek için asla kullanmayız.</li>
+          <li>Fotoğraflarınızı, düzenlemelerinizi ya da raporlarınızı reklamcılara asla göndermeyiz.</li>
           <li>Uygulamayı kullanmanız için sizden asla e-posta adresi istemeyiz.</li>
         </ul>
 
@@ -1688,7 +1746,7 @@
       back: "beauty studio'ya dön",
       eyebrow: "beauty studio · koşullar",
       title: "Kullanım Koşulları",
-      meta: "Son güncelleme · 30.09.2026 · v1.1",
+      meta: "Son güncelleme · 29.10.2026 · v1.2",
       body: `
         <p>Bu Kullanım Koşulları ("Koşullar"), <strong>Foi Digitals</strong> (İstanbul, Türkiye — "biz") tarafından işletilen <strong>Beauty Studio: Glow Up AI</strong> mobil uygulamasının ("Uygulama") kullanımını düzenler. Uygulamayı indirerek ya da kullanarak bu Koşulları ve <a href="privacy.html">Gizlilik Politikamızı</a> kabul etmiş olursunuz. Kabul etmiyorsanız Uygulamayı kullanmayın.</p>
 
@@ -1729,17 +1787,18 @@
           <li>Uygulamayı, sunucularını ya da yapay zekâ sağlayıcılarını tersine mühendislikle çözmeye, kaynak koda dönüştürmeye, veri kazımaya veya işleyişini bozmaya çalışmayın.</li>
           <li>Kredi ölçümünü, hak kontrollerini ya da ödeme duvarlarını aşmaya veya ücretli özellikleri ödemeden elde etmeye çalışmayın.</li>
           <li>Toplu analiz göndermek için otomatik sistemler kullanmayın.</li>
+          <li>Reklam ödüllerini otomatik, taklit ya da sahte reklam gösterimleriyle elde etmeye çalışmayın.</li>
           <li>Uygulamayı taciz etmek, başkasının kimliğine bürünmek ya da rızası olmadan biri hakkında materyal üretmek için kullanmayın.</li>
           <li>Yapay zekâyı zararlı, hukuka aykırı ya da cinsel çıktı üretmeye yönlendirmeye çalışmayın.</li>
         </ul>
 
         <h2 id="subscriptions">8. Abonelikler, krediler ve ödemeler</h2>
-        <p>Beauty Studio'yu indirmek ücretsizdir. Ücretli planlar ve kredi paketleri, analiz kataloğunu ve onu çalıştıran yapay zekâ işlemesini açar.</p>
+        <p>Beauty Studio'yu indirmek ücretsizdir. Ücretli planlar ve kredi paketleri, analiz kataloğunu ve onu çalıştıran yapay zekâ işlemesini açar. 2.4 sürümünden itibaren ücretsiz sürüm reklam gösterir (<a href="privacy.html">Gizlilik Politikası</a>, 6. bölüm); abonelere reklam gösterilmez, tek seferlik <strong>Reklamları Kaldır</strong> satın alımı banner'ları ve tam ekran reklamları kaldırır.</p>
         <h3>Planlar</h3>
         <ul>
           <li><strong>Haftalık</strong> — haftalık kredi hakkıyla, görsel denemeler dahil tam erişim.</li>
           <li><strong>Aylık</strong> — aylık kredi hakkıyla, görsel denemeler dahil tam erişim.</li>
-          <li><strong>Yıllık</strong> — yıllık faturalandırılan, görsel denemeler dahil tam erişim; kredi hakkı her ay yenilenir.</li>
+          <li><strong>Yıllık</strong> — yıllık faturalandırılan (bazı ülkelerde Apple aynı planı 12 ay taahhütle, aylık ödemeli olarak da sunar), görsel denemeler dahil tam erişim; kredi hakkı her ay yenilenir.</li>
         </ul>
         <p>Her planın tam fiyatı, süresi ve kredi hakkı, siz onaylamadan önce Uygulamada yerel para biriminizle gösterilir.</p>
         <h3>Krediler</h3>
@@ -1747,6 +1806,8 @@
           <li>Krediler yapay zekâ kullanımını ölçer. Yazılı analizler az sayıda kredi tüketir; kendi yüzünüzde görsel üretmek belirgin biçimde daha fazlasını tüketir, çünkü bize gerçekten daha pahalıya mal olur. Uygulamada hiçbir şey sınırsız değildir ve bunu aksini vaat etmeye tercih ediyoruz.</li>
           <li>Yeni hesaplar 1 kredilik bakiyeyle başlar. Bu bir ücretsiz hak <strong>değildir</strong>: bu bakiyeyle hiçbir analiz çalıştırılamaz.</li>
           <li><strong>Kredi paketleri</strong> tek seferlik, tüketilebilir satın alımlardır. Kredi ekler ancak tek başlarına premium erişimi açmaz.</li>
+          <li><strong>Ödüllü reklamlar</strong> isteğe bağlıdır. Ödül, reklam ağı reklamın sonuna kadar izlendiğini doğruladıktan sonra verilir; ödüllerin nakit değeri yoktur, günlük olarak sınırlıdır ve değiştirilebilir ya da kaldırılabilir.</li>
+          <li><strong>Reklamları Kaldır</strong> (2.4 sürümünden itibaren) aynı mağaza hesabında geri yüklenebilen tek seferlik bir satın alımdır. Premium özellikleri açmaz ve kredi eklemez.</li>
           <li>Kredilerin nakit değeri yoktur, paraya çevrilemez, hesaplar arasında aktarılamaz ve hesabınız silindiğinde sona erer.</li>
           <li>Bir planın dönemsel hak tanıdığı hâllerde, kullanılmayan hak kredileri Uygulama aksini belirtmedikçe sonraki döneme devretmez.</li>
         </ul>
@@ -1843,7 +1904,10 @@
         <p>Hayır. İçeriğinizle model eğitmiyoruz ve sağlayıcılarımızın eğitmesine de izin vermiyoruz.</p>
 
         <h3>Uygulama neden beni izlemek için izin istiyor?</h3>
-        <p>Yalnızca hangi reklamların insanları Uygulamaya getirdiğini ölçmek için. Reddetmeniz Uygulamanın işleyişinde hiçbir şeyi değiştirmez — her özellik, kredi ve rapor aynı şekilde çalışır. Bkz. <a href="privacy.html">Gizlilik Politikası</a>, 6. bölüm.</p>
+        <p>Hangi reklamların insanları Uygulamaya getirdiğini ölçmek ve 2.4 sürümünden itibaren ücretsiz sürümdeki reklamların kişiselleştirilebilmesi için. Reddetmek Uygulamanın işleyişinde hiçbir şeyi değiştirmez — her özellik, kredi ve rapor aynı çalışır; gördüğünüz reklamlar yalnızca kişiselleştirilmez. Bkz. <a href="privacy.html">Gizlilik Politikası</a>, 6. bölüm.</p>
+
+        <h3>Neden reklam var, nasıl kaldırırım?</h3>
+        <p>2.4 sürümünden itibaren ücretsiz sürüm reklam gösterir; editörün ve temel araçların ücretsiz kalmasını reklamlar sağlar. Premium abonelere reklam gösterilmez, tek seferlik <strong>Reklamları Kaldır</strong> satın alımı da banner'ları ve tam ekran reklamları kaldırır. Ödüllü reklamlar her zaman isteğe bağlıdır: yalnızca siz seçtiğinizde, Uygulamada bir karşılık için izlenir.</p>
 
         <h2>Sonuçlar</h2>
 
