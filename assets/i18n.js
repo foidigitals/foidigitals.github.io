@@ -30,8 +30,8 @@
       appCaloriePrivacyTitle: "Calorie Reader AI — Privacy",
       appCalorieTermsTitle: "Calorie Reader AI — Terms",
       appCalorieSupportTitle: "Calorie Reader AI — Support",
-      appBeautyTitle: "Beauty Studio: Glow Up AI — Foi Digitals",
-      appBeautyDesc: "Your own face, read properly — shape, colors, and the styles that suit you. AI styling reports.",
+      appBeautyTitle: "Beauty Studio: Photo Editor — Foi Digitals",
+      appBeautyDesc: "Edit any photo with filters, effects, text and stickers, with no watermark. Then try a new cut or shade on your own face.",
       appBeautyPrivacyTitle: "Beauty Studio — Privacy",
       appBeautyTermsTitle: "Beauty Studio — Terms",
       appBeautySupportTitle: "Beauty Studio — Support",
@@ -78,11 +78,11 @@
     },
 
     featured2: {
-      pill: "beauty studio · glow up ai",
-      title: "photograph a face. <em>style it.</em>",
-      desc: "Face structure, seasonal color palette, hair, makeup and outfits — 92 analyses returned as written reports, plus try-ons rendered on your own photo before you commit to anything.",
+      pill: "beauty studio · photo editor",
+      title: "edit a photo. <em>style your face.</em>",
+      desc: "A full photo editor with filters, effects, text and stickers, and no watermark. Plus 92 analyses of face, color, hair and makeup, with try-ons rendered on your own photo before you commit to anything.",
       tag2: "AI vision",
-      tag3: "lifestyle",
+      tag3: "photo & video",
       tag4: "9 languages",
     },
 
@@ -511,30 +511,30 @@
       `,
     },
 
-    /* ----- Beauty Studio: Glow Up AI product ----- */
+    /* ----- Beauty Studio: Photo Editor product ----- */
     bs: {
       back: "back to foi digitals",
       eyebrow: "product · beauty studio",
-      pill: "AI styling reports from your own face",
-      titleHtml: "your own face, <em>read properly.</em>",
-      desc: "What looks good on someone else may not look good on you. Beauty Studio reads your face — its structure, its proportions, its coloring — and turns that into advice you can act on. Your lines, your palette, your look.",
+      pill: "photo editor with a beauty studio inside",
+      titleHtml: "edit any photo, <em>then style your own face.</em>",
+      desc: "Filters, effects, text, stickers and full control of light and color, with no watermark on what you save. When you want more than an edit, Beauty Studio reads your face and shows a new cut, shade or look on your own photo.",
       meta: {
         platform: "Platform", platformVal: "iOS · Android",
-        category: "Category", categoryVal: "Lifestyle · Photo & Video",
+        category: "Category", categoryVal: "Photo & Video · Graphics & Design",
         langs: "Languages", langsVal: "9 (EN · TR · DE · FR · PT · IT · RU · ES · NL)",
         size: "Status", sizeVal: "App Store & Play soon",
       },
       cta: { primary: "view on the stores · soon", privacy: "privacy policy", terms: "terms of use", support: "support & faq" },
 
       featuresId: "what it does",
-      featuresHeading: "built around <em>your face,</em> not a trend.",
+      featuresHeading: "an editor first, <em>a studio when you want one.</em>",
       features: {
-        f1: { title: "Start with your structure.", desc: "Face shape, proportions, and the feature worth leading with. Eye shape and where liner belongs. Brow architecture, lip proportions, and frames that suit your bone structure." },
-        f2: { title: "Find your colors.", desc: "Your seasonal palette, your five best colors, and the neutrals that hold them together. Gold or silver. Colors for an interview, an evening, a wedding invitation. Hold a garment to your face and get a verdict." },
-        f3: { title: "See it before you commit.", desc: "Try a cut, a shade, a makeup look or an outfit on your own photo first — then decide. Hair length and color, natural to glam makeup, capsule outfits, a 30-day glow-up preview." },
-        f4: { title: "92 analyses, one library.", desc: "Face, skin, color, hair, makeup, outfits, style identity and glow-up planning across ten categories. Every result is saved as a report you can reopen while you shop, compare over time, or export as a card." },
-        f5: { title: "Nine languages.", desc: "English, Turkish, German, French, Portuguese, Italian, Russian, Spanish and Dutch — interface and written reports alike, following your device language." },
-        f6: { title: "Your photos stay yours.", desc: "Photos are stored privately to your account, never shown to other users, and never sold. Delete a photo, delete every report, or delete your whole account from inside the app." },
+        f1: { title: "Edit any photo.", desc: "Crop, rotate, straighten and resize for stories and posts. Light, color and detail sliders, HSL, curves and color grading, selective edits with a brush or gradient. Editing runs on your device and works offline." },
+        f2: { title: "Filters and effects.", desc: "Film, portrait, cinema, vintage, black and white, seasonal and glow packs, each filter with its own strength. Blur or pixelate what you want to hide. Light leaks, tilt-shift, glitch, VHS, duotone and prism." },
+        f3: { title: "Text, stickers, drawing.", desc: "Fonts, colors, outlines and backgrounds. Emoji, shapes and glow stickers. Pen, highlighter and neon brushes. Frames, and layers you can reorder, fade and duplicate. Save as JPEG, PNG or WEBP with no watermark." },
+        f4: { title: "See it before you commit.", desc: "Try a cut, a shade, a makeup look or an outfit on your own photo first, then decide. Hair length and color, natural to glam makeup, capsule outfits, a 30-day glow-up preview." },
+        f5: { title: "92 analyses, one library.", desc: "Face, skin, color, hair, makeup, outfits, style identity and glow-up planning across ten categories. Every result is saved as a report you can reopen while you shop, compare over time, or export as a card." },
+        f6: { title: "Your photos stay yours.", desc: "Photos you only edit never leave your device. A photo you send for an analysis goes with your permission, is stored privately to your account, is never shown to other users and is never sold. Delete a photo, every report or your whole account from inside the app." },
       },
       disclaimer: "Beauty Studio is a styling tool — not medical, dermatological, or cosmetic-procedure advice. The analysis is generated by AI and can be wrong. Treat it as a well-informed second opinion, not a verdict. The app does not score attractiveness and never ranks you against anyone else.",
 
@@ -546,9 +546,9 @@
       back: "back to beauty studio",
       eyebrow: "beauty studio · privacy",
       title: "Privacy Policy",
-      meta: "Last updated · 2026-10-29 · v1.2",
+      meta: "Last updated · 2026-10-30 · v1.3",
       body: `
-        <p>This Privacy Policy explains how <strong>Beauty Studio: Glow Up AI</strong> ("the App", "Beauty Studio", "we", "us") collects, uses, shares, and protects your information. The App is operated by <strong>Foi Digitals</strong>, Istanbul, Türkiye ("the data controller"). It applies to the iOS and Android versions of the App. By using the App you agree to the practices described here.</p>
+        <p>This Privacy Policy explains how <strong>Beauty Studio: Photo Editor</strong> ("the App", "Beauty Studio", "we", "us") collects, uses, shares, and protects your information. The App is operated by <strong>Foi Digitals</strong>, Istanbul, Türkiye ("the data controller"). It applies to the iOS and Android versions of the App. By using the App you agree to the practices described here.</p>
         <p class="muted">Written to be read, not to be survived. If anything here is unclear, email us and we will explain it in plain language.</p>
 
         <h2>1. Who we are &amp; how to contact us</h2>
@@ -664,7 +664,8 @@
         <p>All notifications in Beauty Studio are <strong>scheduled locally on your device</strong>. The App does not generate or store a push token, and we operate no push server — which means we cannot send you a message remotely, and there is no notification identifier of yours held anywhere. Your notification preferences never leave your phone. You can turn notifications off in the App or in your device settings.</p>
 
         <h2>9. Data kept only on your device</h2>
-        <p>Some things are stored only on your device. Your sign-in session is held in the device's secure keystore (iOS Keychain / Android Keystore). Your display name, avatar color, report tone, language, notification settings, the two onboarding answers (hair type and goal), your saved Lookbook images, the steps you saved from reports, the date you allowed photo sharing, cached reports and cached previews are stored in the App's local storage and files. Uninstalling the App removes all of it. Deleting your account from inside the App erases it too, apart from your language choice.</p>
+        <p>Some things are stored only on your device. Your sign-in session is held in the device's secure keystore (iOS Keychain / Android Keystore). Your display name, avatar color, report tone, language, notification settings, the two onboarding answers (hair type and goal), your saved Lookbook images, the steps you saved from reports, the date you allowed photo sharing, your editor projects (the photos you open in the editor and your edits), cached reports and cached previews are stored in the App's local storage and files. Uninstalling the App removes all of it. Deleting your account from inside the App erases it too, apart from your language choice.</p>
+        <p>The photo editor runs entirely on your device. Photos you open in it are not sent to us unless you separately start an analysis or a visual try-on.</p>
         <p>Most of it never reaches us. The exceptions travel with an analysis request, as part of its instructions (Section 4): the language and report tone you chose, so the report comes back the way you asked, and a short note of your most recent readings and of any correction you made, so the next analysis stays consistent with the last one. A correction is also saved inside the report it belongs to.</p>
 
         <h2>10. Service providers (sub-processors)</h2>
@@ -737,6 +738,7 @@
             <thead><tr><th>Data type</th><th>Collected</th><th>Linked to you</th><th>Used for tracking</th></tr></thead>
             <tbody>
               <tr><td>Email address</td><td>Only if you sign in</td><td>Yes</td><td>No</td></tr>
+              <tr><td>User ID (random account ID)</td><td>Yes</td><td>Yes</td><td>No</td></tr>
               <tr><td>Photos</td><td>Yes</td><td>Yes</td><td>No</td></tr>
               <tr><td>Other user content (reports, notes, goals)</td><td>Yes</td><td>Yes</td><td>No</td></tr>
               <tr><td>Purchase history</td><td>Yes</td><td>Yes</td><td><strong>Yes</strong></td></tr>
@@ -772,12 +774,13 @@
       back: "back to beauty studio",
       eyebrow: "beauty studio · terms",
       title: "Terms of Use",
-      meta: "Last updated · 2026-10-29 · v1.2",
+      meta: "Last updated · 2026-10-30 · v1.3",
       body: `
-        <p>These Terms of Use ("Terms") govern your use of the <strong>Beauty Studio: Glow Up AI</strong> mobile application ("the App"), operated by <strong>Foi Digitals</strong>, Istanbul, Türkiye ("we", "us"). By downloading or using the App, you agree to these Terms and to our <a href="privacy.html">Privacy Policy</a>. If you do not agree, do not use the App.</p>
+        <p>These Terms of Use ("Terms") govern your use of the <strong>Beauty Studio: Photo Editor</strong> mobile application ("the App"), operated by <strong>Foi Digitals</strong>, Istanbul, Türkiye ("we", "us"). By downloading or using the App, you agree to these Terms and to our <a href="privacy.html">Privacy Policy</a>. If you do not agree, do not use the App.</p>
 
         <h2>1. What the App is</h2>
-        <p>Beauty Studio analyses a photograph you provide and returns styling guidance: face structure and proportions, seasonal color palettes, hair, makeup and outfit recommendations, a style archetype, and glow-up suggestions. For many analyses it also generates preview images from your own photo so you can see a change before committing to it. The catalogue currently holds <strong>92 analyses across ten categories</strong>.</p>
+        <p>Beauty Studio is a photo editor with an optional analysis studio. The editor runs on your device: photos you open in it are not uploaded to us, and you are responsible for what you edit, save and share. Some tools are part of Premium. You can try them freely, but a photo that uses them is saved only with Premium or, where offered, after a rewarded ad.</p>
+        <p>The studio analyses a photograph you provide and returns styling guidance: face structure and proportions, seasonal color palettes, hair, makeup and outfit recommendations, a style archetype, and glow-up suggestions. For many analyses it also generates preview images from your own photo so you can see a change before committing to it. The catalogue currently holds <strong>92 analyses across ten categories</strong>.</p>
 
         <h2>2. What the App is not</h2>
         <p>Beauty Studio is a <strong>styling and self-expression tool</strong>. It is <strong>not</strong> medical, dermatological, psychological, nutritional or cosmetic-procedure advice, and it is not a diagnostic device. Nothing in the App should be used to identify, diagnose or treat any condition of the skin, hair or body. If you have a health concern, consult a qualified professional.</p>
@@ -819,19 +822,19 @@
         </ul>
 
         <h2 id="subscriptions">8. Subscriptions, credits &amp; payments</h2>
-        <p>Beauty Studio is free to download. Paid plans and credit packs unlock the analysis catalogue and the AI processing that powers it. From version 2.4 the free version shows ads (<a href="privacy.html">Privacy Policy</a>, Section 6); subscribers see no ads, and a one-time <strong>Remove Ads</strong> purchase removes full-screen ads.</p>
+        <p>Beauty Studio is free to download, and the editor's basic tools are free. Plans open every editing tool. Credits pay for analyses and visual try-ons, and credit packs are available to everyone. From version 2.4 the free version shows ads (<a href="privacy.html">Privacy Policy</a>, Section 6); subscribers see no ads, and a one-time <strong>Remove Ads</strong> purchase removes full-screen ads.</p>
         <h3>Plans</h3>
         <ul>
-          <li><strong>Weekly</strong> — full access including visual try-ons, with a weekly credit allowance.</li>
-          <li><strong>Monthly</strong> — full access including visual try-ons, with a monthly credit allowance.</li>
-          <li><strong>Yearly</strong> — full access including visual try-ons, billed annually (in some countries Apple also offers the same plan with a 12-month commitment billed monthly), with the credit allowance refilled each month.</li>
+          <li><strong>Weekly</strong> — every editing tool, no ads, and a weekly credit allowance.</li>
+          <li><strong>Monthly</strong> — every editing tool, no ads, and a monthly credit allowance.</li>
+          <li><strong>Yearly</strong> — every editing tool and no ads, billed annually (in some countries Apple also offers the same plan with a 12-month commitment billed monthly), with the credit allowance refilled each month.</li>
         </ul>
         <p>The exact price, duration and credit allowance of every plan are shown in the App, in your local currency, before you confirm anything.</p>
         <h3>Credits</h3>
         <ul>
           <li>Credits meter AI usage. Written analyses cost a small number of credits; generating images on your own face costs substantially more, because it genuinely costs us more to produce. Nothing in the App is unlimited, and we would rather say so than promise otherwise.</li>
           <li>New accounts start with a balance of 1 credit. That is <strong>not</strong> a free allowance: no analysis can be run with it.</li>
-          <li><strong>Credit packs</strong> are one-time consumable purchases. They add credits but do not unlock premium access on their own.</li>
+          <li><strong>Credit packs</strong> are one-time consumable purchases. They add credits, are available to everyone, and do not open Premium editing tools.</li>
           <li><strong>Rewarded ads</strong> are optional. A reward is given only after the ad network confirms that the ad was watched to the end; rewards have no cash value, are limited per day, and may be changed or withdrawn.</li>
           <li><strong>Remove Ads</strong> (from version 2.4) is a one-time purchase that can be restored on the same store account. It does not unlock premium features or add credits.</li>
           <li>Credits have no cash value, cannot be exchanged for money, cannot be transferred between accounts, and expire when your account is deleted.</li>
@@ -917,6 +920,9 @@
 
         <h2>Photos &amp; privacy</h2>
 
+        <h3>Are the photos I edit uploaded?</h3>
+        <p>No. The editor runs on your device. Photos you open in it and your projects stay there until you delete them. A photo is uploaded only if you start an analysis or a visual try-on, after you give permission.</p>
+
         <h3>What happens to the photo I upload?</h3>
         <p>The App asks for your permission first. Once you allow it, the photo is shrunk and re-encoded on your device, uploaded to a private storage area belonging to your account, and sent to our AI provider (fal.ai) for analysis. It is never shown to other users and never sold. It stays until you delete it. The <a href="privacy.html">Privacy Policy</a> walks through every step.</p>
 
@@ -957,8 +963,8 @@
         <h3>Why are there credits at all?</h3>
         <p>Because running a vision model on a photo and generating new images of your face costs us real money per run. Credits meter that. Written analyses cost a little; image generation costs considerably more. Nothing is unlimited, and we would rather be straight about it than promise otherwise.</p>
 
-        <h3>Which plan includes the visual try-ons?</h3>
-        <p>All three: weekly, monthly and yearly. The plans differ in price and in how many credits they include, and a try-on costs more credits than a written analysis. Exact allowances and prices are shown in the App before you buy.</p>
+        <h3>Do I need a plan for the visual try-ons?</h3>
+        <p>No. A try-on spends credits, and anyone can buy a credit pack. A plan adds credits each period, opens every editing tool and removes ads. A try-on costs more credits than a written analysis. Exact allowances and prices are shown in the App before you buy.</p>
 
         <h3>How do I cancel?</h3>
         <p>On iOS: <em>Settings → your name → Subscriptions</em>. On Android: <em>Google Play → Subscriptions</em>. Cancel at least 24 hours before the period ends. <strong>Deleting the App or your account does not cancel a subscription.</strong></p>
@@ -978,7 +984,7 @@
         <p>English, Turkish, German, French, Portuguese, Italian, Russian, Spanish and Dutch — for both the interface and the written report. The App follows your device language, and you can change it in the App.</p>
 
         <h3>Does it work offline?</h3>
-        <p>No. Analyses and image generation run on our servers, so a connection is required. Reports you have already run are cached and can be reopened offline.</p>
+        <p>The photo editor does, because it runs on your device. Analyses and image generation run on our servers, so they need a connection. Reports you have already run are cached and can be reopened offline.</p>
 
         <h3>Will my reports sync to a new phone?</h3>
         <p>Yes, if you signed in with email, Google or Apple — sign in on the new device and your reports are there. A guest account cannot be moved.</p>
@@ -1008,8 +1014,8 @@
       appCaloriePrivacyTitle: "Calorie Reader AI — Gizlilik",
       appCalorieTermsTitle: "Calorie Reader AI — Koşullar",
       appCalorieSupportTitle: "Calorie Reader AI — Destek",
-      appBeautyTitle: "Beauty Studio: Glow Up AI — Foi Digitals",
-      appBeautyDesc: "Kendi yüzün, doğru okunmuş — hatların, renklerin ve sana yakışan stiller. Yapay zekâ ile stil raporları.",
+      appBeautyTitle: "Beauty Studio: Photo Editor — Foi Digitals",
+      appBeautyDesc: "Fotoğrafını filtre, efekt, yazı ve çıkartmayla düzenle, filigransız kaydet. Sonra yeni bir kesimi ya da tonu kendi yüzünde dene.",
       appBeautyPrivacyTitle: "Beauty Studio — Gizlilik",
       appBeautyTermsTitle: "Beauty Studio — Koşullar",
       appBeautySupportTitle: "Beauty Studio — Destek",
@@ -1056,11 +1062,11 @@
     },
 
     featured2: {
-      pill: "beauty studio · glow up ai",
-      title: "bir yüzün fotoğrafını çek. <em>stilini bul.</em>",
-      desc: "Yüz yapısı, mevsimsel renk paleti, saç, makyaj ve kombinler — yazılı rapor olarak dönen 92 analiz; üstüne, karar vermeden önce kendi fotoğrafında görebileceğin denemeler.",
+      pill: "beauty studio · photo editor",
+      title: "fotoğrafını düzenle. <em>stilini bul.</em>",
+      desc: "Filtre, efekt, yazı ve çıkartmalı tam bir fotoğraf düzenleyici; filigran yok. Üstüne yüz, renk, saç ve makyaj için 92 analiz ve karar vermeden önce kendi fotoğrafında görebileceğin denemeler.",
       tag2: "AI görüntü",
-      tag3: "yaşam tarzı",
+      tag3: "fotoğraf ve video",
       tag4: "9 dil",
     },
 
@@ -1485,30 +1491,30 @@
       `,
     },
 
-    /* ----- Beauty Studio: Glow Up AI ürünü ----- */
+    /* ----- Beauty Studio: Photo Editor ürünü ----- */
     bs: {
       back: "foi digitals'e dön",
       eyebrow: "ürün · beauty studio",
-      pill: "kendi yüzünden yapay zekâ stil raporları",
-      titleHtml: "kendi yüzün, <em>doğru okunmuş.</em>",
-      desc: "Başkasına yakışan sana yakışmayabilir. Beauty Studio kendi yüzünü okur — yapısını, oranlarını, renk uyumunu — ve bunu gerçekten uygulayabileceğin bir yönlendirmeye çevirir. Senin hatların, senin paletin, senin görünüşün.",
+      pill: "içinde güzellik stüdyosu olan fotoğraf düzenleyici",
+      titleHtml: "fotoğrafını düzenle, <em>sonra kendi yüzünde dene.</em>",
+      desc: "Filtre, efekt, yazı, çıkartma, ışık ve renk üzerinde tam kontrol; kaydettiğin hiçbir şeyde filigran yok. Düzenlemenin ötesini istediğinde Beauty Studio yüzünü okur, yeni bir kesimi, tonu ya da görünümü kendi fotoğrafında gösterir.",
       meta: {
         platform: "Platform", platformVal: "iOS · Android",
-        category: "Kategori", categoryVal: "Yaşam Tarzı · Fotoğraf ve Video",
+        category: "Kategori", categoryVal: "Fotoğraf ve Video · Grafik ve Tasarım",
         langs: "Diller", langsVal: "9 (EN · TR · DE · FR · PT · IT · RU · ES · NL)",
         size: "Durum", sizeVal: "App Store ve Play yakında",
       },
       cta: { primary: "mağazalarda görüntüle · yakında", privacy: "gizlilik politikası", terms: "kullanım koşulları", support: "destek & sss" },
 
       featuresId: "ne yapıyor",
-      featuresHeading: "bir trendin değil, <em>senin yüzünün</em> etrafında kuruldu.",
+      featuresHeading: "önce düzenleyici, <em>istediğinde stüdyo.</em>",
       features: {
-        f1: { title: "Kendi yapınla başla.", desc: "Yüz şekli, oranlar ve öne çıkarmaya değer özelliğin. Göz şeklin ve eyeliner'ın yeri. Kaş mimarisi, dudak oranları ve kemik yapına yakışan gözlük çerçeveleri." },
-        f2: { title: "Renklerini bul.", desc: "Mevsim paletin, en iyi beş rengin ve onları bir arada tutan nötrler. Altın mı gümüş mü. İş görüşmesi, bir akşam, bir düğün daveti için renkler. Bir kıyafeti yüzüne tut, cevabını al." },
-        f3: { title: "Denemeden önce gör.", desc: "Bir kesimi, bir tonu, bir makyajı ya da bir kombini önce kendi fotoğrafında dene — sonra karar ver. Saç boyu ve rengi, doğaldan gösterişliye makyaj, kapsül kombinler, 30 günlük glow-up önizlemesi." },
-        f4: { title: "92 analiz, tek kütüphane.", desc: "On kategori boyunca yüz, cilt, renk, saç, makyaj, kıyafet, stil kimliği ve glow-up planlaması. Her sonuç, alışveriş yaparken yeniden açabileceğin, zaman içinde karşılaştırabileceğin ya da kart olarak dışa aktarabileceğin bir rapor olarak kaydedilir." },
-        f5: { title: "Dokuz dil.", desc: "İngilizce, Türkçe, Almanca, Fransızca, Portekizce, İtalyanca, Rusça, İspanyolca ve Felemenkçe — hem arayüz hem yazılı raporlar, cihazının dilini izleyerek." },
-        f6: { title: "Fotoğrafların senin kalır.", desc: "Fotoğraflar hesabına özel olarak saklanır, başka kullanıcılara asla gösterilmez ve asla satılmaz. Bir fotoğrafı, tüm raporlarını ya da hesabının tamamını uygulama içinden silebilirsin." },
+        f1: { title: "Her fotoğrafı düzenle.", desc: "Kırp, döndür, düzelt; story ve gönderi için boyutlandır. Işık, renk ve detay ayarları, HSL, eğriler ve renk derecelendirme, fırça ya da geçişle seçici düzenleme. Düzenleme cihazında çalışır, internet gerekmez." },
+        f2: { title: "Filtreler ve efektler.", desc: "Film, portre, sinema, vintage, siyah beyaz, mevsim ve ışıltı paketleri, her filtrede ayrı yoğunluk. Gizlemek istediğin yeri bulanıklaştır ya da mozaikle. Işık sızıntısı, minyatür, glitch, VHS, duotone ve prizma." },
+        f3: { title: "Yazı, çıkartma, çizim.", desc: "Yazı tipleri, renkler, kontur ve zemin. Emoji, şekil ve ışıltı çıkartmaları. Kalem, fosforlu kalem ve neon fırça. Çerçeveler ve sırasını değiştirip kopyalayabileceğin katmanlar. JPEG, PNG ya da WEBP olarak filigransız kaydet." },
+        f4: { title: "Denemeden önce gör.", desc: "Bir kesimi, bir tonu, bir makyajı ya da bir kombini önce kendi fotoğrafında dene, sonra karar ver. Saç boyu ve rengi, doğaldan gösterişliye makyaj, kapsül kombinler, 30 günlük glow-up önizlemesi." },
+        f5: { title: "92 analiz, tek kütüphane.", desc: "On kategori boyunca yüz, cilt, renk, saç, makyaj, kıyafet, stil kimliği ve glow-up planlaması. Her sonuç, alışveriş yaparken yeniden açabileceğin, zaman içinde karşılaştırabileceğin ya da kart olarak dışa aktarabileceğin bir rapor olarak kaydedilir." },
+        f6: { title: "Fotoğrafların senin kalır.", desc: "Yalnızca düzenlediğin fotoğraflar cihazından çıkmaz. Analiz için gönderdiğin fotoğraf izninle gider, hesabına özel saklanır, başka kullanıcılara gösterilmez ve satılmaz. Bir fotoğrafı, tüm raporlarını ya da hesabının tamamını uygulama içinden silebilirsin." },
       },
       disclaimer: "Beauty Studio bir stil aracıdır — tıbbi, dermatolojik ya da estetik işlem tavsiyesi değildir. Analiz yapay zekâ tarafından üretilir ve yanılabilir. Bir hüküm değil, bilgili bir ikinci görüş olarak değerlendir. Uygulama çekicilik puanı vermez ve seni asla başkasıyla kıyaslamaz.",
 
@@ -1520,9 +1526,9 @@
       back: "beauty studio'ya dön",
       eyebrow: "beauty studio · gizlilik",
       title: "Gizlilik Politikası",
-      meta: "Son güncelleme · 29.10.2026 · v1.2",
+      meta: "Son güncelleme · 30.10.2026 · v1.3",
       body: `
-        <p>Bu Gizlilik Politikası, <strong>Beauty Studio: Glow Up AI</strong>'ın ("Uygulama", "Beauty Studio", "biz") bilgilerinizi nasıl topladığını, kullandığını, paylaştığını ve koruduğunu açıklar. Uygulama, <strong>Foi Digitals</strong> (İstanbul, Türkiye — "veri sorumlusu") tarafından işletilir. Uygulamanın hem iOS hem Android sürümü için geçerlidir. Uygulamayı kullanarak burada açıklanan uygulamaları kabul etmiş olursunuz.</p>
+        <p>Bu Gizlilik Politikası, <strong>Beauty Studio: Photo Editor</strong>'ın ("Uygulama", "Beauty Studio", "biz") bilgilerinizi nasıl topladığını, kullandığını, paylaştığını ve koruduğunu açıklar. Uygulama, <strong>Foi Digitals</strong> (İstanbul, Türkiye — "veri sorumlusu") tarafından işletilir. Uygulamanın hem iOS hem Android sürümü için geçerlidir. Uygulamayı kullanarak burada açıklanan uygulamaları kabul etmiş olursunuz.</p>
         <p class="muted">Okunmak için yazıldı, atlatılmak için değil. Bir yer belirsiz kalırsa bize yazın, sade bir dille açıklayalım.</p>
 
         <h2>1. Biz kimiz ve nasıl ulaşılır</h2>
@@ -1638,7 +1644,8 @@
         <p>Beauty Studio'daki tüm bildirimler <strong>cihazınızda yerel olarak planlanır</strong>. Uygulama bir push token üretmez ya da saklamaz; bir push sunucusu işletmiyoruz — yani size uzaktan mesaj gönderemeyiz ve hiçbir yerde size ait bir bildirim tanımlayıcısı tutulmuyor. Bildirim tercihleriniz telefonunuzdan hiç çıkmaz. Bildirimleri Uygulamadan ya da cihaz ayarlarınızdan kapatabilirsiniz.</p>
 
         <h2>9. Yalnızca cihazınızda kalan veriler</h2>
-        <p>Bazı şeyler yalnızca cihazınızda saklanır. Oturum bilginiz cihazın güvenli anahtar deposunda (iOS Keychain / Android Keystore) tutulur. Görünen adınız, avatar renginiz, rapor tonunuz, diliniz, bildirim ayarlarınız, iki tanıtım yanıtınız (saç tipi ve hedef), kaydettiğiniz Lookbook görselleri, raporlardan kaydettiğiniz adımlar, fotoğraf gönderme iznini verdiğiniz tarih, önbelleğe alınmış raporlar ve önizlemeler Uygulamanın yerel depolamasında ve dosyalarında saklanır. Uygulamayı kaldırmak bunların hepsini siler. Uygulama içinden hesabınızı silmek de siler; yalnızca dil seçiminiz kalır.</p>
+        <p>Bazı şeyler yalnızca cihazınızda saklanır. Oturum bilginiz cihazın güvenli anahtar deposunda (iOS Keychain / Android Keystore) tutulur. Görünen adınız, avatar renginiz, rapor tonunuz, diliniz, bildirim ayarlarınız, iki tanıtım yanıtınız (saç tipi ve hedef), kaydettiğiniz Lookbook görselleri, raporlardan kaydettiğiniz adımlar, fotoğraf gönderme iznini verdiğiniz tarih, düzenleyici projeleriniz (düzenleyicide açtığınız fotoğraflar ve düzenlemeleriniz), önbelleğe alınmış raporlar ve önizlemeler Uygulamanın yerel depolamasında ve dosyalarında saklanır. Uygulamayı kaldırmak bunların hepsini siler. Uygulama içinden hesabınızı silmek de siler; yalnızca dil seçiminiz kalır.</p>
+        <p>Fotoğraf düzenleyici tamamen cihazınızda çalışır. İçinde açtığınız fotoğraflar, ayrıca bir analiz ya da görsel deneme başlatmadığınız sürece bize gönderilmez.</p>
         <p>Bunların çoğu bize hiç ulaşmaz. İstisnalar bir analiz isteğiyle birlikte, talimatların parçası olarak gider (4. bölüm): rapor istediğiniz biçimde dönsün diye seçtiğiniz dil ve rapor tonu; bir sonraki analiz öncekiyle tutarlı kalsın diye de en son okumalarınızın ve yaptığınız düzeltmelerin kısa bir notu. Yaptığınız düzeltme ayrıca ait olduğu raporun içine kaydedilir.</p>
 
         <h2>10. Hizmet sağlayıcılar (alt işleyenler)</h2>
@@ -1711,6 +1718,7 @@
             <thead><tr><th>Veri türü</th><th>Toplanıyor</th><th>Size bağlı</th><th>İzleme için kullanılıyor</th></tr></thead>
             <tbody>
               <tr><td>E-posta adresi</td><td>Yalnızca oturum açarsanız</td><td>Evet</td><td>Hayır</td></tr>
+              <tr><td>Kullanıcı kimliği (rastgele hesap kimliği)</td><td>Evet</td><td>Evet</td><td>Hayır</td></tr>
               <tr><td>Fotoğraflar</td><td>Evet</td><td>Evet</td><td>Hayır</td></tr>
               <tr><td>Diğer kullanıcı içeriği (raporlar, notlar, hedefler)</td><td>Evet</td><td>Evet</td><td>Hayır</td></tr>
               <tr><td>Satın alma geçmişi</td><td>Evet</td><td>Evet</td><td><strong>Evet</strong></td></tr>
@@ -1746,12 +1754,13 @@
       back: "beauty studio'ya dön",
       eyebrow: "beauty studio · koşullar",
       title: "Kullanım Koşulları",
-      meta: "Son güncelleme · 29.10.2026 · v1.2",
+      meta: "Son güncelleme · 30.10.2026 · v1.3",
       body: `
-        <p>Bu Kullanım Koşulları ("Koşullar"), <strong>Foi Digitals</strong> (İstanbul, Türkiye — "biz") tarafından işletilen <strong>Beauty Studio: Glow Up AI</strong> mobil uygulamasının ("Uygulama") kullanımını düzenler. Uygulamayı indirerek ya da kullanarak bu Koşulları ve <a href="privacy.html">Gizlilik Politikamızı</a> kabul etmiş olursunuz. Kabul etmiyorsanız Uygulamayı kullanmayın.</p>
+        <p>Bu Kullanım Koşulları ("Koşullar"), <strong>Foi Digitals</strong> (İstanbul, Türkiye — "biz") tarafından işletilen <strong>Beauty Studio: Photo Editor</strong> mobil uygulamasının ("Uygulama") kullanımını düzenler. Uygulamayı indirerek ya da kullanarak bu Koşulları ve <a href="privacy.html">Gizlilik Politikamızı</a> kabul etmiş olursunuz. Kabul etmiyorsanız Uygulamayı kullanmayın.</p>
 
         <h2>1. Uygulama nedir</h2>
-        <p>Beauty Studio, sağladığınız bir fotoğrafı analiz eder ve stil yönlendirmesi döndürür: yüz yapısı ve oranları, mevsimsel renk paletleri, saç, makyaj ve kombin önerileri, bir stil arketipi ve glow-up önerileri. Birçok analizde ayrıca kendi fotoğrafınızdan önizleme görselleri üretir; böylece bir değişikliği uygulamadan önce görebilirsiniz. Katalog şu anda <strong>on kategoride 92 analiz</strong> içerir.</p>
+        <p>Beauty Studio, isteğe bağlı bir analiz stüdyosu olan bir fotoğraf düzenleyicidir. Düzenleyici cihazınızda çalışır: içinde açtığınız fotoğraflar bize yüklenmez ve düzenlediğiniz, kaydettiğiniz, paylaştığınız içerikten siz sorumlusunuz. Bazı araçlar Premium'a dahildir. Onları serbestçe deneyebilirsiniz; ancak bu araçları içeren bir fotoğraf yalnızca Premium ile ya da sunulduğu yerde ödüllü reklamdan sonra kaydedilir.</p>
+        <p>Stüdyo, sağladığınız bir fotoğrafı analiz eder ve stil yönlendirmesi döndürür: yüz yapısı ve oranları, mevsimsel renk paletleri, saç, makyaj ve kombin önerileri, bir stil arketipi ve glow-up önerileri. Birçok analizde ayrıca kendi fotoğrafınızdan önizleme görselleri üretir; böylece bir değişikliği uygulamadan önce görebilirsiniz. Katalog şu anda <strong>on kategoride 92 analiz</strong> içerir.</p>
 
         <h2>2. Uygulama ne değildir</h2>
         <p>Beauty Studio bir <strong>stil ve kendini ifade aracıdır</strong>. Tıbbi, dermatolojik, psikolojik, beslenmeye ilişkin ya da estetik işlem tavsiyesi <strong>değildir</strong> ve bir tanı cihazı değildir. Uygulamadaki hiçbir şey cilt, saç ya da vücutla ilgili bir durumu tespit etmek, teşhis etmek veya tedavi etmek için kullanılmamalıdır. Bir sağlık endişeniz varsa nitelikli bir uzmana danışın.</p>
@@ -1793,19 +1802,19 @@
         </ul>
 
         <h2 id="subscriptions">8. Abonelikler, krediler ve ödemeler</h2>
-        <p>Beauty Studio'yu indirmek ücretsizdir. Ücretli planlar ve kredi paketleri, analiz kataloğunu ve onu çalıştıran yapay zekâ işlemesini açar. 2.4 sürümünden itibaren ücretsiz sürüm reklam gösterir (<a href="privacy.html">Gizlilik Politikası</a>, 6. bölüm); abonelere reklam gösterilmez, tek seferlik <strong>Reklamları Kaldır</strong> satın alımı tam ekran reklamları kaldırır.</p>
+        <p>Beauty Studio'yu indirmek ücretsizdir, düzenleyicinin temel araçları da ücretsizdir. Planlar bütün düzenleme araçlarını açar. Analizler ve görsel denemeler kredi harcar, kredi paketleri herkese açıktır. 2.4 sürümünden itibaren ücretsiz sürüm reklam gösterir (<a href="privacy.html">Gizlilik Politikası</a>, 6. bölüm); abonelere reklam gösterilmez, tek seferlik <strong>Reklamları Kaldır</strong> satın alımı tam ekran reklamları kaldırır.</p>
         <h3>Planlar</h3>
         <ul>
-          <li><strong>Haftalık</strong> — haftalık kredi hakkıyla, görsel denemeler dahil tam erişim.</li>
-          <li><strong>Aylık</strong> — aylık kredi hakkıyla, görsel denemeler dahil tam erişim.</li>
-          <li><strong>Yıllık</strong> — yıllık faturalandırılan (bazı ülkelerde Apple aynı planı 12 ay taahhütle, aylık ödemeli olarak da sunar), görsel denemeler dahil tam erişim; kredi hakkı her ay yenilenir.</li>
+          <li><strong>Haftalık</strong> — bütün düzenleme araçları, reklamsız, haftalık kredi hakkı.</li>
+          <li><strong>Aylık</strong> — bütün düzenleme araçları, reklamsız, aylık kredi hakkı.</li>
+          <li><strong>Yıllık</strong> — yıllık faturalandırılan (bazı ülkelerde Apple aynı planı 12 ay taahhütle, aylık ödemeli olarak da sunar), bütün düzenleme araçları ve reklamsız; kredi hakkı her ay yenilenir.</li>
         </ul>
         <p>Her planın tam fiyatı, süresi ve kredi hakkı, siz onaylamadan önce Uygulamada yerel para biriminizle gösterilir.</p>
         <h3>Krediler</h3>
         <ul>
           <li>Krediler yapay zekâ kullanımını ölçer. Yazılı analizler az sayıda kredi tüketir; kendi yüzünüzde görsel üretmek belirgin biçimde daha fazlasını tüketir, çünkü bize gerçekten daha pahalıya mal olur. Uygulamada hiçbir şey sınırsız değildir ve bunu aksini vaat etmeye tercih ediyoruz.</li>
           <li>Yeni hesaplar 1 kredilik bakiyeyle başlar. Bu bir ücretsiz hak <strong>değildir</strong>: bu bakiyeyle hiçbir analiz çalıştırılamaz.</li>
-          <li><strong>Kredi paketleri</strong> tek seferlik, tüketilebilir satın alımlardır. Kredi ekler ancak tek başlarına premium erişimi açmaz.</li>
+          <li><strong>Kredi paketleri</strong> tek seferlik tüketilebilir satın almalardır. Kredi ekler, herkese açıktır ve Premium düzenleme araçlarını açmaz.</li>
           <li><strong>Ödüllü reklamlar</strong> isteğe bağlıdır. Ödül, reklam ağı reklamın sonuna kadar izlendiğini doğruladıktan sonra verilir; ödüllerin nakit değeri yoktur, günlük olarak sınırlıdır ve değiştirilebilir ya da kaldırılabilir.</li>
           <li><strong>Reklamları Kaldır</strong> (2.4 sürümünden itibaren) aynı mağaza hesabında geri yüklenebilen tek seferlik bir satın alımdır. Premium özellikleri açmaz ve kredi eklemez.</li>
           <li>Kredilerin nakit değeri yoktur, paraya çevrilemez, hesaplar arasında aktarılamaz ve hesabınız silindiğinde sona erer.</li>
@@ -1891,6 +1900,9 @@
 
         <h2>Fotoğraflar ve gizlilik</h2>
 
+        <h3>Düzenlediğim fotoğraflar yükleniyor mu?</h3>
+        <p>Hayır. Düzenleyici cihazınızda çalışır. İçinde açtığınız fotoğraflar ve projeleriniz siz silene kadar orada kalır. Fotoğraf yalnızca siz izin verip bir analiz ya da görsel deneme başlatırsanız yüklenir.</p>
+
         <h3>Yüklediğim fotoğrafa ne oluyor?</h3>
         <p>Uygulama önce izninizi ister. İzin verdiğinizde fotoğraf cihazınızda küçültülüp yeniden kodlanır, hesabınıza ait özel bir depolama alanına yüklenir ve analiz için yapay zekâ sağlayıcımıza (fal.ai) gönderilir. Başka kullanıcılara asla gösterilmez ve asla satılmaz. Siz silene kadar kalır. <a href="privacy.html">Gizlilik Politikası</a> her adımı tek tek anlatır.</p>
 
@@ -1931,8 +1943,8 @@
         <h3>Neden kredi var?</h3>
         <p>Çünkü bir fotoğrafta görüntü modeli çalıştırmak ve yüzünüzden yeni görseller üretmek bize her çalıştırmada gerçek para maliyeti çıkarıyor. Krediler bunu ölçüyor. Yazılı analizler az, görsel üretimi belirgin biçimde daha fazla tüketir. Hiçbir şey sınırsız değil ve bunu aksini vaat etmeye tercih ediyoruz.</p>
 
-        <h3>Görsel denemeler hangi planda var?</h3>
-        <p>Üçünde de: haftalık, aylık ve yıllık. Planlar fiyatta ve içerdikleri kredi miktarında ayrışır; bir görsel deneme, yazılı analizden daha fazla kredi harcar. Kesin haklar ve fiyatlar, satın almadan önce Uygulamada gösterilir.</p>
+        <h3>Görsel denemeler için plan gerekir mi?</h3>
+        <p>Hayır. Görsel deneme kredi harcar ve kredi paketini herkes alabilir. Plan her dönem kredi ekler, bütün düzenleme araçlarını açar ve reklamları kaldırır. Bir görsel deneme, yazılı analizden daha fazla kredi harcar. Kesin haklar ve fiyatlar, satın almadan önce Uygulamada gösterilir.</p>
 
         <h3>Nasıl iptal ederim?</h3>
         <p>iOS'ta: <em>Ayarlar → adınız → Abonelikler</em>. Android'de: <em>Google Play → Abonelikler</em>. Dönem bitmeden en az 24 saat önce iptal edin. <strong>Uygulamayı ya da hesabınızı silmek aboneliği iptal etmez.</strong></p>
@@ -1952,7 +1964,7 @@
         <p>İngilizce, Türkçe, Almanca, Fransızca, Portekizce, İtalyanca, Rusça, İspanyolca ve Felemenkçe — hem arayüz hem yazılı rapor için. Uygulama cihazınızın dilini izler, dilerseniz Uygulama içinden değiştirebilirsiniz.</p>
 
         <h3>Çevrimdışı çalışıyor mu?</h3>
-        <p>Hayır. Analizler ve görsel üretimi sunucularımızda çalışır, bu yüzden bağlantı gerekir. Daha önce çalıştırdığınız raporlar önbelleğe alınır ve çevrimdışı açılabilir.</p>
+        <p>Fotoğraf düzenleyici çalışır, çünkü cihazınızda çalışıyor. Analizler ve görsel üretimi sunucularımızda çalışır, bu yüzden bağlantı gerekir. Daha önce çalıştırdığınız raporlar önbelleğe alınır ve çevrimdışı açılabilir.</p>
 
         <h3>Raporlarım yeni telefonuma taşınır mı?</h3>
         <p>E-posta, Google ya da Apple ile oturum açtıysanız evet — yeni cihazda giriş yapın, raporlarınız orada olur. Misafir hesap taşınamaz.</p>
