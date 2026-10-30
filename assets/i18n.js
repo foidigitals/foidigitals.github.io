@@ -633,7 +633,7 @@
         <h2>6. Ads, advertising measurement, and App Tracking Transparency</h2>
         <p>We want to be direct about this, because it is the part of Beauty Studio that involves tracking in Apple's sense of the word.</p>
         <h3>Ads in the App (from version 2.4)</h3>
-        <p>The free version of Beauty Studio shows ads: banners, and full-screen ads between screens. It also offers <strong>rewarded ads</strong> that you can choose to watch in exchange for something in the App, such as opening a report or a filter pack. Ads are served by <strong>Google AdMob</strong> (Google LLC; Google Ireland Limited in the EEA, the UK and Switzerland). When an ad is requested or shown, Google receives:</p>
+        <p>The free version of Beauty Studio shows full-screen ads between screens. It also offers <strong>rewarded ads</strong> that you can choose to watch in exchange for something in the App, such as opening a report or a filter pack. Ads are served by <strong>Google AdMob</strong> (Google LLC; Google Ireland Limited in the EEA, the UK and Switzerland). When an ad is requested or shown, Google receives:</p>
         <ul>
           <li>your device's advertising identifier — on iOS <strong>only if you allow tracking</strong>;</li>
           <li>your IP address, from which Google may estimate an approximate location;</li>
@@ -643,7 +643,7 @@
         <ul>
           <li><strong>Rewarded ads.</strong> When you choose to watch one, the request carries your random account ID (Section 2) so that Google can confirm to our server that the ad finished and we can give you the reward. We send Google no name and no email.</li>
           <li><strong>Personalised ads only where you allow them.</strong> In the EEA, the UK and Switzerland the App shows Google's consent form before any ad is loaded, and you can change your choice at any time in <em>Profile → Data Management → Ad privacy choices</em>. On iOS, ads are personalised only if you allow tracking. On Android you can opt out of ad personalisation in your device settings. Otherwise Google shows non-personalised or limited ads.</li>
-          <li><strong>Who sees no ads.</strong> Premium subscribers see no ads. A one-time <em>Remove Ads</em> purchase removes banners and full-screen ads; rewarded ads stay optional for everyone.</li>
+          <li><strong>Who sees no ads.</strong> Premium subscribers see no ads. A one-time <em>Remove Ads</em> purchase removes full-screen ads; rewarded ads stay optional for everyone.</li>
           <li><strong>Your photos never reach advertisers.</strong> We do not pass your photos, edits, reports or analysis results to Google or to any advertiser, and ads are not chosen based on them.</li>
         </ul>
         <p>Google processes this data under its own privacy policy, including to measure ads and prevent fraud: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses information from apps that use its services</a>.</p>
@@ -819,7 +819,7 @@
         </ul>
 
         <h2 id="subscriptions">8. Subscriptions, credits &amp; payments</h2>
-        <p>Beauty Studio is free to download. Paid plans and credit packs unlock the analysis catalogue and the AI processing that powers it. From version 2.4 the free version shows ads (<a href="privacy.html">Privacy Policy</a>, Section 6); subscribers see no ads, and a one-time <strong>Remove Ads</strong> purchase removes banners and full-screen ads.</p>
+        <p>Beauty Studio is free to download. Paid plans and credit packs unlock the analysis catalogue and the AI processing that powers it. From version 2.4 the free version shows ads (<a href="privacy.html">Privacy Policy</a>, Section 6); subscribers see no ads, and a one-time <strong>Remove Ads</strong> purchase removes full-screen ads.</p>
         <h3>Plans</h3>
         <ul>
           <li><strong>Weekly</strong> — full access including visual try-ons, with a weekly credit allowance.</li>
@@ -933,7 +933,7 @@
         <p>To measure which ads bring people to the App and, from version 2.4, to let the ads in the free version be personalised. Declining changes nothing about how the App works — every feature, credit and report behaves identically; ads you see are simply not personalised. See <a href="privacy.html">the Privacy Policy</a>, Section 6.</p>
 
         <h3>Why are there ads, and how do I remove them?</h3>
-        <p>From version 2.4 the free version shows ads; they keep the editor and the basic tools free. Premium subscribers see no ads, and a one-time <strong>Remove Ads</strong> purchase removes banners and full-screen ads. Rewarded ads are always optional: you watch one only when you choose to, in exchange for something in the App.</p>
+        <p>From version 2.4 the free version shows ads; they keep the editor and the basic tools free. Premium subscribers see no ads, and a one-time <strong>Remove Ads</strong> purchase removes full-screen ads. Rewarded ads are always optional: you watch one only when you choose to, in exchange for something in the App.</p>
 
         <h2>Results</h2>
 
@@ -1607,7 +1607,7 @@
         <h2>6. Reklamlar, reklam ölçümü ve App Tracking Transparency</h2>
         <p>Bu konuda açık olmak istiyoruz, çünkü Beauty Studio'nun Apple'ın tanımıyla "izleme" içeren kısmı burası.</p>
         <h3>Uygulamadaki reklamlar (2.4 sürümünden itibaren)</h3>
-        <p>Beauty Studio'nun ücretsiz sürümü reklam gösterir: banner'lar ve ekranlar arasında tam ekran reklamlar. Ayrıca Uygulamada bir karşılık için, örneğin bir raporu ya da bir filtre paketini açmak için, izlemeyi kendinizin seçtiği <strong>ödüllü reklamlar</strong> sunar. Reklamları <strong>Google AdMob</strong> sunar (Google LLC; AEA, Birleşik Krallık ve İsviçre'de Google Ireland Limited). Bir reklam istendiğinde ya da gösterildiğinde Google şunları alır:</p>
+        <p>Beauty Studio'nun ücretsiz sürümü ekranlar arasında tam ekran reklamlar gösterir. Ayrıca Uygulamada bir karşılık için, örneğin bir raporu ya da bir filtre paketini açmak için, izlemeyi kendinizin seçtiği <strong>ödüllü reklamlar</strong> sunar. Reklamları <strong>Google AdMob</strong> sunar (Google LLC; AEA, Birleşik Krallık ve İsviçre'de Google Ireland Limited). Bir reklam istendiğinde ya da gösterildiğinde Google şunları alır:</p>
         <ul>
           <li>cihazınızın reklam tanımlayıcısı — iOS'ta <strong>yalnızca izlemeye izin verirseniz</strong>;</li>
           <li>IP adresiniz; Google bundan yaklaşık bir konum tahmin edebilir;</li>
@@ -1617,7 +1617,7 @@
         <ul>
           <li><strong>Ödüllü reklamlar.</strong> Birini izlemeyi seçtiğinizde, Google'ın reklamın bittiğini sunucumuza doğrulayabilmesi ve ödülünüzü verebilmemiz için istek rastgele hesap kimliğinizi (2. bölüm) taşır. Google'a adınızı ya da e-postanızı göndermeyiz.</li>
           <li><strong>Kişiselleştirilmiş reklam yalnızca izin verdiğiniz yerde.</strong> AEA, Birleşik Krallık ve İsviçre'de Uygulama, herhangi bir reklam yüklenmeden önce Google'ın onay formunu gösterir; seçiminizi istediğiniz zaman <em>Profil → Veri Yönetimi → Reklam gizliliği tercihleri</em>'nden değiştirebilirsiniz. iOS'ta reklamlar yalnızca izlemeye izin verirseniz kişiselleştirilir. Android'de reklam kişiselleştirmesini cihaz ayarlarınızdan kapatabilirsiniz. Aksi hâlde Google kişiselleştirilmemiş ya da sınırlı reklam gösterir.</li>
-          <li><strong>Kimler reklam görmez.</strong> Premium abonelere reklam gösterilmez. Tek seferlik <em>Reklamları Kaldır</em> satın alımı banner'ları ve tam ekran reklamları kaldırır; ödüllü reklamlar herkes için isteğe bağlı kalır.</li>
+          <li><strong>Kimler reklam görmez.</strong> Premium abonelere reklam gösterilmez. Tek seferlik <em>Reklamları Kaldır</em> satın alımı tam ekran reklamları kaldırır; ödüllü reklamlar herkes için isteğe bağlı kalır.</li>
           <li><strong>Fotoğraflarınız reklamcılara asla ulaşmaz.</strong> Fotoğraflarınızı, düzenlemelerinizi, raporlarınızı ya da analiz sonuçlarınızı Google'a veya herhangi bir reklamcıya vermeyiz; reklamlar bunlara göre seçilmez.</li>
         </ul>
         <p>Google bu veriyi, reklamları ölçmek ve sahteciliği önlemek dahil, kendi gizlilik politikasına göre işler: <a href="https://policies.google.com/technologies/partner-sites?hl=tr" target="_blank" rel="noopener">Google'ın, hizmetlerini kullanan uygulamalardan gelen bilgileri nasıl kullandığı</a>.</p>
@@ -1793,7 +1793,7 @@
         </ul>
 
         <h2 id="subscriptions">8. Abonelikler, krediler ve ödemeler</h2>
-        <p>Beauty Studio'yu indirmek ücretsizdir. Ücretli planlar ve kredi paketleri, analiz kataloğunu ve onu çalıştıran yapay zekâ işlemesini açar. 2.4 sürümünden itibaren ücretsiz sürüm reklam gösterir (<a href="privacy.html">Gizlilik Politikası</a>, 6. bölüm); abonelere reklam gösterilmez, tek seferlik <strong>Reklamları Kaldır</strong> satın alımı banner'ları ve tam ekran reklamları kaldırır.</p>
+        <p>Beauty Studio'yu indirmek ücretsizdir. Ücretli planlar ve kredi paketleri, analiz kataloğunu ve onu çalıştıran yapay zekâ işlemesini açar. 2.4 sürümünden itibaren ücretsiz sürüm reklam gösterir (<a href="privacy.html">Gizlilik Politikası</a>, 6. bölüm); abonelere reklam gösterilmez, tek seferlik <strong>Reklamları Kaldır</strong> satın alımı tam ekran reklamları kaldırır.</p>
         <h3>Planlar</h3>
         <ul>
           <li><strong>Haftalık</strong> — haftalık kredi hakkıyla, görsel denemeler dahil tam erişim.</li>
@@ -1907,7 +1907,7 @@
         <p>Hangi reklamların insanları Uygulamaya getirdiğini ölçmek ve 2.4 sürümünden itibaren ücretsiz sürümdeki reklamların kişiselleştirilebilmesi için. Reddetmek Uygulamanın işleyişinde hiçbir şeyi değiştirmez — her özellik, kredi ve rapor aynı çalışır; gördüğünüz reklamlar yalnızca kişiselleştirilmez. Bkz. <a href="privacy.html">Gizlilik Politikası</a>, 6. bölüm.</p>
 
         <h3>Neden reklam var, nasıl kaldırırım?</h3>
-        <p>2.4 sürümünden itibaren ücretsiz sürüm reklam gösterir; editörün ve temel araçların ücretsiz kalmasını reklamlar sağlar. Premium abonelere reklam gösterilmez, tek seferlik <strong>Reklamları Kaldır</strong> satın alımı da banner'ları ve tam ekran reklamları kaldırır. Ödüllü reklamlar her zaman isteğe bağlıdır: yalnızca siz seçtiğinizde, Uygulamada bir karşılık için izlenir.</p>
+        <p>2.4 sürümünden itibaren ücretsiz sürüm reklam gösterir; editörün ve temel araçların ücretsiz kalmasını reklamlar sağlar. Premium abonelere reklam gösterilmez, tek seferlik <strong>Reklamları Kaldır</strong> satın alımı da tam ekran reklamları kaldırır. Ödüllü reklamlar her zaman isteğe bağlıdır: yalnızca siz seçtiğinizde, Uygulamada bir karşılık için izlenir.</p>
 
         <h2>Sonuçlar</h2>
 
